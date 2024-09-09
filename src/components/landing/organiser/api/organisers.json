@@ -1,0 +1,60 @@
+{
+	"organisers": [
+		{
+			"avatar": "",
+			"name": "Алексей Табула",
+			"link": "",
+			"description": "Frontend-разработчик",
+			"role": "Создатель JoyJS"
+		},
+		{
+			"avatar": "",
+			"name": "Ирина Иванова",
+			"link": "",
+			"description": "UX/UI Дизайнер",
+			"role": ""
+		},
+		{
+			"avatar": "",
+			"name": "Кирилл Павлик",
+			"link": "",
+			"description": "Frontend-разработчик в Альфа-Банке",
+			"role": ""
+		},
+		{
+			"avatar": "",
+			"name": "Анна Ширяева",
+			"link": "",
+			"description": "Организатор & ведущая @moscowjs",
+			"role": ""
+		},
+		{
+			"avatar": "",
+			"name": "Анна Пахотина",
+			"link": "",
+			"description": "",
+			"role": ""
+		},
+		{
+			"avatar": "",
+			"name": "Вячеслав Завьялов",
+			"link": "",
+			"description": "",
+			"role": ""
+		},
+		{
+			"avatar": "",
+			"name": "Максим Булавчиков",
+			"link": "",
+			"description": "Ведущий разработчик в Сбере",
+			"role": ""
+		},
+		{
+			"avatar": "",
+			"name": "Александр Кириллов",
+			"link": "",
+			"description": "",
+			"role": ""
+		}
+	]
+}
