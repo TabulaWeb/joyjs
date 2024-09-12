@@ -3,6 +3,8 @@ import { IconEye } from '../../icons/icon-eye'
 
 import programsJson from './api/programs.json'
 
+import AvatarMolch from '../../../assets/image/molchanov-avatar.jpg'
+
 export const Program = () => {
 	const { programs } = programsJson
 
@@ -24,9 +26,11 @@ export const Program = () => {
 						<Avatar> 
 							<Image 
 								alt='avatar'
+								src={program.speaker.avatar}
 							/>
 							<Logo 
 								alt='logo'
+								src={program.speaker.company}
 							/>
 						</Avatar>
 						<More>
@@ -132,6 +136,7 @@ const Image = styled.img`
 	width: 95px;
 	height: 95px;
 	border-radius: 20px;
+	object-fit: cover;
 `
 
 const Logo = styled.img`
