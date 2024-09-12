@@ -61,7 +61,11 @@ const Content = styled.div`
 
 const Title = styled.h1`
 	font-family: 'YapariTrial-SemiBold';
-	font-size: 16vw;
+	font-size: 15.7vw;
+
+	@media screen and (min-width: 1400px) {
+		font-size: 223px;
+	}
 `
 
 const IconLoft = styled.img`

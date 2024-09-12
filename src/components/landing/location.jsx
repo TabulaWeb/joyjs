@@ -112,7 +112,7 @@ const Time = styled.p`
 	justify-content: center;
 	align-items: center;
 	height: 60px;
-	padding: 0 30px;
+	padding: 0 20px;
 	border-radius: 100px;
 	background-color: #212121;
 	border: 1px solid #4B4547;

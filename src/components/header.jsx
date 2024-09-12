@@ -26,7 +26,7 @@ export const Header = () => {
 }
 
 const Main = styled.header`
-	padding: 0 2%;
+	padding: 0 20px;
 	margin: 0 auto;
 	margin-bottom: 100px;
 `
@@ -54,12 +54,13 @@ const Register = styled.a`
 	align-items: center;
 	justify-content: center;
 	gap: 0 10px;
-	padding: 0 30px;
+	padding: 0 20px;
 	height: 60px;
 	margin-left: auto;
 	border: 1px solid #AFB2FF;
 	border-radius: 100px;
 	cursor: pointer;
+	text-decoration: none;
 `
 
 const TextButton = styled.span`

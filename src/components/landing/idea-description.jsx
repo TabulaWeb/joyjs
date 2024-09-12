@@ -70,7 +70,7 @@ const Button = styled.a`
 	justify-content: center;
 	gap: 7.5px;
 	height: 60px;
-	padding: 0 30px;
+	padding: 0 20px;
 	border-radius: 100px;
 	border: none;
 	font-weight: 500;
