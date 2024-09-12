@@ -176,4 +176,5 @@ const Button = styled.a`
 	border: none;
 	background-color: #AFB2FF;
 	cursor: pointer;
+	text-decoration: none;
 `

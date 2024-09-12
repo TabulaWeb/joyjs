@@ -136,6 +136,7 @@ const AreaLinks = styled.nav``
 
 const Link = styled.a`
 	cursor: pointer;
+	text-decoration: none;
 `
 
 const Slide = styled(SwiperSlide)`

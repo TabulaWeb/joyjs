@@ -69,4 +69,5 @@ const Link = styled.a`
 	font-family: 'Unbounded-Regular';
 	font-size: 15px;
 	cursor: pointer;
+	text-decoration: none;
 `

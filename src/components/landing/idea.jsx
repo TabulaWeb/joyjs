@@ -58,7 +58,7 @@ const Main = styled.section`
 const Keywords = styled.div`
 	display: flex;
 	flex-direction: column;
-	gap: 80px;
+	gap: 60px;
 	font-size: 7vw;
 
 	&.left {
@@ -74,6 +74,10 @@ const Keywords = styled.div`
 			align-items: center;
 			justify-content: flex-end;
 		}
+	}
+
+	@media screen and (min-width: 1400px) {
+		font-size: 100px;
 	}
 `
 
@@ -115,4 +119,9 @@ const MascotImage = styled.img`
   right:0;
 	margin: 0 auto;
 	bottom: -65px;
+	width: 600px;
+
+	@media screen and (max-width: 1400px) {
+		width: 500px;
+	}
 `

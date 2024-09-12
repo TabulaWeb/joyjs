@@ -83,6 +83,7 @@ const Link = styled.a`
 	height: 65px;
 	border-radius: 50%;
 	background-color: #4B4547;
+	text-decoration: none;
 `
 
 const Name = styled.p`

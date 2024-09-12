@@ -23,6 +23,7 @@ const Main = styled.a`
 	border-bottom: 1px solid #909090;
 	cursor: pointer;
 	margin-bottom: 150px;
+	text-decoration: none;
 `
 
 const LinkText = styled.span`

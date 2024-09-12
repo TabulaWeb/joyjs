@@ -67,6 +67,7 @@ const Link = styled.a`
 	background-color: #AFB2FF;
 	border-radius: 50%;
 	cursor: pointer;
+	text-decoration: none;
 
 	&.telegram {
 		background-color: #4B4547;

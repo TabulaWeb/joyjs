@@ -85,4 +85,5 @@ const Button = styled.a`
 	border-radius: 100px;
 	border: none;
 	cursor: pointer;
+	text-decoration: none;
 `

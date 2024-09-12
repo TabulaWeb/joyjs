@@ -58,4 +58,5 @@ const Button = styled.a`
 	color: #080808;
 	font-family: 'Unbounded-Medium';
 	font-size: 15px;
+	text-decoration: none;
 `

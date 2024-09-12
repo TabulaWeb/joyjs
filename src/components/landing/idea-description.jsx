@@ -79,4 +79,5 @@ const Button = styled.a`
 	background-color: ${({ isFilled }) => isFilled ? '#AFB2FF' : '#212121'};
 	color: ${({ isFilled }) => isFilled ? '#212121' : '#AFB2FF'};
 	cursor: pointer;
+	text-decoration: none;
 `
