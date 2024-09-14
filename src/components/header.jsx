@@ -1,9 +1,27 @@
+import { useEffect, useState } from 'react'
 import styled from '@emotion/styled'
 import { IconBurger } from './icons/icon-burger'
 import { IconLogo } from './icons/icon-logo'
 import { IconEye } from './icons/icon-eye'
+import { timepad } from '../consts/urls'
 
 export const Header = () => {
+	const [isActive, setIsActive] = useState(false)
+
+	useEffect(() => {
+		const getScrollHeight = () => {
+			if(window.pageYOffset > 1945) {
+				setIsActive(true)
+			} else {
+				setIsActive(false)
+			}
+		}
+
+		window.addEventListener('scroll', getScrollHeight, { passive: true })
+	
+		return () => window.removeEventListener('scroll', getScrollHeight)
+	}, [])
+
 	return <Main>
 		<Content>
 			<OpenBurder
@@ -14,13 +32,15 @@ export const Header = () => {
 			</OpenBurder>
 			<IconLogo />
 			<Register
-				href='/'
+				isActive={isActive}
+				href={timepad}
 				name='link to register'
 				aria-label='Go to register page'
 			>
 				<IconEye />
 				<TextButton>Посетить встречу</TextButton>
 			</Register>
+			
 		</Content>
 	</Main>
 }
@@ -29,6 +49,15 @@ const Main = styled.header`
 	padding: 0 20px;
 	margin: 0 auto;
 	margin-bottom: 100px;
+	position: sticky;
+	top: 0;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	backdrop-filter: blur(10px);
+	border-bottom-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+	z-index: 2;
+	background-color: #08080850;
 `
 
 const Content = styled.div`
@@ -36,7 +65,7 @@ const Content = styled.div`
 	align-items: center;
 	padding: 15px 15px 15px 25px;
 	border-radius: 100px;
-	background-color: #212121;
+	background-color: #2C2C2C;
 `
 
 const OpenBurder = styled.button`
@@ -61,11 +90,31 @@ const Register = styled.a`
 	border-radius: 100px;
 	cursor: pointer;
 	text-decoration: none;
+	transition: 300ms;
+	background-color: ${({ isActive }) => isActive ? '#AFB2FF' : ''};
+	color:${({ isActive }) => isActive ? '#212121' : '#AFB2FF'};
+
+	& svg path {
+		fill:${({ isActive }) => isActive ? '#212121' : '#AFB2FF'};
+	}
+
+	&:hover {
+		transition: 300ms;
+		border-color: #9496D3;
+		background-color: ${({ isActive }) => isActive ? '#9496D3' : ''};
+
+		& svg path {
+			fill:  ${({ isActive }) => isActive ? '#080808' : '#9496D3'};
+		}
+
+		& span {
+			color: ${({ isActive }) => isActive ? '#080808' : '#9496D3'};
+		}
+	}
 `
 
 const TextButton = styled.span`
 	font-family: 'Unbounded-Medium';
-	color: #AFB2FF;
 	font-weight: 500;
 	font-size: 16px;
 `

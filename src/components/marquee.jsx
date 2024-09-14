@@ -21,7 +21,6 @@ export const Marquee = () => {
 
 const Main = styled(ReactFastMarquee)`
 	padding: 10px 0;
-	margin-bottom: 25px;
 	gap: 0 50px;
 	background-color: #212121;
 	font-family: 'Unbounded-Light';
