@@ -52,11 +52,24 @@ const Description = styled.h2`
 	& span {
 		opacity: 0.5;
 	}
+
+	@media screen and (max-width: 1024px) {
+		max-width: 400px;
+		font-size: 14px;
+	}
+
+	@media screen and (max-width: 600px) {
+		margin-bottom: 117px;
+	}
 `
 
 const Content = styled.div`
 	position: relative;
-	margin-bottom: 293px;
+	margin-bottom: 290px;
+
+	@media screen and (max-width: 600px) {
+		margin-bottom: 140px;
+	}
 `
 
 const Title = styled.h1`
@@ -66,18 +79,53 @@ const Title = styled.h1`
 	@media screen and (min-width: 1400px) {
 		font-size: 223px;
 	}
+
+	@media screen and (max-width: 1024px) {
+		display: block;
+		margin: 0 auto;
+		width: min-content;
+		font-size: 27vw;
+		text-align: left;
+	}
+
+	@media screen and (max-width: 600px) {
+		width: auto;
+		font-size: 30vw;
+	}
 `
 
 const IconLoft = styled.img`
 	position: absolute;
 	top: 63%;
 	left: 0;
+
+	@media screen and (max-width: 1024px) {
+		top: 25%;
+		transform: rotate(-30deg);
+	}
+
+	@media screen and (max-width: 600px) {
+		top: -30%;
+		left: inherit;
+		right: -5%;
+		transform: rotate(10deg);
+	}
 `
 
 const IconSmile = styled.img`
 	position: absolute;
 	left: 18.5%;
 	top: -5px;
+
+	@media screen and (max-width: 1024px) {
+		top: 5%;
+		left: 43%;
+	}
+
+	@media screen and (max-width: 600px) {
+		top: -27%;
+		left: 0;
+	}
 `
 
 const IconCode = styled.img`
@@ -86,12 +134,34 @@ const IconCode = styled.img`
 	transform: rotate(30deg);
 	left: 41%;
 	top: 28%;
+
+	@media screen and (max-width: 1024px) {
+		top: 15%;
+		left: inherit;
+		right: 10%;
+	}
+
+	@media screen and (max-width: 600px) {
+		top: inherit;
+		bottom: 5%;
+		right: -5%;
+	}
 `
 
 const IconMascot = styled.img`
-position: absolute;
+	position: absolute;
 	right: 20%;
 	top: -30%;
+
+	@media screen and (max-width: 1024px) {
+		top: inherit;
+		bottom: 38%;
+		left: 15%;
+	}
+
+	@media screen and (max-width: 600px) {
+		left: 0;
+	}
 `
 
 const IconCamera = styled.img`
@@ -99,4 +169,15 @@ const IconCamera = styled.img`
 	transform: rotate(-30deg);
 	right: -1px;
 	top: 48%;
+
+	@media screen and (max-width: 1024px) {
+		top: inherit;
+		bottom: 5%;
+		right: 20%;
+	}
+
+	@media screen and (max-width: 600px) {
+		bottom: -20%;
+		right: 0;
+	}
 `
