@@ -8,7 +8,7 @@ import SlideBar from '../../assets/image/slide-bar.png'
 
 export const Location = () => {
 	return <Main>
-		<Content className='container'>
+		<Content className='container' id='location'>
 			<Title>Места встречи</Title>
 
 			<Areas>

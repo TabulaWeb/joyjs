@@ -6,7 +6,7 @@ import { IconCursor } from '../icons/icon-cursor'
 import Sketch from '../../assets/image/sketch.png'
 
 export const Idea = () => {
-	return <Main className='container'>
+	return <Main className='container' id='about'>
 		<Keywords className='left'>
 			<Keyword>Митап</Keyword>
 			<Keyword>Знания</Keyword>

@@ -4,6 +4,7 @@ import { IconTelegram } from '../icons/icon-telegram'
 export const Questions = () => {
 	return <Main
 		className='container'
+		id='support'
 	>
 		<Title>Есть вопросики?</Title>
 		<Description>Не стесняйся! Спрашивай всё, что тебя интересует</Description>

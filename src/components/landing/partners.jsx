@@ -7,7 +7,7 @@ import { IconEmail } from '../icons/icon-email'
 
 export const Partners = () => {
 	return <Main>
-		<Container className='container'>
+		<Container className='container' id='partners'>
 			<Title>Партнеры</Title>
 			<Content>
 				<Logos>

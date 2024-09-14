@@ -81,6 +81,7 @@ const IconSmile = styled.img`
 `
 
 const IconCode = styled.img`
+	width: 120px;
 	position: absolute;
 	transform: rotate(30deg);
 	left: 41%;

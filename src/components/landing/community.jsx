@@ -9,7 +9,7 @@ export const Community = () => {
 			<IconSmileOutline />
 			<span>Сообщество Joy.JS</span>
 		</Marquee>
-		<Main className='container'>
+		<Main className='container' id='community'>
 			<Description>
 				Идея "Joy.JS" заключается в развитии IT-культуры в регионах.
 				Для формирования сообщества был выбран Псков, так как это родной
@@ -21,8 +21,6 @@ export const Community = () => {
 				А так как сообщество только зарождается, ты можешь повлиять 
 				на его будущее и развитие. 
 			</Description>
-
-			
 		</Main>
 	</>
 	
