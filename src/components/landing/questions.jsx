@@ -27,6 +27,7 @@ const Main = styled.section`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-bottom: 250px;
 `
 
 const Title = styled.h2`

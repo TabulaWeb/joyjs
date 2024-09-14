@@ -1,7 +1,6 @@
 import styled from '@emotion/styled'
 import ReactFastMarquee from "react-fast-marquee";
 import { IconSmileOutline } from '../icons/icon-smile-outline';
-import { IconEye } from '../icons/icon-eye'
 
 export const Community = () => {
 	return <>
@@ -23,18 +22,7 @@ export const Community = () => {
 				на его будущее и развитие. 
 			</Description>
 
-			<Button
-				href='/'
-				name='link to register'
-				aria-label='Go to register page'
-			>
-				<IconEye 
-					width={44}
-					height={44}
-					color='#080808'
-				/>
-				<span>Посетить встречу</span>
-			</Button>
+			
 		</Main>
 	</>
 	
@@ -67,23 +55,4 @@ const Description = styled.p`
 	&.subDescription {
 		margin-bottom: 50px;
 	}
-`
-
-const Button = styled.a`
-	height: 110px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Unbounded-Medium';
-	color: #080808;
-	font-size: 25px;
-	gap: 10px;
-	padding: 0 10px;
-	max-width: 865px;
-	width: 100%;
-	background-color: #AFB2FF;
-	border-radius: 100px;
-	border: none;
-	cursor: pointer;
-	text-decoration: none;
 `

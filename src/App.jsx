@@ -11,6 +11,7 @@ import { Info } from './components/landing/info'
 import { InfoContact } from './components/landing/info-contact'
 import { Location } from './components/landing/location'
 import { Organiser } from './components/landing/organiser'
+import { Comics } from './components/landing/comics'
 import { Community } from './components/landing/community'
 import { Partners } from './components/landing/partners'
 import { Questions } from './components/landing/questions'
@@ -31,11 +32,12 @@ function App() {
         <InfoContact />
         <Location/>
         <Organiser />
+        <Comics />
         <Community />
         <Partners />
         <Questions />
       </main>
-      <KeyWords />
+      {/* <KeyWords /> */}
       <Footer />
     </>
   )

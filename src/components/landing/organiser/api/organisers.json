@@ -1,14 +1,14 @@
 {
 	"organisers": [
 		{
-			"avatar": "",
+			"avatar": "/src/assets/image/tabula-avatar.jpg",
 			"name": "Алексей Табула",
 			"link": "",
 			"description": "Frontend-разработчик",
 			"role": "Создатель JoyJS"
 		},
 		{
-			"avatar": "",
+			"avatar": "/src/assets/image/flina-avatar.png",
 			"name": "Ирина Иванова",
 			"link": "",
 			"description": "UX/UI Дизайнер",
@@ -29,14 +29,14 @@
 			"role": ""
 		},
 		{
-			"avatar": "",
-			"name": "Анна Пахотина",
+			"avatar": "/src/assets/image/maximSber-avatar.png",
+			"name": "Максим Булавчиков",
 			"link": "",
-			"description": "",
+			"description": "Ведущий разработчик в Сбере",
 			"role": ""
 		},
 		{
-			"avatar": "",
+			"avatar": "/src/assets/image/viacheslav-avatar.png",
 			"name": "Вячеслав Завьялов",
 			"link": "",
 			"description": "",
@@ -44,9 +44,9 @@
 		},
 		{
 			"avatar": "",
-			"name": "Максим Булавчиков",
+			"name": "Анна Пахотина",
 			"link": "",
-			"description": "Ведущий разработчик в Сбере",
+			"description": "",
 			"role": ""
 		},
 		{

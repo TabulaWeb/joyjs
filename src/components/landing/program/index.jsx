@@ -28,14 +28,15 @@ export const Program = () => {
 								alt='avatar'
 								src={program.speaker.avatar}
 							/>
-							<Logo 
+							<Logo
+								isDark={program.speaker.name === 'Тимур Гафиулин'}
 								alt='logo'
 								src={program.speaker.company}
 							/>
 						</Avatar>
 						<More>
-							<Name></Name>
-							<SubInfo></SubInfo>
+							<Name>{program.speaker.name}</Name>
+							<SubInfo>{program.speaker.description}</SubInfo>
 						</More>
 					</Speaker>}
 				</Content>
@@ -146,6 +147,7 @@ const Logo = styled.img`
 	bottom: -5px;
 	right: -5px;
 	border-radius: 8px;
+	background: ${({ isDark }) => isDark ? '#1e1e1e' : '#ffffff'};
 `
 
 const More = styled.div`

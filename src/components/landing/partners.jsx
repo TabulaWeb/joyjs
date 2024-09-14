@@ -8,57 +8,68 @@ import { IconEmail } from '../icons/icon-email'
 export const Partners = () => {
 	return <Main>
 		<Container className='container'>
-			<h2>Партнеры</h2>
-		</Container>
-		<Container className='container'>
-			<Logos>
-				<Logo
-					className='loft'
-					alt='loft'
-					src={LogoLoft} 
-				/>
-				<Logo 
-					className='coffee-studion'
-					alt='coffee-studion'
-					src={LogoCoffee} 
-				/>
-			</Logos>
+			<Title>Партнеры</Title>
+			<Content>
+				<Logos>
+					<Logo
+						className='loft'
+						alt='loft'
+						src={LogoLoft} 
+					/>
+					<Logo 
+						className='coffee-studion'
+						alt='coffee-studion'
+						src={LogoCoffee} 
+					/>
+				</Logos>
 
-			<Links>
-				<span>Контакты для связи</span>
-				<ContainerLink>
-					<Link
-						href='/'
-						className='telegram'
-						name='link to telegram'
-						aria-label='link to telegram'
-					>
-						<IconTelegram 
-							width={110}
-							height={110}
-							color='#AFB2FF'
-						/>
-					</Link>
-					<Link
-						href='/'
-						name='link to email'
-						aria-label='link to email'
-					>
-						<IconEmail />
-					</Link>
-				</ContainerLink>
-			</Links>
+				<Links>
+					<span>Контакты для связи</span>
+					<ContainerLink>
+						<Link
+							href='/'
+							className='telegram'
+							name='link to telegram'
+							aria-label='link to telegram'
+						>
+							<IconTelegram 
+								width={110}
+								height={110}
+								color='#AFB2FF'
+							/>
+						</Link>
+						<Link
+							href='/'
+							name='link to email'
+							aria-label='link to email'
+						>
+							<IconEmail />
+						</Link>
+					</ContainerLink>
+				</Links>
+			</Content>
 		</Container>
 	</Main>
 }
 
-const Main = styled.div`
+const Main = styled.section`
 	margin-bottom: 170px;
 	padding: 70px 50px;
 	background-color: #212121;
 `
 
 const Container = styled.div`
+	display: flex;
+	flex-direction: column;
+	gap: 70px;
+`
+
+const Title = styled.div`
+	font-family: 'Unbounded-Regular';
+	font-size: 80px;
+`
+
+const Content = styled.div`
 	display: flex;
 	justify-content: space-between;
 `
