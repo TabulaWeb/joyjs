@@ -8,6 +8,7 @@ import { timepad } from '../consts/urls'
 import { IconTelegram } from './icons/icon-telegram'
 import { IconEmail } from './icons/icon-email'
 import ImageCode from '../assets/image/code.png'
+import Sketch from '../assets/image/sketch.png'
 
 export const Header = () => {
 	const [isActive, setIsActive] = useState(false)
@@ -54,7 +55,7 @@ export const Header = () => {
 					: <IconBurger />
 				}
 			</OpenBurder>
-			<IconLogo />
+			<IconLogo className='logo' />
 			<Register
 				isActive={isActive}
 				href={timepad}
@@ -62,7 +63,10 @@ export const Header = () => {
 				aria-label='Go to register page'
 			>
 				<IconEye />
-				<TextButton>Посетить встречу</TextButton>
+				<TextButton>
+					<span className='text-button-desctop'>Посетить встречу</span>
+					<span className='text-button-mobile'>Посетить</span>
+				</TextButton>
 			</Register>
 		</Content>
 		<Menu className={isOpen ? 'active' : ''}>
@@ -71,6 +75,10 @@ export const Header = () => {
 					<IconCode 
 						src={ImageCode}
 						alt='code'
+					/>
+					<MascotImage
+						src={Sketch}
+						alt='mascot'
 					/>
 					<Link
 						href='#about'
@@ -171,6 +179,12 @@ const Content = styled.div`
 	padding: 15px 15px 15px 25px;
 	border-radius: 100px;
 	background-color: #2C2C2C;
+
+	@media screen and (max-width: 600px) {
+		& .logo {
+			width: 41px;
+		}
+	}
 `
 
 const GradientBlur = styled.div`
@@ -306,6 +320,17 @@ const OpenBurder = styled.button`
 	width: 60px;
 	height: 60px;
 	margin-right: 40px;
+
+	@media screen and (max-width: 600px) {
+		margin-right: 20px;
+		width: 30px;
+		height: 30px;
+
+		& svg {
+			width: 30px;
+			height: 30px;
+		}
+	}
 `
 
 const Register = styled.a`
@@ -339,6 +364,28 @@ const Register = styled.a`
 
 		& span {
 			color: ${({ isActive }) => isActive ? '#080808' : '#9496D3'};
+		}
+	}
+
+	& .text-button-mobile {
+		display: none;
+	}
+
+	@media screen and (max-width: 600px) {
+		height: 40px;
+		font-size: 14px;
+
+		& .text-button-desctop {
+			display: none;
+		}
+
+		& .text-button-mobile {
+			display: block;
+		}
+
+		& svg {
+			width: 30px;
+			height: 30px;
 		}
 	}
 `
@@ -385,6 +432,12 @@ const ListNav = styled.nav`
 	max-width: 300px;
 	margin-left: auto;
 	margin-right: auto;
+
+	@media screen and (max-width: 600px) {
+		margin-left: 0;
+		align-items: self-start;
+		padding-left: 25px;
+	}
 `
 
 const Link = styled.a`
@@ -403,6 +456,12 @@ const Message = styled.p`
 	max-width: 350px;
 	margin: 0 auto;
 	margin-bottom: 25px;
+
+	@media screen and (max-width: 600px) {
+		margin-left: 0;
+		align-items: self-start;
+		padding-left: 25px;
+	}
 `
 
 const Contacts = styled.div`
@@ -411,6 +470,12 @@ const Contacts = styled.div`
 	gap: 10px;
 	max-width: 350px;
 	margin: 0 auto;
+
+	@media screen and (max-width: 600px) {
+		margin-left: 0;
+		align-items: self-start;
+		padding-left: 25px;
+	}
 `
 
 const Contact = styled.a`
@@ -429,4 +494,19 @@ const IconCode = styled.img`
 	width: 120px;
 	position: absolute;
 	transform: rotate(30deg);
+
+	@media screen and (max-width: 600px) {
+		display: none;
+	}
+`
+
+const MascotImage = styled.img`
+	position: absolute;
+	bottom: -130px;
+	right: -80%;
+	width: 210px;
+
+	@media screen and (max-width: 600px) {
+		display: none;
+	}
 `

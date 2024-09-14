@@ -2,20 +2,66 @@ import styled from '@emotion/styled'
 import ReactFastMarquee from "react-fast-marquee";
 
 import { IconSmile } from './icons/icon-smile';
+import { telegram } from '../consts/urls';
 
 export const Marquee = () => {
-	return <Main>
-		<p>{'/!/'}</p>
-		<p>Что?: Frontend Meetup в Пскове</p>
-		<p>{'</>'}</p>
-		<p>Когда?: 10  октября</p>
-		<p>{'/!/'}</p>
-		<p>Где?: Креативное пространство «Лофт» </p>
-		<p>{'</>'}</p>
-		<p>
-			<IconSmile />
-			Движухи и анонсы в TG joyjs_conf
-		</p>
+	return <Main pauseOnHover>
+		<MarqueeItem>
+			<p>{'/!/'}</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>Что?: Frontend Meetup в Пскове</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>{'</>'}</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>Когда?: 10  октября</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>{'/!/'}</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>Где?: Креативное пространство «Лофт» </p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>{'</>'}</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>
+				<IconSmile />
+				Движухи и анонсы в TG: <a href={telegram.chennal} name='link to channel'
+			aria-label='Read more channel'>JOYJS_CONF</a>
+			</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>{'/!/'}</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>Что?: Frontend Meetup в Пскове</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>{'</>'}</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>Когда?: 10  октября</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>{'/!/'}</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>Где?: Креативное пространство «Лофт» </p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>{'</>'}</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>
+				<IconSmile />
+				Движухи и анонсы в TG: <a href={telegram.chennal} name='link to channel'
+			aria-label='Read more channel'>JOYJS_CONF</a>
+			</p>
+		</MarqueeItem>
 	</Main>
 }
 
@@ -24,6 +70,7 @@ const Main = styled(ReactFastMarquee)`
 	gap: 0 50px;
 	background-color: #212121;
 	font-family: 'Unbounded-Light';
+	background-color: #212121;
 
 	& .rfm-marquee {
 		gap: 50px;
@@ -33,9 +80,22 @@ const Main = styled(ReactFastMarquee)`
 
 			& .rfm-child p {
 				display: flex;
-				align-items: center;
+				align-items: center;;
 				gap: 8px;
+
+				& a {
+					margin-top: 3px;
+					color: #CCEE55;
+					font-family: 'YapariTrial-Medium';
+					text-decoration: none;
+				}
 			}
 		}
 	}
+`
+
+const MarqueeItem = styled.div`
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 `
