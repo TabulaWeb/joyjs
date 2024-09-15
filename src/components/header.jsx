@@ -405,7 +405,7 @@ const Menu = styled.div`
 	top: 25px;
 	left: 0;
 	right: 0;
-	height: 0vh;
+	height: 92px;
 	z-index: 6;
 	padding: 0 20px;
 	margin: 0 auto;
@@ -413,12 +413,16 @@ const Menu = styled.div`
 
 	&.active {
 		transition: height 300ms;
-		height: calc(100vh - 100px);
+		height: calc(100dvh - 100px);
+	}
+
+	@media screen and (max-width: 600px) {
+		height: 77px;
 	}
 `
 
 const MenuContent = styled.div`
-	border-radius: 45px;
+	border-radius: 46px;
 	background-color: #2C2C2C;
 	height: 100%;
 	overflow: hidden;
@@ -454,8 +458,8 @@ const Link = styled.a`
 
 const Message = styled.p`
 	display: block;
-	font-family: 'YapariTrial-Regular';
-	font-size: 18px;
+	font-family: 'Unbounded-Light';
+	font-size: 14px;
 	text-align: left;
 	max-width: 350px;
 	margin: 0 auto;
