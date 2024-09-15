@@ -1,11 +1,27 @@
+import { useEffect, useState } from 'react'
+
 import styled from '@emotion/styled'
+import { keyframes } from '@emotion/react'
 import ImageLoft from '../../assets/image/loft.png'
 import ImageSmile from '../../assets/image/smile.png'
 import ImageCode from '../../assets/image/code.png'
 import ImageMascot from '../../assets/image/mascot.png'
 import ImageCamera from '../../assets/image/camera.png'
 
-export const Home = () => {
+export const Home = ({ loading }) => {
+	const [timer, setTimer] = useState(0)
+
+	useEffect(() => {
+		let interval
+		if(timer < 2) {
+			interval = setTimeout(() => {
+				setTimer(prev => prev + 1)
+			}, 1000)
+		}
+
+		return () => clearInterval(interval)
+	}, [timer])
+
 	return <Main className='container'>
 		<Description>
 			Велком на первый в Пскове Frontend Meetup!
@@ -15,22 +31,27 @@ export const Home = () => {
 
 		<Content>
 			<IconLoft
+				className={timer >= 2 && 'active'}
 				src={ImageLoft}
 				alt='loft logo'
 			/>
-			<IconSmile 
+			<IconSmile
+				className={timer >= 1 && 'active'}
 				src={ImageSmile}
 				alt='smile'
 			/>
 			<IconCode 
+				className={timer >= 2 && 'active'}
 				src={ImageCode}
 				alt='code'
 			/>
-			<IconMascot 
+			<IconMascot
+				className={timer >= 1 && 'active'}
 				src={ImageMascot}
 				alt='mascot'
 			/>
 			<IconCamera 
+				className={timer >= 2 && 'active'}
 				src={ImageCamera}
 				alt='camera'
 			/>
@@ -38,6 +59,17 @@ export const Home = () => {
 		</Content>
 	</Main>
 }
+
+const blob = keyframes`
+	0% {
+		opacity: 0;
+		transform: scale3d(.3, .3, .3);
+	}
+
+	50% {
+		opacity: 1;
+	}
+`
 
 const Main = styled.section``
 
@@ -99,6 +131,13 @@ const IconLoft = styled.img`
 	width: 140px;
 	top: 63%;
 	left: 0;
+	opacity: 0;
+
+	&.active {
+		transition: 500ms;
+		animation: ${blob} 500ms ease-in-out;
+		opacity: 1;
+	}
 
 	@media (min-width: 1025px) and (max-width: 1400px) {
 		width: clamp(90px, 9dvw, 140px);
@@ -106,7 +145,7 @@ const IconLoft = styled.img`
 
 	@media screen and (max-width: 1024px) {
 		top: 25%;
-		transform: rotate(-30deg);
+		rotate: -30deg;
 	}
 
 	@media (min-width: 601px) and (max-width: 1024px) {
@@ -117,7 +156,7 @@ const IconLoft = styled.img`
 		top: -30%;
 		left: inherit;
 		right: -5%;
-		transform: rotate(10deg);
+		rotate: 10deg;
 	}
 
 	@media (min-width: 300px) and (max-width: 600px) {
@@ -130,6 +169,14 @@ const IconSmile = styled.img`
 	width: 140px;
 	left: 18.5%;
 	top: -5px;
+	opacity: 0;
+
+	&.active {
+		transition: 500ms;
+		animation: ${blob} 500ms ease-in-out;
+		opacity: 1;
+	}
+	
 
 	@media (min-width: 1025px) and (max-width: 1400px) {
 		width: clamp(90px, 9dvw, 140px);
@@ -157,9 +204,16 @@ const IconSmile = styled.img`
 const IconCode = styled.img`
 	width: 120px;
 	position: absolute;
-	transform: rotate(30deg);
+	rotate: 30deg;
 	left: 41%;
 	top: 28%;
+	opacity: 0;
+
+	&.active {
+		transition: 500ms;
+		animation: ${blob} 500ms ease-in-out;
+		opacity: 1;
+	}
 
 	@media (min-width: 1025px) and (max-width: 1400px) {
 		width: clamp(90px, 9dvw, 140px);
@@ -191,6 +245,13 @@ const IconMascot = styled.img`
 	width: 275px;
 	right: 20%;
 	top: -30%;
+	opacity: 0;
+
+	&.active {
+		transition: 500ms;
+		animation: ${blob} 500ms ease-in-out;
+		opacity: 1;
+	}
 
 	@media (min-width: 1025px) and (max-width: 1400px) {
 		width: clamp(200px, 20dvw, 275px);
@@ -218,9 +279,17 @@ const IconMascot = styled.img`
 const IconCamera = styled.img`
 	position: absolute;
 	width: 140px;
-	transform: rotate(-30deg);
+	rotate: -30deg;
 	right: -1px;
 	top: 48%;
+	opacity: 0;
+
+	&.active {
+		transition: 500ms;
+		animation: ${blob} 500ms ease-in-out;
+		opacity: 1;
+	}
+	
 
 	@media (min-width: 1025px) and (max-width: 1400px) {
 		width: clamp(90px, 9dvw, 140px);

@@ -21,7 +21,7 @@ const Main = styled.div`
 	position: fixed;
 	background-color: #080808;
 	transition: 300ms;
-	z-index: 10;
+	z-index: ${({ active }) => active ? 10 : -1};
 `
 
 const blob = keyframes`

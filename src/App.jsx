@@ -46,7 +46,7 @@ function App() {
       <Marquee />
       <Header />
       <main>
-        <Home />
+        <Home loading={loading}/>
         <Devider />
         <Idea />
         <IdeaDescription />
