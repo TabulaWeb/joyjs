@@ -6,7 +6,10 @@ import { IconEmail } from '../icons/icon-email'
 export const Footer = () => {
 	return (
 		<Main>
-			<IconLogo />
+			<IconLogo 
+				width={77}
+				height={46}
+			/>
 			<Description>
 				Давайте сделаем ещё что-нибудь классное вместе, пишите!
 			</Description>
@@ -18,11 +21,11 @@ export const Footer = () => {
 					aria-label='link to telegram'
 				>
 					<IconTelegram 
-						width={36}
-						height={36}
+						width={25}
+						height={25}
 						color='#AFB2FF'
 					/>
-					<span>Контакты для связи</span>
+					<span>@webtabula</span>
 				</Link>
 				<Link
 					href='/'
@@ -30,11 +33,11 @@ export const Footer = () => {
 					aria-label='link to email'
 				>
 					<IconEmail 
-						width={36}
-						height={36}
+						width={25}
+						height={25}
 						color='#AFB2FF'
 					/>
-					<span>Контакты для связи</span>
+					<span>tabulaweb@mail.ru</span>
 				</Link>
 			</Links>
 		</Main>
@@ -45,14 +48,25 @@ const Main = styled.footer`
 	display: flex;
 	align-items: center;
 	background-color: #212121;
-	padding: 60px;
+	padding: 55px 48px;
+
+	@media screen and (max-width: 991px) {
+		flex-direction: column;
+		padding: 50px 19px;
+		justify-content: center;
+		gap: 25px;
+	}
 `
 
 const Description = styled.p`
 	font-family: 'Unbounded-Light';
-	font-size: 25px;
-	margin-left: 100px;
+	font-size: 18px;
+	margin-left: 75px;
 	max-width: 532px;
+
+	@media screen and (max-width: 991px) {
+		margin-left: 0;
+	}
 `
 
 const Links = styled.nav`
@@ -60,6 +74,10 @@ const Links = styled.nav`
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
+
+	@media screen and (max-width: 991px) {
+		margin-left: 0;
+	}
 `
 
 const Link = styled.a`
@@ -67,7 +85,8 @@ const Link = styled.a`
 	align-items: center;
 	gap: 10px;
 	font-family: 'Unbounded-Regular';
-	font-size: 15px;
+	font-size: 14px;
 	cursor: pointer;
 	text-decoration: none;
+	color: #ffffff;
 `
