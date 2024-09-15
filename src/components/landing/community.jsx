@@ -46,8 +46,8 @@ const Marquee = styled(ReactFastMarquee)`
 
 const Description = styled.p`
 	margin-bottom: 35px;
-	max-width: 775px;
-	font-size: 20px;
+	max-width: 700px;
+	font-size: 14px;
 	font-family: 'Unbounded-Regular';
 
 	&.subDescription {

@@ -39,6 +39,16 @@ const Images = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 20px;
+
+	@media screen and (max-width: 1024px) {
+		grid-template-columns: 415px 415px 415px;
+		overflow-x: auto;
+		width: 100%;
+	}
+
+	@media screen and (max-width: 600px) {
+		grid-template-columns: 1fr;
+	}
 `
 
 const Image = styled.img`
@@ -62,4 +72,23 @@ const Button = styled.a`
 	border: none;
 	cursor: pointer;
 	text-decoration: none;
+	transition: 300ms;
+
+	&:hover {
+		transition: 300ms;
+		border-color: #9496D3;
+		background-color: #9496D3;
+
+		& svg path {
+			fill: #080808;
+		}
+
+		& span {
+			color:  #080808;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		height: 80px;
+	}
 `

@@ -33,8 +33,8 @@ export const Partners = () => {
 							aria-label='link to telegram'
 						>
 							<IconTelegram 
-								width={110}
-								height={110}
+								width={70}
+								height={70}
 								color='#AFB2FF'
 							/>
 						</Link>
@@ -43,7 +43,10 @@ export const Partners = () => {
 							name='link to email'
 							aria-label='link to email'
 						>
-							<IconEmail />
+							<IconEmail 
+								width={70}
+								height={70}
+							/>
 						</Link>
 					</ContainerLink>
 				</Links>
@@ -54,8 +57,16 @@ export const Partners = () => {
 
 const Main = styled.section`
 	margin-bottom: 170px;
-	padding: 70px 50px;
+	padding: 125px 35px;
 	background-color: #212121;
+
+	@media screen and (max-width: 1024px) {
+		padding: 100px 35px;
+	}
+
+	@media screen and (max-width: 600px) {
+		padding: 75px 15px;
+	}
 `
 
 const Container = styled.div`
@@ -80,26 +91,33 @@ const Title = styled.div`
 const Content = styled.div`
 	display: flex;
 	justify-content: space-between;
+	gap: 70px;
+	flex-wrap: wrap;
 `
 
 const Logos = styled.div`
 	display: flex;
 	align-items: center;
-	gap: 150px;
+	gap: 100px;
+
+
+	@media screen and (max-width: 600px) {
+		gap: 70px;
+		flex-wrap: wrap;
+	}
 `
 
 const Logo = styled.img`
 	width: 100%;
-	height: 100%;
 	object-fit: contain;
 
 	&.coffee-studion {
-		max-width: 380px;
+		max-width: 250px;
 	}
 
 	&.loft {
-		width: 200px;
-		height: 200px;
+		width: 100px;
+		height: 100px;
 	}
 `
 
@@ -119,8 +137,8 @@ const ContainerLink = styled.div`
 `
 
 const Link = styled.a`
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

@@ -36,6 +36,14 @@ const Title = styled.h2`
 	margin-bottom: 100px;
 	font-size: 80px;
 	font-family: 'Unbounded-Regular';
+
+	@media screen and (max-width: 1024px) {
+		font-size: 50px;
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 30px;
+	}
 `
 
 const Description = styled.p`
@@ -61,4 +69,19 @@ const Button = styled.a`
 	font-family: 'Unbounded-Medium';
 	font-size: 15px;
 	text-decoration: none;
+	transition: 300ms;
+
+	&:hover {
+		transition: 300ms;
+		border-color: #9496D3;
+		background-color: #9496D3;
+
+		& svg path {
+			fill: #080808;
+		}
+
+		& span {
+			color:  #080808;
+		}
+	}
 `
