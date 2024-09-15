@@ -410,6 +410,7 @@ const Menu = styled.div`
 	padding: 0 20px;
 	margin: 0 auto;
 	transition: height 300ms;
+	overflow: auto;
 
 	&.active {
 		transition: height 300ms;
