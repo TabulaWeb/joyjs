@@ -66,9 +66,15 @@ body {
 .container {
   padding: 0 20px;
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1400px; 
 }
 
 .hidden {
   overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 10px;
+  }
 }

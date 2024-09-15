@@ -159,19 +159,18 @@ export const Header = () => {
 }
 
 const Main = styled.header`
-	padding: 0 20px;
+	padding: 25px 20px;
 	margin: 0 auto;
 	margin-bottom: 100px;
 	position: sticky;
 	top: 0;
 	z-index: 8;
-	padding-top: 25px;
-	padding-bottom: 25px;
 	border-bottom-left-radius: 60px;
 	border-bottom-right-radius: 60px;
 
 	@media screen and (max-width: 600px) {
 		margin-bottom: 75px;
+		padding: 25px 10px;
 	}
 `
 
@@ -410,7 +409,7 @@ const Menu = styled.div`
 	padding: 0 20px;
 	margin: 0 auto;
 	transition: height 300ms;
-	overflow: auto;
+	/* overflow: auto; */
 
 	&.active {
 		transition: height 300ms;
@@ -426,7 +425,7 @@ const MenuContent = styled.div`
 	border-radius: 46px;
 	background-color: #2C2C2C;
 	height: 100%;
-	overflow: hidden;
+	overflow: auto;
 `
 
 const ListNav = styled.nav`
