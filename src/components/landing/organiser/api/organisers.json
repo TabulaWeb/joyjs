@@ -3,57 +3,57 @@
 		{
 			"avatar": "/src/assets/image/tabula-avatar.jpg",
 			"name": "Алексей Табула",
-			"link": "",
-			"description": "Frontend-разработчик",
+			"link": "https://t.me/webtabula",
+			"description": "Frontend dev",
 			"role": "Создатель JoyJS"
 		},
 		{
 			"avatar": "/src/assets/image/flina-avatar.png",
 			"name": "Ирина Иванова",
-			"link": "",
+			"link": "https://t.me/iriflina13",
 			"description": "UX/UI Дизайнер",
 			"role": ""
 		},
 		{
-			"avatar": "",
+			"avatar": "/src/assets/image/kirill-org-avatar.jpg",
 			"name": "Кирилл Павлик",
-			"link": "",
-			"description": "Frontend-разработчик в Альфа-Банке",
+			"link": "https://t.me/shoom1337",
+			"description": "Frontend dev, Alfa",
 			"role": ""
 		},
 		{
-			"avatar": "",
+			"avatar": "/src/assets/image/anna-msc-org-avatar.jpg",
 			"name": "Анна Ширяева",
-			"link": "",
-			"description": "Организатор & ведущая @moscowjs",
+			"link": "@it_wildlife",
+			"description": "Lead Frontend dev, SIBUR Digital",
 			"role": ""
 		},
 		{
 			"avatar": "/src/assets/image/maximSber-avatar.png",
 			"name": "Максим Булавчиков",
-			"link": "",
-			"description": "Ведущий разработчик в Сбере",
+			"link": "https://t.me/maximjaks",
+			"description": "Frontend dev, Sber",
 			"role": ""
 		},
 		{
 			"avatar": "/src/assets/image/viacheslav-avatar.png",
 			"name": "Вячеслав Завьялов",
-			"link": "",
-			"description": "",
+			"link": "https://t.me/idmxFrontend",
+			"description": "Frontend dev, Alfa",
 			"role": ""
 		},
 		{
-			"avatar": "",
+			"avatar": "/src/assets/image/anna-org-avatar.jpg",
 			"name": "Анна Пахотина",
-			"link": "",
-			"description": "",
+			"link": "https://t.me/whataboutanna",
+			"description": "Frontend dev",
 			"role": ""
 		},
 		{
-			"avatar": "",
+			"avatar": "/src/assets/image/alexander-org-avatar.jpg",
 			"name": "Александр Кириллов",
-			"link": "",
-			"description": "",
+			"link": "https://t.me/Southpaw681",
+			"description": "Frontend dev, Гринатом",
 			"role": ""
 		}
 	]

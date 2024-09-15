@@ -17,7 +17,7 @@ export const Organiser = () => {
 							alt='avatar'
 						/>
 						<Link
-							href='/'
+							href={organiser.link}
 							name='link to telegram'
 							aria-label='link to telegram'
 						>
@@ -62,6 +62,18 @@ const Content = styled.div`
 	justify-content: center;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 50px;
+
+	@media screen and (max-width: 1150px) {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	@media screen and (max-width: 840px) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media screen and (max-width: 600px) {
+		grid-template-columns: 1fr;
+	}
 `
 
 const People = styled.div`

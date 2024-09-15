@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import { IconTelegram } from '../icons/icon-telegram'
 import { IconArrow } from '../icons/icon-arrow'
+import { telegram } from '../../consts/urls'
 
 export const InfoContact = () => {
 	return <Main className='container'>
@@ -11,7 +12,7 @@ export const InfoContact = () => {
 
 		<Links>
 			<Link 
-				href='/'
+				href={telegram.chennal}
 				className='telegram'
 				name='link to telegram'
 				aria-label='link to telegram'
@@ -23,7 +24,7 @@ export const InfoContact = () => {
 				/>
 			</Link>
 			<Link
-				href='/'
+				href={telegram.chennal}
 				name='link to telegram'
 				aria-label='link to telegram'
 			>
@@ -53,6 +54,7 @@ const Main = styled.section`
 	}
 
 	@media screen and (max-width: 600px) {
+		gap: 15px;
 		margin-left: 0;
 		max-width: 360px;
 		margin-right: auto;
@@ -84,8 +86,18 @@ const Link = styled.a`
 		background-color: #4B4547;
 	}
 
+	& svg {
+		width: 60px;
+		height: 60px;
+	}
+
 	@media screen and (max-width: 600px) {
 		width: 100px;
 		height: 100px;
+
+		& svg {
+			width: 40px;
+			height: 40px;
+		}
 	}
 `

@@ -92,10 +92,19 @@ const Title = styled.h2`
 const Areas = styled.div`
 	display: flex;
 	gap: 35px;
+
+	@media screen and (max-width: 600px) {
+		flex-direction: column;
+		gap: 50px;
+	}
 `
 
 const Area = styled.div`
 	width: 48.5%;
+
+	@media screen and (max-width: 600px) {
+		width: 100%;
+	}
 `
 
 const AreaTime = styled.div`
