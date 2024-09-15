@@ -85,6 +85,12 @@ const ProgramItem = styled.div`
 	padding: 50px;
 	display: flex;
 	justify-content: space-between;
+
+	@media screen and (max-width: 600px) {
+		padding: 35px 20px;
+		flex-direction: column;
+		gap: 35px;
+	}
 `
 
 const Time = styled.div`
@@ -103,6 +109,14 @@ const Time = styled.div`
 	& span {
 		padding-top: 6px;
 	}
+
+	@media screen and (max-width: 600px) {
+		background: none;
+		height: auto;
+		width: auto;
+		padding: 0;
+		border: 0;
+	}
 `
 
 const Content = styled.div`
@@ -110,6 +124,10 @@ const Content = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	width: 70%;
+
+	@media screen and (max-width: 600px) {
+		width: 100%;
+	}
 `
 
 const Title = styled.p`
@@ -124,6 +142,10 @@ const Description = styled.p`
 	line-height: 20.8px;
 	font-size: 15;
 	font-family: 'Unbounded-Regular';
+
+	@media screen and (max-width: 600px) {
+		margin-bottom: ${({ hasMargin }) => hasMargin ? 35 : 0}px;
+	}
 `
 
 const Speaker = styled.div`
@@ -204,7 +226,12 @@ const Button = styled.a`
 		}
 
 		& span {
-			color:  #080808';
+			color:  #080808;
 		}
+	}
+
+	@media screen and (max-width: 600px) {
+		margin-top: 50px;
+		height: 80px;
 	}
 `
