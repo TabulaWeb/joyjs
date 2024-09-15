@@ -3,7 +3,7 @@ import { IconEye } from '../icons/icon-eye'
 import { IconTelegram } from '../icons/icon-telegram'
 
 export const IdeaDescription = () => {
-	return <Main>
+	return <Main className='container'>
 		<Description>
 			На нашем митапе тебя ждёт программа с четырьмя докладами от экспертов,
 			В перерывах между выступлениями будет отличная возможность пообщаться, обменяться
@@ -55,13 +55,25 @@ const Description = styled.p`
 	margin-bottom: 25px;
 
 	&.subDescription {
-		margin-bottom: 50px;
+		margin-bottom: 75px;
+	}
+
+	@media screen and (max-width: 600px) {
+		&.subDescription {
+			margin-bottom: 50px;
+		}
 	}
 `
 
 const Actions = styled.div`
 	display: flex;
 	gap: 25px;
+
+	@media screen and (max-width: 600px) {
+		width: 100%;
+		flex-direction: column;
+		gap: 15px;
+	}
 `
 
 const Button = styled.a`
@@ -80,4 +92,19 @@ const Button = styled.a`
 	color: ${({ isFilled }) => isFilled ? '#212121' : '#AFB2FF'};
 	cursor: pointer;
 	text-decoration: none;
+	transition: 300ms;
+
+	&:hover {
+		transition: 300ms;
+		border-color: #9496D3;
+		background-color: ${({ isFilled }) => isFilled ? '#9496D3' : ''};
+
+		& svg path {
+			fill:  ${({ isFilled }) => isFilled ? '#080808' : '#9496D3'};
+		}
+
+		& span {
+			color: ${({ isFilled }) => isFilled ? '#080808' : '#9496D3'};
+		}
+	}
 `

@@ -53,6 +53,14 @@ const Main = styled.section`
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 150px;
+
+	@media screen and (max-width: 1024px) {
+		margin-bottom: 120px;
+	}
+
+	@media screen and (max-width: 600px) {
+		margin-bottom: 100px;
+	}
 `
 
 const Keywords = styled.div`
@@ -78,6 +86,15 @@ const Keywords = styled.div`
 
 	@media screen and (min-width: 1400px) {
 		font-size: 100px;
+	}
+
+	@media screen and (max-width: 1024px) {
+		font-size: 6vw;
+		gap: 44px;
+	}
+
+	@media screen and (max-width: 600px) {
+		gap: 17px;
 	}
 `
 
@@ -111,6 +128,26 @@ const IconContainer = styled.span`
 		position: absolute;
 		right: 17%;
 	}
+
+	@media screen and (max-width: 1024px) {
+		width: 85px;
+		height: 85px;
+
+		& svg {
+			width: 85px;
+			height: 85px;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		width: 35px;
+		height: 35px;
+
+		& svg {
+			width: 35px;
+			height: 35px;
+		}
+	}
 `
 
 const MascotImage = styled.img`
@@ -123,5 +160,13 @@ const MascotImage = styled.img`
 
 	@media screen and (max-width: 1400px) {
 		width: 500px;
+	}
+
+	@media screen and (max-width: 1024px) {
+		width: 350px;
+	}
+
+	@media screen and (max-width: 600px) {
+		width: 200px;
 	}
 `
