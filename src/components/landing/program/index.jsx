@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 import { IconEye } from '../../icons/icon-eye'
 import programsJson from './api/programs.json'
 import { timepad } from '../../../consts/urls'
+import imageParty from '../../../assets/image/drink.png'
 
 export const Program = () => {
 	const { programs } = programsJson
@@ -12,6 +13,8 @@ export const Program = () => {
 			<ProgramItem key={program.id}>
 				<Time>
 					<span>{program.time}</span>
+					{console.log(program)}
+					{program.time === '21:00' && <ImageParty src={imageParty} />}
 				</Time>
 				<Content>
 					<Title hasMargin={program.description}>{ program.title }</Title>
@@ -84,11 +87,34 @@ const SecTitle = styled.h2`
 
 const ProgramItem = styled.div`
 	background-color: #21212199;
-	gap: 20px;
+	position: relative;
+	gap: 70px;
 	border-radius: 50px;
 	padding: 50px;
 	display: flex;
 	justify-content: space-between;
+	--b: 1px;
+  --s: 50px;
+  --c1: #CCEE55;
+  --c2: #080808;
+
+	&:nth-last-child(2) {
+		&::before {
+			content:"";
+			position: absolute;
+			border-radius: 50px;
+			inset: 0;
+			padding: var(--b);
+			background: 
+				repeating-conic-gradient(var(--c1) 0 25%,var(--c2) 0 50%) 
+				0 0/var(--s) var(--s) round;
+			-webkit-mask: linear-gradient(#000 0 0) content-box,
+				linear-gradient(#000 0 0);
+			-webkit-mask-composite: xor;
+							mask-composite: exclude;
+			pointer-events: none;
+		}
+	}
 
 	@media screen and (max-width: 600px) {
 		padding: 35px 20px;
@@ -102,6 +128,7 @@ const Time = styled.div`
 	font-family: 'YapariTrial-Medium';
 	justify-content: center;
 	align-items: center;
+	position: relative;
 	align-self: self-start;
 	padding: 0 25px;
 	height: 60px;
@@ -117,9 +144,20 @@ const Time = styled.div`
 	@media screen and (max-width: 600px) {
 		background: none;
 		height: auto;
-		width: auto;
+		width: 100%;
+		justify-content: flex-start;
 		padding: 0;
 		border: 0;
+	}
+`
+
+const ImageParty = styled.img`
+	position: absolute;
+	right: -70px;
+
+
+	@media screen and (max-width: 600px) {
+		right: 0;
 	}
 `
 

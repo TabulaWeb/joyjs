@@ -53,8 +53,8 @@ export const Location = () => {
 						</Slide>
 					</Swiper>
 					<AreaTime>
-						<Step>2</Step>
-						<Time>22:00 — 01:00</Time>
+						<Step className='dashed'>2</Step>
+						<Time className='dashed'>22:00 — 01:00</Time>
 					</AreaTime>
 					<AreaDescription>
 						<AreaTitle>Рестобар Друзья</AreaTitle>
@@ -122,11 +122,36 @@ const Step = styled.p`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border: 1px solid #4B4547;
 	width: 60px;
 	height: 60px;
-	border: 1px solid #FFFFFF80;
 	border-radius: 50%;
 	font-family: 'YapariTrial-Medium';
+
+	&.dashed {
+		position: relative;
+		--b: 1px;
+		--s: 40px;
+		--c1: #4B4547;
+		--c2: #080808;
+		border: none;
+
+		&::before {
+			content:"";
+			position: absolute;
+			border-radius: 50px;
+			inset: 0;
+			padding: var(--b);
+			background: 
+				repeating-conic-gradient(var(--c1) 0 25%,var(--c2) 0 50%) 
+				0 0/var(--s) var(--s) round;
+			-webkit-mask: linear-gradient(#000 0 0) content-box,
+				linear-gradient(#000 0 0);
+			-webkit-mask-composite: xor;
+							mask-composite: exclude;
+			pointer-events: none;
+		}
+	}
 `
 
 const Time = styled.p`
@@ -139,6 +164,31 @@ const Time = styled.p`
 	background-color: #212121;
 	border: 1px solid #4B4547;
 	font-family: 'YapariTrial-Medium';
+
+	&.dashed {
+		position: relative;
+		--b: 1px;
+		--s: 30px;
+		--c1: #4B4547;
+		--c2: #080808;
+		border: none;
+
+		&::before {
+			content:"";
+			position: absolute;
+			inset: 0;
+			padding: var(--b);
+			border-radius: 100px;
+			background: 
+				repeating-conic-gradient(var(--c1) 0 25%,var(--c2) 0 50%) 
+				0 0/var(--s) var(--s) round;
+			-webkit-mask: linear-gradient(#000 0 0) content-box,
+				linear-gradient(#000 0 0);
+			-webkit-mask-composite: xor;
+							mask-composite: exclude;
+			pointer-events: none;
+		}
+	}
 `
 
 const AreaDescription = styled.div``
