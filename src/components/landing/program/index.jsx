@@ -1,9 +1,7 @@
 import styled from '@emotion/styled'
 import { IconEye } from '../../icons/icon-eye'
-
 import programsJson from './api/programs.json'
-
-import AvatarMolch from '../../../assets/image/molchanov-avatar.jpg'
+import { timepad } from '../../../consts/urls'
 
 export const Program = () => {
 	const { programs } = programsJson
@@ -44,7 +42,7 @@ export const Program = () => {
 		))}
 
 		<Button
-			href='/'
+			href={timepad}
 			name='link to register'
 			aria-label='link to register'
 		>
@@ -69,10 +67,20 @@ const SecTitle = styled.h2`
 	font-size: 80px;
 	font-family: 'Unbounded-Regular';
 	margin-bottom: 85px;
+
+	@media screen and (max-width: 1024px) {
+		font-size: 50px;
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 30px;
+		margin-bottom: 75px;
+	}
 `
 
 const ProgramItem = styled.div`
 	background-color: #21212199;
+	gap: 20px;
 	border-radius: 50px;
 	padding: 50px;
 	display: flex;
@@ -184,4 +192,19 @@ const Button = styled.a`
 	background-color: #AFB2FF;
 	cursor: pointer;
 	text-decoration: none;
+	transition: 300ms;
+
+	&:hover {
+		transition: 300ms;
+		border-color: #9496D3;
+		background-color: #9496D3;
+
+		& svg path {
+			fill: #080808;
+		}
+
+		& span {
+			color:  #080808';
+		}
+	}
 `

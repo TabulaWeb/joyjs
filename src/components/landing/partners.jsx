@@ -67,6 +67,14 @@ const Container = styled.div`
 const Title = styled.div`
 	font-family: 'Unbounded-Regular';
 	font-size: 80px;
+
+	@media screen and (max-width: 1024px) {
+		font-size: 50px;
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 30px;
+	}
 `
 
 const Content = styled.div`

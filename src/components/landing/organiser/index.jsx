@@ -46,6 +46,15 @@ const Title = styled.h2`
 	font-family: 'Unbounded-Regular';
 	font-size: 80px;
 	margin-bottom: 100px;
+
+	@media screen and (max-width: 1024px) {
+		font-size: 50px;
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 30px;
+		margin-bottom: 75px;
+	}
 `
 
 const Content = styled.div`
