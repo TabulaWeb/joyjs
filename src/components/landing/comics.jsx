@@ -23,7 +23,7 @@ export const Comics = () => {
 					color='#080808'
 				/>
 				<span>Посетить встречу</span>
-			</Button>
+		</Button>
 	</Main>
 }
 
@@ -90,5 +90,12 @@ const Button = styled.a`
 
 	@media screen and (max-width: 600px) {
 		height: 80px;
+		width: -webkit-fill-available;
+		font-size: 17px;
+
+		& svg {
+			width: 35px;
+			height: 35px;
+		}
 	}
 `
