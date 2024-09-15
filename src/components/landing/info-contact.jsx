@@ -44,8 +44,19 @@ const Main = styled.section`
 	width: 100%;
 	gap: 32px;
 	margin-left: auto;
-	margin-right: 30%;
+	margin-right: 12%;
 	margin-bottom: 250px;
+
+	@media screen and (max-width: 1024px) {
+		margin-right: 0;
+		max-width: 495px;
+	}
+
+	@media screen and (max-width: 600px) {
+		margin-left: 0;
+		max-width: 360px;
+		margin-right: auto;
+	}
 `
 
 const Description = styled.p`
@@ -62,8 +73,8 @@ const Link = styled.a`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	background-color: #AFB2FF;
 	border-radius: 50%;
 	cursor: pointer;
@@ -71,5 +82,10 @@ const Link = styled.a`
 
 	&.telegram {
 		background-color: #4B4547;
+	}
+
+	@media screen and (max-width: 600px) {
+		width: 100px;
+		height: 100px;
 	}
 `

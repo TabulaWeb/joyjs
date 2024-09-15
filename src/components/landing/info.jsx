@@ -46,7 +46,7 @@ const Marquee = styled(ReactFastMarquee)`
 const Sticker = styled.div`
 	position: absolute;
 	z-index: 1;
-	right: 15%;
+	right: 6%;
 	margin-top: 20px;
 `
 
