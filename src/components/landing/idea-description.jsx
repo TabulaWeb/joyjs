@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import { IconEye } from '../icons/icon-eye'
 import { IconTelegram } from '../icons/icon-telegram'
+import { timepad, telegram } from '../../consts/urls'
 
 export const IdeaDescription = () => {
 	return <Main className='container'>
@@ -17,7 +18,7 @@ export const IdeaDescription = () => {
 
 		<Actions>
 			<Button
-				href='/'
+				href={timepad}
 				name='link to register'
 				aria-label='link to telegram'
 				isFilled
@@ -26,7 +27,7 @@ export const IdeaDescription = () => {
 				<span>Посетить встречу</span>
 			</Button>
 			<Button
-				href='/'
+				href={telegram.chennal}
 				name='link to telegram'
 				aria-label='link to telegram'
 			>
