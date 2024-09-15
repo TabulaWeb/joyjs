@@ -169,8 +169,9 @@ const Main = styled.header`
 	border-bottom-right-radius: 60px;
 
 	@media screen and (max-width: 600px) {
-		margin-bottom: 75px;
+		margin-bottom: 50px;
 		padding: 25px 10px;
+		padding-bottom: 0;
 	}
 `
 

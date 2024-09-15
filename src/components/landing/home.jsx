@@ -99,9 +99,17 @@ const IconLoft = styled.img`
 	top: 63%;
 	left: 0;
 
+	@media (min-width: 1025px) and (max-width: 1400px) {
+		width: clamp(90px, 9dvw, 140px);
+	}
+
 	@media screen and (max-width: 1024px) {
 		top: 25%;
 		transform: rotate(-30deg);
+	}
+
+	@media (min-width: 601px) and (max-width: 1024px) {
+		width: clamp(90px, 13dvw, 140px);
 	}
 
 	@media screen and (max-width: 600px) {
@@ -110,6 +118,10 @@ const IconLoft = styled.img`
 		right: -5%;
 		transform: rotate(10deg);
 	}
+
+	@media (min-width: 300px) and (max-width: 600px) {
+		width: clamp(90px, 24dvw, 140px);
+	}
 `
 
 const IconSmile = styled.img`
@@ -117,14 +129,26 @@ const IconSmile = styled.img`
 	left: 18.5%;
 	top: -5px;
 
+	@media (min-width: 1025px) and (max-width: 1400px) {
+		width: clamp(90px, 9dvw, 140px);
+	}
+
 	@media screen and (max-width: 1024px) {
 		top: 5%;
 		left: 43%;
 	}
 
+	@media (min-width: 601px) and (max-width: 1024px) {
+		width: clamp(90px, 13dvw, 140px);
+	}
+
 	@media screen and (max-width: 600px) {
 		top: -27%;
 		left: 0;
+	}
+
+	@media (min-width: 300px) and (max-width: 600px) {
+		width: clamp(90px, 24dvw, 140px);
 	}
 `
 
@@ -135,16 +159,28 @@ const IconCode = styled.img`
 	left: 41%;
 	top: 28%;
 
+	@media (min-width: 1025px) and (max-width: 1400px) {
+		width: clamp(90px, 9dvw, 140px);
+	}
+
 	@media screen and (max-width: 1024px) {
 		top: 15%;
 		left: inherit;
 		right: 10%;
 	}
 
+	@media (min-width: 601px) and (max-width: 1024px) {
+		width: clamp(90px, 13dvw, 140px);
+	}
+
 	@media screen and (max-width: 600px) {
 		top: inherit;
 		bottom: 5%;
 		right: -5%;
+	}
+
+	@media (min-width: 300px) and (max-width: 600px) {
+		width: clamp(90px, 24dvw, 140px);
 	}
 `
 
@@ -153,14 +189,26 @@ const IconMascot = styled.img`
 	right: 20%;
 	top: -30%;
 
+	@media (min-width: 1025px) and (max-width: 1400px) {
+		width: clamp(200px, 20dvw, 275px);
+	}
+
 	@media screen and (max-width: 1024px) {
 		top: inherit;
 		bottom: 38%;
 		left: 15%;
 	}
 
+	@media (min-width: 601px) and (max-width: 1024px) {
+		width: clamp(200px, 28dvw, 275px);
+	}
+
 	@media screen and (max-width: 600px) {
 		left: 0;
+	}
+
+	@media (min-width: 300px) and (max-width: 600px) {
+		width: clamp(200px, 46dvw, 275px);
 	}
 `
 
@@ -170,14 +218,26 @@ const IconCamera = styled.img`
 	right: -1px;
 	top: 48%;
 
+	@media (min-width: 1025px) and (max-width: 1400px) {
+		width: clamp(90px, 9dvw, 140px);
+	}
+
 	@media screen and (max-width: 1024px) {
 		top: inherit;
 		bottom: 5%;
 		right: 20%;
 	}
 
+	@media (min-width: 601px) and (max-width: 1024px) {
+		width: clamp(90px, 13dvw, 140px);
+	}
+
 	@media screen and (max-width: 600px) {
 		bottom: -20%;
 		right: 0;
+	}
+
+	@media (min-width: 300px) and (max-width: 600px) {
+		width: clamp(90px, 24dvw, 140px);
 	}
 `
