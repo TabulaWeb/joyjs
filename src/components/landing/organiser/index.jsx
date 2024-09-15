@@ -40,6 +40,10 @@ export const Organiser = () => {
 
 const Main = styled.section`
 	margin-bottom: 250px;
+
+	@media screen and (max-width: 600px) {
+		margin-bottom: 200px;
+	}
 `
 
 const Title = styled.h2`

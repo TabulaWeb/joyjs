@@ -46,6 +46,10 @@ const Main = styled.section`
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 250px;
+
+	@media screen and (max-width: 600px) {
+		margin-bottom: 200px;
+	}
 `
 
 const Description = styled.p`

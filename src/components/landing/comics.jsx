@@ -33,6 +33,10 @@ const Main = styled.section`
 	flex-direction: column;
 	align-items: center;
 	gap: 75px;
+
+	@media screen and (max-width: 600px) {
+		margin-bottom: 200px;
+	}
 `
 
 const Images = styled.div`

@@ -58,6 +58,7 @@ const Main = styled.section`
 		margin-left: 0;
 		max-width: 360px;
 		margin-right: auto;
+		margin-bottom: 200px;
 	}
 `
 

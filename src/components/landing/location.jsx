@@ -70,6 +70,10 @@ export const Location = () => {
 
 const Main = styled.section`
 	margin-bottom: 250px;
+
+	@media screen and (max-width: 600px) {
+		margin-bottom: 200px;
+	}
 `
 
 const Content = styled.div``

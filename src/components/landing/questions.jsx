@@ -29,6 +29,10 @@ const Main = styled.section`
 	flex-direction: column;
 	justify-content: center;
 	margin-bottom: 250px;
+
+	@media screen and (max-width: 600px) {
+		margin-bottom: 200px;
+	}
 `
 
 const Title = styled.h2`
