@@ -96,6 +96,7 @@ const Title = styled.h1`
 
 const IconLoft = styled.img`
 	position: absolute;
+	width: 140px;
 	top: 63%;
 	left: 0;
 
@@ -126,6 +127,7 @@ const IconLoft = styled.img`
 
 const IconSmile = styled.img`
 	position: absolute;
+	width: 140px;
 	left: 18.5%;
 	top: -5px;
 
@@ -186,6 +188,7 @@ const IconCode = styled.img`
 
 const IconMascot = styled.img`
 	position: absolute;
+	width: 275px;
 	right: 20%;
 	top: -30%;
 
@@ -214,6 +217,7 @@ const IconMascot = styled.img`
 
 const IconCamera = styled.img`
 	position: absolute;
+	width: 140px;
 	transform: rotate(-30deg);
 	right: -1px;
 	top: 48%;

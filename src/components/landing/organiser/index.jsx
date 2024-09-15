@@ -115,6 +115,17 @@ const Link = styled.a`
 	border-radius: 50%;
 	background-color: #4B4547;
 	text-decoration: none;
+	transition: 300ms;
+
+	&:hover {
+		transition: 300ms;
+		background-color: #2C2C2C;
+
+		& svg path {
+			transition: 300ms;
+			fill: #9496d3;
+		}
+	}
 `
 
 const Name = styled.p`

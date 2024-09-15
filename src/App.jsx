@@ -1,7 +1,10 @@
+import { useState, useEffect } from 'react'
+
 import { Marquee } from './components/marquee'
 import { Header } from './components/header'
 import { Devider } from './components/devider'
 
+import { Loader } from './components/landing/loader'
 import { Home } from './components/landing/home'
 import { Idea } from './components/landing/idea'
 import { IdeaDescription } from './components/landing/idea-description'
@@ -18,8 +21,28 @@ import { Questions } from './components/landing/questions'
 import { Footer } from './components/landing/footer'
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let timerId
+
+    const removeLoader = () => {
+      timerId = setTimeout(() => {
+        setLoading(false)
+      }, 1000)
+    }
+
+    window.addEventListener("load", removeLoader);
+
+    return () => {
+      window.removeEventListener("load", removeLoader)
+      clearInterval(timerId)
+    }
+  }, []);
+
   return (
     <>
+      <Loader active={loading} />
       <Marquee />
       <Header />
       <main>
