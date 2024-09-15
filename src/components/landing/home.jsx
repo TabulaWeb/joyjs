@@ -13,6 +13,7 @@ export const Home = ({ loading }) => {
 
 	useEffect(() => {
 		let interval
+
 		if(timer < 2) {
 			interval = setTimeout(() => {
 				setTimer(prev => prev + 1)
