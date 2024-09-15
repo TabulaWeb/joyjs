@@ -142,6 +142,7 @@ const Time = styled.div`
 	}
 
 	@media screen and (max-width: 600px) {
+		font-size: 14px;
 		background: none;
 		height: auto;
 		width: 100%;
@@ -176,6 +177,11 @@ const Title = styled.p`
 	font-family: 'Unbounded-Light';
 	margin-bottom: ${({ hasMargin }) => hasMargin ? 35 : 0}px;
 	font-size: 25px;
+
+	@media screen and (max-width: 600px) {
+		font-size: 17px;
+		margin-bottom: ${({ hasMargin }) => hasMargin ? 20 : 0}px;
+	}
 `
 
 const Description = styled.p`
@@ -186,6 +192,7 @@ const Description = styled.p`
 	font-family: 'Unbounded-Regular';
 
 	@media screen and (max-width: 600px) {
+		font-size: 14px;
 		margin-bottom: ${({ hasMargin }) => hasMargin ? 35 : 0}px;
 	}
 `
@@ -231,11 +238,19 @@ const More = styled.div`
 const Name = styled.p`
 	font-family: 'Unbounded-Regular';
 	font-size: 15px;
+
+	@media screen and (max-width: 600px)  {
+		font-size: 14px;
+	}
 `
 
 const SubInfo = styled.p`
 	font-family: 'Unbounded-Medium';
 	font-size: 15px;
+
+	@media screen and (max-width: 600px)  {
+		font-size: 14px;
+	}
 `
 
 const Button = styled.a`
