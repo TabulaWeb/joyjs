@@ -11,7 +11,16 @@ export const Comics = () => {
 		<Images>
 			<div className="flex flex-col [perspective:800px]">
 				<div
-					onMouseLeave={() => (boundingRef.current = null)}
+					style={{
+						transform: 'rotateX(var(--x-rotation)) rotateY(var(--y-rotation)) scale(1)',
+					}}
+					onMouseLeave={(ev) => {
+						boundingRef.current = null
+						ev.currentTarget.style.setProperty("--x-rotation", `${0}deg`);
+						ev.currentTarget.style.setProperty("--y-rotation", `${0}deg`);
+						ev.currentTarget.style.setProperty("--x", `${0 * 100}%`);
+						ev.currentTarget.style.setProperty("--y", `${0 * 100}%`);
+					}}
 					onMouseEnter={(ev) => {
 						boundingRef.current = ev.currentTarget.getBoundingClientRect();
 					}}
@@ -22,8 +31,8 @@ export const Comics = () => {
 						const y = ev.clientY - boundingRef.current.top;
 						const xPercentage = x / boundingRef.current.width;
 						const yPercentage = y / boundingRef.current.height;
-						const xRotation = (xPercentage - 0.5) * 20;
-						const yRotation = (0.5 - yPercentage) * 20;
+						const xRotation = (xPercentage - 0.5) * 25;
+						const yRotation = (0.5 - yPercentage) * 25;
 
 						ev.currentTarget.style.setProperty("--x-rotation", `${yRotation}deg`);
 						ev.currentTarget.style.setProperty("--y-rotation", `${xRotation}deg`);
@@ -38,9 +47,84 @@ export const Comics = () => {
         <div className="pointer-events-none absolute inset-0 group-hover:bg-[radial-gradient(at_var(--x)_var(--y),rgba(255,255,255,0.3)_20%,transparent_80%)]" />
 				</div>
 			</div>
+
+			<div className="flex flex-col [perspective:800px]">
+				<div
+					style={{
+						transform: 'rotateX(var(--x-rotation)) rotateY(var(--y-rotation)) scale(1)',
+					}}
+					onMouseLeave={(ev) => {
+						boundingRef.current = null
+						ev.currentTarget.style.setProperty("--x-rotation", `${0}deg`);
+						ev.currentTarget.style.setProperty("--y-rotation", `${0}deg`);
+						ev.currentTarget.style.setProperty("--x", `${0 * 100}%`);
+						ev.currentTarget.style.setProperty("--y", `${0 * 100}%`);
+					}}
+					onMouseEnter={(ev) => {
+						boundingRef.current = ev.currentTarget.getBoundingClientRect();
+					}}
+					onMouseMove={(ev) => {
+						if (!boundingRef.current) return;
+						console.log(ev)
+						const x = ev.clientX - boundingRef.current.left;
+						const y = ev.clientY - boundingRef.current.top;
+						const xPercentage = x / boundingRef.current.width;
+						const yPercentage = y / boundingRef.current.height;
+						const xRotation = (xPercentage - 0.5) * 25;
+						const yRotation = (0.5 - yPercentage) * 25;
+
+						ev.currentTarget.style.setProperty("--x-rotation", `${yRotation}deg`);
+						ev.currentTarget.style.setProperty("--y-rotation", `${xRotation}deg`);
+						ev.currentTarget.style.setProperty("--x", `${xPercentage * 100}%`);
+						ev.currentTarget.style.setProperty("--y", `${yPercentage * 100}%`);
+					}}
+					className="group relative grid w-[260px] grid-rows-[200px_120px_40px] rounded-md bg-[#FFFEEC] p-4 text-[#01A977] transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))_scale(1.1)]"
+				>
+          <div className="ml-auto w-12">
+						<Image src={TwoComics} alt='вторая картинка комикса' loading='lazy'/>
+          </div>
+        <div className="pointer-events-none absolute inset-0 group-hover:bg-[radial-gradient(at_var(--x)_var(--y),rgba(255,255,255,0.3)_20%,transparent_80%)]" />
+				</div>
+			</div>
 			
-			<Image src={TwoComics} alt='вторая картинка комикса' loading='lazy'/>
-			<Image src={ThreeComics} alt='третья картинка комикса' loading='lazy'/>
+			<div className="flex flex-col [perspective:800px]">
+				<div
+					style={{
+						transform: 'rotateX(var(--x-rotation)) rotateY(var(--y-rotation)) scale(1)',
+					}}
+					onMouseLeave={(ev) => {
+						boundingRef.current = null
+						ev.currentTarget.style.setProperty("--x-rotation", `${0}deg`);
+						ev.currentTarget.style.setProperty("--y-rotation", `${0}deg`);
+						ev.currentTarget.style.setProperty("--x", `${0 * 100}%`);
+						ev.currentTarget.style.setProperty("--y", `${0 * 100}%`);
+					}}
+					onMouseEnter={(ev) => {
+						boundingRef.current = ev.currentTarget.getBoundingClientRect();
+					}}
+					onMouseMove={(ev) => {
+						if (!boundingRef.current) return;
+						console.log(ev)
+						const x = ev.clientX - boundingRef.current.left;
+						const y = ev.clientY - boundingRef.current.top;
+						const xPercentage = x / boundingRef.current.width;
+						const yPercentage = y / boundingRef.current.height;
+						const xRotation = (xPercentage - 0.5) * 25;
+						const yRotation = (0.5 - yPercentage) * 25;
+
+						ev.currentTarget.style.setProperty("--x-rotation", `${yRotation}deg`);
+						ev.currentTarget.style.setProperty("--y-rotation", `${xRotation}deg`);
+						ev.currentTarget.style.setProperty("--x", `${xPercentage * 100}%`);
+						ev.currentTarget.style.setProperty("--y", `${yPercentage * 100}%`);
+					}}
+					className="group relative grid w-[260px] grid-rows-[200px_120px_40px] rounded-md bg-[#FFFEEC] p-4 text-[#01A977] transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))_scale(1.1)]"
+				>
+          <div className="ml-auto w-12">
+						<Image src={ThreeComics} alt='третья картинка комикса' loading='lazy'/>
+          </div>
+        <div className="pointer-events-none absolute inset-0 group-hover:bg-[radial-gradient(at_var(--x)_var(--y),rgba(255,255,255,0.3)_20%,transparent_80%)]" />
+				</div>
+			</div>
 		</Images>
 		
 		<Button
