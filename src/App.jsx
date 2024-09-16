@@ -30,9 +30,7 @@ function App() {
 
     window.addEventListener("load", removeLoader);
 
-    return () => {
-      window.removeEventListener("load", removeLoader)
-    }
+    return () => window.removeEventListener("load", removeLoader)
   }, []);
 
   return (
