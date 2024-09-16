@@ -14,7 +14,12 @@ export const Organiser = () => {
 					<AvatarContainer>
 						<Avatar 
 							src={organiser.avatar}
+							width={230}
+							height={230}
 							alt='avatar'
+							loading='lazy'
+							decoding='async'
+							role='presentation'
 						/>
 						<Link
 							href={organiser.link}

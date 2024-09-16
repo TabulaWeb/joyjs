@@ -45,6 +45,10 @@ export const Idea = () => {
 			src={Sketch}
 			alt='mascot'
 			loading='lazy'
+			decoding='async'
+			role='presentation'
+			width={600}
+			height={600}
 		/>
 	</Main>
 }
@@ -158,6 +162,7 @@ const MascotImage = styled.img`
 	margin: 0 auto;
 	bottom: -65px;
 	width: 600px;
+	height: auto;
 
 	@media screen and (max-width: 1400px) {
 		width: 500px;

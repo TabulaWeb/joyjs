@@ -36,30 +36,50 @@ export const Home = ({ loading }) => {
 				src={ImageLoft}
 				alt='loft logo'
 				loading='lazy'
+				decoding='async'
+				role='presentation'
+				width={140}
+				height={140}
 			/>
 			<IconSmile
 				className={timer >= 1 && 'active'}
 				src={ImageSmile}
 				alt='smile'
 				loading='lazy'
+				decoding='async'
+				role='presentation'
+				width={140}
+				height={140}
 			/>
 			<IconCode 
 				className={timer >= 2 && 'active'}
 				src={ImageCode}
 				alt='code'
 				loading='lazy'
+				decoding='async'
+				role='presentation'
+				width={140}
+				height={140}
 			/>
 			<IconMascot
 				className={timer >= 1 && 'active'}
 				src={ImageMascot}
 				alt='mascot'
 				loading='lazy'
+				decoding='async'
+				role='presentation'
+				width={275}
+				height={159}
 			/>
 			<IconCamera 
 				className={timer >= 2 && 'active'}
 				src={ImageCamera}
 				alt='camera'
 				loading='lazy'
+				decoding='async'
+				role='presentation'
+				width={140}
+				height={140}
 			/>
 			<Title><span>Joy</span> <span>.JS</span></Title>
 		</Content>
@@ -135,6 +155,7 @@ const Title = styled.h1`
 const IconLoft = styled.img`
 	position: absolute;
 	width: 140px;
+	height: auto;
 	top: 63%;
 	left: 0;
 	opacity: 0;
@@ -173,6 +194,7 @@ const IconLoft = styled.img`
 const IconSmile = styled.img`
 	position: absolute;
 	width: 140px;
+	height: auto;
 	left: 18.5%;
 	top: -5px;
 	opacity: 0;
@@ -209,6 +231,7 @@ const IconSmile = styled.img`
 
 const IconCode = styled.img`
 	width: 120px;
+	height: auto;
 	position: absolute;
 	rotate: 30deg;
 	left: 41%;
@@ -249,6 +272,7 @@ const IconCode = styled.img`
 const IconMascot = styled.img`
 	position: absolute;
 	width: 275px;
+	height: auto;
 	right: 20%;
 	top: -30%;
 	opacity: 0;
@@ -285,6 +309,7 @@ const IconMascot = styled.img`
 const IconCamera = styled.img`
 	position: absolute;
 	width: 140px;
+	height: auto;
 	rotate: -30deg;
 	right: -1px;
 	top: 48%;

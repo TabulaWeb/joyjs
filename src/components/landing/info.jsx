@@ -14,19 +14,27 @@ export const Info = () => {
 			<Content>
 				<ImageSticker
 					src={ImgSticker}
+					width={275}
+					height={281}
 					alt='sticker'
 					loading='lazy'
+					decoding='async'
+					role='presentation'
 				/>
 
 				<ActivePin
 					src={ImgPinActive}
 					alt='pin'
 					loading='lazy'
+					decoding='async'
+					role='presentation'
 				/>
 				<Pin
 					src={ImgPin}
 					alt='pin'
 					loading='lazy'
+					decoding='async'
+					role='presentation'
 				/>
 			</Content>
 		</Sticker>
@@ -58,6 +66,7 @@ const Content = styled.div`
 `
 
 const ImageSticker = styled.img`
+	height: auto;
 `
 
 const ActivePin = styled.img`

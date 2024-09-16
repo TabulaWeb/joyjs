@@ -13,7 +13,15 @@ export const Program = () => {
 			<ProgramItem key={program.id} className={program.time === '21:00' ? 'after-party' : ''}>
 				<Time>
 					<span>{program.time}</span>
-					{program.time === '21:00' && <ImageParty src={imageParty} alt='Автепати' loading='lazy' />}
+					{program.time === '21:00' && <ImageParty 
+						src={imageParty} 
+						alt='Автепати' 
+						width={140}
+						height={140}
+						loading='lazy'
+						decoding='async'
+						role='presentation'
+					/>}
 				</Time>
 				<Content>
 					<Title hasMargin={program.description}>{ program.title }</Title>
@@ -27,13 +35,21 @@ export const Program = () => {
 							<Image 
 								alt='avatar'
 								src={program.speaker.avatar}
+								width={95}
+								height={95}
 								loading='lazy'
+								decoding='async'
+								role='presentation'
 							/>
 							<Logo
 								isDark={program.speaker.name === 'Тимур Гафиулин'}
 								alt='logo'
 								src={program.speaker.company}
+								width={30}
+								height={30}
 								loading='lazy'
+								decoding='async'
+								role='presentation'
 							/>
 						</Avatar>
 						<More>
