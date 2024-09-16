@@ -63,6 +63,7 @@ export const Program = () => {
 
 		<Button
 			href={timepad}
+			target='_blank'
 			name='link to register'
 			aria-label='link to register'
 		>

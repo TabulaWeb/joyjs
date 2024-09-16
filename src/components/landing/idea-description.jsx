@@ -19,6 +19,7 @@ export const IdeaDescription = () => {
 		<Actions>
 			<Button
 				href={timepad}
+				target='_blank'
 				name='link to register'
 				aria-label='link to telegram'
 				isFilled
@@ -29,6 +30,7 @@ export const IdeaDescription = () => {
 			<Button
 				href={telegram.chennal}
 				name='link to telegram'
+				target='_blank'
 				aria-label='link to telegram'
 			>
 				<IconTelegram 

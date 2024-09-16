@@ -4,6 +4,7 @@ import LogoLoft from '../../assets/image/loft-logo.png'
 
 import { IconTelegram } from '../icons/icon-telegram'
 import { IconEmail } from '../icons/icon-email'
+import { telegram } from '../../consts/urls'
 
 export const Partners = () => {
 	return <Main>
@@ -29,10 +30,11 @@ export const Partners = () => {
 					<span>Контакты для связи</span>
 					<ContainerLink>
 						<Link
-							href='/'
+							href={telegram.chennal}
 							className='telegram'
 							name='link to telegram'
 							aria-label='link to telegram'
+							target='_blank'
 						>
 							<IconTelegram 
 								width={70}
@@ -41,7 +43,7 @@ export const Partners = () => {
 							/>
 						</Link>
 						<Link
-							href='/'
+							href='mailto:tabulaweb@mail.ru'
 							name='link to email'
 							aria-label='link to email'
 						>

@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { IconTelegram } from '../icons/icon-telegram'
+import { telegram } from '../../consts/urls'
 
 export const Questions = () => {
 	return <Main
@@ -10,9 +11,10 @@ export const Questions = () => {
 		<Description>Не стесняйся! Спрашивай всё, что тебя интересует</Description>
 
 		<Button
-			href='/'
+			href={telegram['alexey-tabula']}
 			name='link to telegram'
 			aria-label='link to telegram'
+			target='_blank'
 		>
 			<IconTelegram 
 				width={36}

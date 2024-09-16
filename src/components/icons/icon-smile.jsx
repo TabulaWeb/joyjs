@@ -1,6 +1,6 @@
 export const IconSmile = ({
-	width = 30,
-	height = 30,
+	width = 25,
+	height = 25,
 	color = '#ffffff'
 }) => {
 	return (

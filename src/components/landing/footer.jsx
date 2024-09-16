@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 import { IconLogo } from '../icons/icon-logo'
 import { IconTelegram } from '../icons/icon-telegram'
 import { IconEmail } from '../icons/icon-email'
+import { telegram } from '../../consts/urls'
 
 export const Footer = () => {
 	return (
@@ -16,9 +17,10 @@ export const Footer = () => {
 
 			<Links>
 				<Link
-					href='/'
+					href={telegram['alexey-tabula']}
 					name='link to telegram'
 					aria-label='link to telegram'
+					target='_blank'
 				>
 					<IconTelegram 
 						width={25}
@@ -28,7 +30,7 @@ export const Footer = () => {
 					<span>@webtabula</span>
 				</Link>
 				<Link
-					href='/'
+					href='mailto:tabulaweb@mail.ru'
 					name='link to email'
 					aria-label='link to email'
 				>
@@ -60,7 +62,7 @@ const Main = styled.footer`
 
 const Description = styled.p`
 	font-family: 'Unbounded-Light';
-	font-size: 18px;
+	font-size: 14px;
 	margin-left: 75px;
 	max-width: 532px;
 

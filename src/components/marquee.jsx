@@ -7,58 +7,79 @@ import { telegram } from '../consts/urls';
 export const Marquee = () => {
 	return <Main pauseOnHover>
 		<MarqueeItem>
-			<p>{'/!/'}</p>
+			<p>{'/  !  /'}</p>
 		</MarqueeItem>
 		<MarqueeItem>
-			<p>Что?: Frontend Meetup в Пскове</p>
+			<p>Что?:  Frontend Meetup в Пскове</p>
 		</MarqueeItem>
 		<MarqueeItem>
-			<p>{'</>'}</p>
+			<p>{'<  /  >'}</p>
 		</MarqueeItem>
 		<MarqueeItem>
-			<p>Когда?: 10  октября</p>
+			<p>Когда?:  10  октября</p>
 		</MarqueeItem>
 		<MarqueeItem>
-			<p>{'/!/'}</p>
+			<p>{'/  !  /'}</p>
 		</MarqueeItem>
 		<MarqueeItem>
-			<p>Где?: Креативное пространство «Лофт» </p>
-		</MarqueeItem>
-		<MarqueeItem>
-			<p>{'</>'}</p>
+			<p>Где?:  Креативное пространство «Лофт» </p>
 		</MarqueeItem>
 		<MarqueeItem>
 			<p>
 				<IconSmile />
-				Движухи и анонсы в TG: <a href={telegram.chennal} name='link to channel'
+				Движухи и анонсы в TG: <a href={telegram.chennal} target='_blank' name='link to channel'
 			aria-label='Read more channel'>JOYJS_CONF</a>
 			</p>
 		</MarqueeItem>
+
 		<MarqueeItem>
-			<p>{'/!/'}</p>
+			<p>{'/  !  /'}</p>
 		</MarqueeItem>
 		<MarqueeItem>
-			<p>Что?: Frontend Meetup в Пскове</p>
+			<p>Что?:  Frontend Meetup в Пскове</p>
 		</MarqueeItem>
 		<MarqueeItem>
-			<p>{'</>'}</p>
+			<p>{'<  /  >'}</p>
 		</MarqueeItem>
 		<MarqueeItem>
-			<p>Когда?: 10  октября</p>
+			<p>Когда?:  10  октября</p>
 		</MarqueeItem>
 		<MarqueeItem>
-			<p>{'/!/'}</p>
+			<p>{'/  !  /'}</p>
 		</MarqueeItem>
 		<MarqueeItem>
-			<p>Где?: Креативное пространство «Лофт» </p>
-		</MarqueeItem>
-		<MarqueeItem>
-			<p>{'</>'}</p>
+			<p>Где?:  Креативное пространство «Лофт» </p>
 		</MarqueeItem>
 		<MarqueeItem>
 			<p>
 				<IconSmile />
-				Движухи и анонсы в TG: <a href={telegram.chennal} name='link to channel'
+				Движухи и анонсы в TG: <a href={telegram.chennal} target='_blank' name='link to channel'
+			aria-label='Read more channel'>JOYJS_CONF</a>
+			</p>
+		</MarqueeItem>
+
+		<MarqueeItem>
+			<p>{'/  !  /'}</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>Что?:  Frontend Meetup в Пскове</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>{'<  /  >'}</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>Когда?:  10  октября</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>{'/  !  /'}</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>Где?:  Креативное пространство «Лофт» </p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>
+				<IconSmile />
+				Движухи и анонсы в TG: <a href={telegram.chennal} target='_blank' name='link to channel'
 			aria-label='Read more channel'>JOYJS_CONF</a>
 			</p>
 		</MarqueeItem>
@@ -66,11 +87,12 @@ export const Marquee = () => {
 }
 
 const Main = styled(ReactFastMarquee)`
-	padding: 10px 0;
+	height: 45px;
 	gap: 0 50px;
 	background-color: #212121;
 	font-family: 'Unbounded-Light';
 	background-color: #212121;
+	font-size: 15px;
 
 	& .rfm-marquee {
 		gap: 50px;
@@ -81,7 +103,8 @@ const Main = styled(ReactFastMarquee)`
 			& .rfm-child p {
 				display: flex;
 				align-items: center;;
-				gap: 8px;
+				gap: 10px;
+				white-space:pre;
 
 				& a {
 					margin-top: 3px;
@@ -91,6 +114,10 @@ const Main = styled(ReactFastMarquee)`
 				}
 			}
 		}
+	}
+
+	@media screen and (max-width: 1440px) {
+		
 	}
 `
 

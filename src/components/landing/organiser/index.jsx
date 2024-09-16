@@ -25,6 +25,7 @@ export const Organiser = () => {
 							href={organiser.link}
 							name='link to telegram'
 							aria-label='link to telegram'
+							target='_blank'
 						>
 							<IconTelegram 
 								width={25}

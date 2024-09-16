@@ -16,6 +16,7 @@ export const InfoContact = () => {
 				className='telegram'
 				name='link to telegram'
 				aria-label='link to telegram'
+				target='_blank'
 			>
 				<IconTelegram 
 					width={80}
@@ -27,6 +28,7 @@ export const InfoContact = () => {
 				href={telegram.chennal}
 				name='link to telegram'
 				aria-label='link to telegram'
+				target='_blank'
 			>
 				<IconArrow
 					width={80}

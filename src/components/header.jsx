@@ -45,7 +45,7 @@ export const Header = () => {
 	}, [isOpen])
 
 	return <Main>
-		<Content>
+		<Content className={isOpen ? 'active' : ''}>
 			<OpenBurder
 				name='burger'
 				aria-label="open burger menu"
@@ -60,6 +60,7 @@ export const Header = () => {
 			<Register
 				isActive={isActive}
 				href={timepad}
+				target='_blank'
 				name='link to register'
 				aria-label='Go to register page'
 			>
@@ -71,7 +72,7 @@ export const Header = () => {
 			</Register>
 		</Content>
 		<Menu className={isOpen ? 'active' : ''}>
-			<MenuContent>
+			<MenuContent className={isOpen ? 'active' : ''}>
 				<ListNav>
 					<IconCode 
 						src={ImageCode}
@@ -132,6 +133,7 @@ export const Header = () => {
 				<Contacts>
 					<Contact
 						href={telegram['alexey-tabula']}
+						target='_blank'
 					>
 						<IconTelegram
 							color='#AFB2FF'
@@ -168,7 +170,7 @@ export const Header = () => {
 const Main = styled.header`
 	padding: 25px 20px;
 	margin: 0 auto;
-	margin-bottom: 100px;
+	margin-bottom: 75px;
 	position: sticky;
 	top: 0;
 	z-index: 8;
@@ -187,9 +189,17 @@ const Content = styled.div`
 	display: flex;
 	z-index: 7;
 	align-items: center;
-	padding: 15px 15px 15px 25px;
-	border-radius: 100px;
+	padding: 20px 15px 20px 35px;
+	border-radius: 100px 100px 100px 100px;
 	background-color: #2C2C2C;
+
+	&.active {
+		border-radius: 46px 46px 0 0;
+	}
+
+	& .logo {
+		width: 77px;
+	}
 
 	@media screen and (max-width: 600px) {
 		& .logo {
@@ -332,6 +342,11 @@ const OpenBurder = styled.button`
 	height: 60px;
 	margin-right: 40px;
 
+	& svg {
+		width: 50px;
+		height: 50px;
+	}
+
 	@media screen and (max-width: 600px) {
 		margin-right: 20px;
 		width: 30px;
@@ -349,7 +364,7 @@ const Register = styled.a`
 	align-items: center;
 	justify-content: center;
 	gap: 0 10px;
-	padding: 0 20px;
+	padding: 0 30px;
 	height: 60px;
 	margin-left: auto;
 	border: 1px solid #AFB2FF;
@@ -359,6 +374,8 @@ const Register = styled.a`
 	transition: 300ms;
 	background-color: ${({ isActive }) => isActive ? '#AFB2FF' : ''};
 	color:${({ isActive }) => isActive ? '#212121' : '#AFB2FF'};
+
+
 
 	& svg path {
 		fill:${({ isActive }) => isActive ? '#212121' : '#AFB2FF'};
@@ -403,8 +420,7 @@ const Register = styled.a`
 
 const TextButton = styled.span`
 	font-family: 'Unbounded-Medium';
-	font-weight: 500;
-	font-size: 16px;
+	font-size: 15px;
 `
 
 const Menu = styled.div`
@@ -417,11 +433,12 @@ const Menu = styled.div`
 	padding: 0 20px;
 	margin: 0 auto;
 	transition: height 300ms;
-	/* overflow: auto; */
+	/* overflow: hidden; */
 
 	&.active {
+		margin-top: 100px;
 		transition: height 300ms;
-		height: calc(100dvh - 100px);
+		height: calc(100dvh - 150px);
 	}
 
 	@media screen and (max-width: 600px) {
@@ -430,10 +447,21 @@ const Menu = styled.div`
 `
 
 const MenuContent = styled.div`
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	border-radius: 46px;
 	background-color: #2C2C2C;
 	height: 100%;
-	overflow: auto;
+	overflow: hidden;
+
+	&.active {
+		overflow: auto;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
 `
 
 const ListNav = styled.nav`
@@ -442,12 +470,8 @@ const ListNav = styled.nav`
 	align-items: center;
 	flex-direction: column;
 	gap: 25px;
-	padding-top: 12vh;
-	margin-bottom: 12vh;
-	margin-top: 92px;
 	max-width: 300px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-bottom: 10vh;
 
 	@media screen and (max-width: 600px) {
 		margin-left: 0;
@@ -481,8 +505,11 @@ const Message = styled.p`
 `
 
 const Contacts = styled.div`
+	max-width: 300px;
 	display: flex;
 	flex-direction: column;
+	width: 100%;
+	justify-content: flex-start;
 	gap: 10px;
 	max-width: 350px;
 	margin: 0 auto;

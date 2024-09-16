@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-
 import styled from '@emotion/styled'
 import { keyframes } from '@emotion/react'
 import ImageLoft from '../../assets/image/loft.png'
@@ -14,10 +13,10 @@ export const Home = ({ loading }) => {
 	useEffect(() => {
 		let interval
 
-		if(timer < 2) {
+		if(timer < 5) {
 			interval = setTimeout(() => {
 				setTimer(prev => prev + 1)
-			}, 1000)
+			}, 100)
 		}
 
 		return () => clearInterval(interval)
@@ -27,12 +26,12 @@ export const Home = ({ loading }) => {
 		<Description>
 			Велком на первый в Пскове Frontend Meetup!
 			4 доклада от крутых спикеров, нетворкинг<br/>
-			<span>и пиво</span>
+			<span class='beer-container'>и пиво <span class="beer"></span></span>
 		</Description>
 
 		<Content>
 			<IconLoft
-				className={timer >= 2 && 'active'}
+				className={timer >= 3 && 'active'}
 				src={ImageLoft}
 				alt='loft logo'
 				loading='lazy'
@@ -52,7 +51,7 @@ export const Home = ({ loading }) => {
 				height={140}
 			/>
 			<IconCode 
-				className={timer >= 2 && 'active'}
+				className={timer >= 5 && 'active'}
 				src={ImageCode}
 				alt='code'
 				loading='lazy'
@@ -62,17 +61,17 @@ export const Home = ({ loading }) => {
 				height={140}
 			/>
 			<IconMascot
-				className={timer >= 1 && 'active'}
+				className={timer >= 2 && 'active'}
 				src={ImageMascot}
 				alt='mascot'
 				loading='lazy'
 				decoding='async'
 				role='presentation'
-				width={275}
-				height={159}
+				width={240}
+				height={141}
 			/>
 			<IconCamera 
-				className={timer >= 2 && 'active'}
+				className={timer >= 4 && 'active'}
 				src={ImageCamera}
 				alt='camera'
 				loading='lazy'
@@ -99,16 +98,81 @@ const blob = keyframes`
 
 const Main = styled.section``
 
+const cheersBefore = keyframes`
+	0% {
+		transform: rotateZ(0) translateX(20px);
+	}
+	30% {
+		transform: rotateZ(0) translateX(0);
+	}
+	50% {
+		transform: rotateZ(-15deg) translateX(-10px);
+	}
+	70% {
+		transform: rotateZ(0) translateX(0);
+	}
+	100% {
+		transform: rotateZ(0) translateX(20px);
+	}
+`
+
+const cheersAfter = keyframes`
+	0% {
+		transform: rotateZ(0) rotateY(180deg) translateX(20px);
+	}
+	30% {
+		transform: rotateZ(0) rotateY(180deg) translateX(0);
+	}
+	50% {
+		transform: rotateZ(15deg) rotateY(180deg) translateX(-10px);
+	}
+	70% {
+		transform: rotateZ(0) rotateY(180deg) translateX(0);
+	}
+	100% {
+		transform: rotateZ(0) rotateY(180deg) translateX(20px);
+	}
+`
+
+
 const Description = styled.h2`
 	font-family: 'Unbounded-Light';
 	font-weight: 400;
-	max-width: 500px;
-	line-height: 25.2px;
-	margin-bottom: 75px;
-	font-size: 18px;
+	max-width: 390px;
+	line-height: 22px;
+	margin-bottom: 50px;
+	font-size: 14px;;
 
 	& span {
+		position: relative;
 		opacity: 0.5;
+		& .beer {
+			opacity: 1;
+		}
+	}
+
+	& .beer-container:hover {
+		& .beer {
+			opacity: 1;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			left: 10px;
+			top: 40px;
+			&:before,
+			&:after {
+				content: "🍺";
+				font-size: 50px;
+			}
+			&:before {
+				animation: ${cheersAfter} 3s ease infinite;
+			}
+			&:after {
+				animation: ${cheersBefore} 3s ease infinite;
+			}
+		}
 	}
 
 	@media screen and (max-width: 1024px) {
@@ -271,9 +335,9 @@ const IconCode = styled.img`
 
 const IconMascot = styled.img`
 	position: absolute;
-	width: 275px;
+	width: 240px;
 	height: auto;
-	right: 20%;
+	right: 22%;
 	top: -30%;
 	opacity: 0;
 
