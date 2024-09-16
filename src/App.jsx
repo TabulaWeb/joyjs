@@ -24,19 +24,14 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    let timerId
-
     const removeLoader = () => {
-      timerId = setTimeout(() => {
-        setLoading(false)
-      }, 1000)
+      setLoading(false)
     }
 
     window.addEventListener("load", removeLoader);
 
     return () => {
       window.removeEventListener("load", removeLoader)
-      clearInterval(timerId)
     }
   }, []);
 
