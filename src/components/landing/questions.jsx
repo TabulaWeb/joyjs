@@ -8,7 +8,7 @@ export const Questions = () => {
 		id='support'
 	>
 		<Title>Есть вопросики?</Title>
-		<Description>Не стесняйся! Спрашивай всё, что тебя интересует</Description>
+		<Description>Не стесняйся! Спрашивай</Description>
 
 		<Button
 			href={telegram['alexey-tabula']}
@@ -21,7 +21,7 @@ export const Questions = () => {
 				height={36}
 				color='#080808'
 			/>
-			<span>Задать вопрос</span>
+			<span>Поддержка</span>
 		</Button>
 	</Main>
 }
@@ -55,7 +55,7 @@ const Title = styled.h2`
 const Description = styled.p`
 	font-size: 15px;
 	font-family: 'Unbounded-Regular';
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 	text-align: center;
 `
 
@@ -65,29 +65,35 @@ const Button = styled.a`
 	align-items: center;
 	gap: 10px;
 	height: 60px;
-	padding: 0 20px;
+	padding: 0 30px;
 	margin: 0 auto;
 	border-radius: 100px;
 	background-color: #AFB2FF;
 	border: none;
 	cursor: pointer;
-	color: #080808;
+	color: #AFB2FF;
+	background: #212121;
 	font-family: 'Unbounded-Medium';
 	font-size: 15px;
 	text-decoration: none;
 	transition: 300ms;
+	border: 1px solid #AFB2FF;
+	cursor: url('src/assets/image/cursor-hover.png'), auto;
+
+	& svg path {
+		fill: #AFB2FF;
+	}
 
 	&:hover {
 		transition: 300ms;
 		border-color: #9496D3;
-		background-color: #9496D3;
 
 		& svg path {
-			fill: #080808;
+			fill: #9496D3;
 		}
 
 		& span {
-			color:  #080808;
+			color:  #9496D3;
 		}
 	}
 `

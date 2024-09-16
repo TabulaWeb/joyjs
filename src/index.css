@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: 'Unbounded-ExtraLight';
   src: url('/src/assets/fonts/Unbounded-ExtraLight.woff');

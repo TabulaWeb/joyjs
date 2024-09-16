@@ -21,6 +21,7 @@ export const Footer = () => {
 					name='link to telegram'
 					aria-label='link to telegram'
 					target='_blank'
+					className='telegram'
 				>
 					<IconTelegram 
 						width={25}
@@ -62,9 +63,11 @@ const Main = styled.footer`
 
 const Description = styled.p`
 	font-family: 'Unbounded-Light';
-	font-size: 14px;
-	margin-left: 75px;
-	max-width: 532px;
+	font-size: 20px;
+	margin-left: 73px;
+	line-height: 30px;
+	max-width: 700px;
+	text-transform: uppercase;
 
 	@media screen and (max-width: 991px) {
 		margin-left: 0;
@@ -91,4 +94,10 @@ const Link = styled.a`
 	cursor: pointer;
 	text-decoration: none;
 	color: #ffffff;
+	cursor: url('src/assets/image/cursor-hover.png'), auto;
+
+	& svg {
+		width: 36px;
+		height: 36px;
+	}
 `

@@ -15,7 +15,7 @@ export const Idea = () => {
 	}, [])
 
 	return <Main className='container' id='about'>
-		<Keywords className='left' data-aos='fade-up' data-aos-delay="500">
+		<Keywords className='left' data-aos='fade-up' data-aos-delay="200">
 			<Keyword>Митап</Keyword>
 			<Keyword>Знания</Keyword>
 			<Keyword>Доклады</Keyword>
@@ -27,7 +27,7 @@ export const Idea = () => {
 			</Keyword>
 		</Keywords>
 
-		<Keywords className='right' data-aos='fade-up' data-aos-delay="500">
+		<Keywords className='right' data-aos='fade-up' data-aos-delay="200">
 			<Keyword>
 				<IconContainer className='networker'>
 					<IconNetwork />
@@ -51,7 +51,7 @@ export const Idea = () => {
 
 		<MascotImage
 			data-aos='fade-up'
-			data-aos-delay="800"
+			data-aos-delay="400"
 			src={Sketch}
 			alt='mascot'
 			loading='lazy'

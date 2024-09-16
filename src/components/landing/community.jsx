@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import ReactFastMarquee from "react-fast-marquee";
 import { IconSmileOutline } from '../icons/icon-smile-outline';
+import { telegram } from '../../consts/urls'
 
 export const Community = () => {
 	return <>
@@ -8,17 +9,20 @@ export const Community = () => {
 			<span>Сообщество Joy.JS</span>
 			<IconSmileOutline />
 			<span>Сообщество Joy.JS</span>
+			<IconSmileOutline />
+			<span>Сообщество Joy.JS</span>
+			<IconSmileOutline />
 		</Marquee>
 		<Main className='container' id='community'>
 			<Description>
-				Идея "Joy.JS" заключается в развитии IT-культуры в регионах.
-				Для формирования сообщества был выбран Псков, так как это родной
-				город создателя Joy.JS Алексея Табула.
+				Идея "Joy.JS" заключается в развитии IT-культуры в регионах.<br/>
+				Для формирования сообщества был выбран Псков, так как это родной<br/>
+				город создателя Joy.JS <a href={telegram['alexey-tabula']}>Алексея Табула</a>.
 			</Description>
 			<Description className='subDescription'>
-				Наше сообщество — это про обсуждение актуальных тем, обмен знаний 
-				и опыта, нетворкинг, IT-вечеринки и прочие форматы движа. 
-				А так как сообщество только зарождается, ты можешь повлиять 
+				Наше сообщество — это про обсуждение актуальных тем, обмен знаний<br/>
+				и опыта, нетворкинг, IT-вечеринки и прочие форматы движа.<br/>
+				А так как сообщество только зарождается, ты можешь повлиять<br/>
 				на его будущее и развитие. 
 			</Description>
 		</Main>
@@ -27,7 +31,7 @@ export const Community = () => {
 }
 
 const Main = styled.section`
-	margin-bottom: 154px;
+	margin-bottom: 250px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -35,9 +39,11 @@ const Main = styled.section`
 `
 
 const Marquee = styled(ReactFastMarquee)`
+	display: flex;
+	gap: 100px;
 	font-family: 'Unbounded-ExtraLight';
 	font-size: 7vw;
-	margin-bottom: 100px;
+	margin-bottom: 75px;
 
 	& .rfm-initial-child-container {
 		gap: 100px;
@@ -46,11 +52,18 @@ const Marquee = styled(ReactFastMarquee)`
 
 const Description = styled.p`
 	margin-bottom: 35px;
-	max-width: 700px;
-	font-size: 14px;
+	max-width: 900px;
+	font-size: 15px;
+	line-height: 22px;
 	font-family: 'Unbounded-Regular';
 
+	& a {
+		cursor: url('src/assets/image/cursor-hover.png'), auto;
+		color: #AFB2FF;
+		text-decoration: none;
+	}
+
 	&.subDescription {
-		margin-bottom: 50px;
+		margin-bottom: 0px;
 	}
 `

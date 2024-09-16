@@ -60,7 +60,8 @@ export const Partners = () => {
 }
 
 const Main = styled.section`
-	margin-bottom: 170px;
+border-radius: 80px;
+	margin-bottom: 250px;
 	padding: 125px 35px;
 	background-color: #212121;
 
@@ -116,12 +117,12 @@ const Logo = styled.img`
 	object-fit: contain;
 
 	&.coffee-studion {
-		max-width: 250px;
+		max-width: 302px;
 	}
 
 	&.loft {
-		width: 100px;
-		height: 100px;
+		width: 150px;
+		height: 150px;
 	}
 `
 
@@ -131,7 +132,8 @@ const Links = styled.nav`
 	gap: 32px;
 
 	& span {
-		font-size: 25px;
+		font-size: 20px;
+		text-transform: uppercase;
 		font-family: 'Unbounded-Light';
 	}
 `
@@ -141,8 +143,8 @@ const ContainerLink = styled.div`
 `
 
 const Link = styled.a`
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -151,6 +153,12 @@ const Link = styled.a`
 	cursor: pointer;
 	text-decoration: none;
 	transition: 300ms;
+	cursor: url('src/assets/image/cursor-hover.png'), auto;
+
+	& svg {
+		width: 100px;
+		height: 100px;
+	}
 
 	&:hover {
 		transition: 300ms;
@@ -159,6 +167,11 @@ const Link = styled.a`
 
 	&.telegram {
 		background-color: #4B4547;
+
+		& svg {
+		width: 140px;
+		height: 140px;
+	}
 
 		&:hover {
 			transition: 300ms;
