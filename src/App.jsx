@@ -21,7 +21,7 @@ import { Questions } from './components/landing/questions'
 import { Footer } from './components/landing/footer'
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const removeLoader = () => {
