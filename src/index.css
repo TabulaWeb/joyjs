@@ -61,6 +61,7 @@
 
 body {
   overflow-x: hidden;
+  cursor: url('/src/assets/image/cursor.png'), auto;
 }
 
 .container {

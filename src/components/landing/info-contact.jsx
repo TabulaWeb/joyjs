@@ -45,7 +45,7 @@ const Main = styled.section`
 	flex-direction: column;
 	max-width: 550px;
 	width: 100%;
-	gap: 32px;
+	gap: 35px;
 	margin-left: auto;
 	margin-right: 12%;
 	margin-bottom: 250px;
@@ -82,9 +82,9 @@ const Link = styled.a`
 	height: 150px;
 	background-color: #AFB2FF;
 	border-radius: 50%;
-	cursor: pointer;
 	text-decoration: none;
 	transition: 300ms;
+	cursor: url('src/assets/image/cursor-hover.png'), auto;
 
 	&:hover {
 		transition: 300ms;
@@ -93,6 +93,10 @@ const Link = styled.a`
 
 	&.telegram {
 		background-color: #4B4547;
+		& svg {
+			width: 100px;
+			height: 100px;
+		}
 
 		&:hover {
 			transition: 300ms;

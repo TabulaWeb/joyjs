@@ -1,9 +1,10 @@
 import styled from '@emotion/styled'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import "swiper/css";
+import { Tooltip } from 'react-tooltip';
 
+import { IconAttention } from '../icons/icon-attention';
 import { IconVk } from '../icons/icon-vk'
-import SlideLoft from '../../assets/image/slide-loft.png'
+import SlideLoft from '../../assets/image/slide-loft.jpg'
 import SlideBar from '../../assets/image/slide-bar.png'
 
 export const Location = () => {
@@ -27,9 +28,10 @@ export const Location = () => {
 						<Time>18:30 — 21:30</Time>
 						<AreaLinks>
 							<Link
-								href='/'
+								href='https://vk.com/loft.pskov'
 								name='link to vk'
 								aria-label='link to vk'
+								target='_blank'
 							>
 								<IconVk />
 							</Link>
@@ -39,7 +41,7 @@ export const Location = () => {
 						<AreaTitle>Креативное пространство «Лофт»</AreaTitle>
 						<AreaAddress>
 							Зал: Арт-пространство <br />
-							Адрес: Спортивная ул., 1б
+							Адрес: <a href='https://yandex.ru/maps/org/loft/4353360720/?ll=28.344192,57.810261&z=15' target='_blank'>Спортивная ул., 1б</a>
 						</AreaAddress>
 					</AreaDescription>
 				</Area>
@@ -57,11 +59,21 @@ export const Location = () => {
 					<AreaTime>
 						<Step className='dashed'>2</Step>
 						<Time className='dashed'>22:00 — 01:00</Time>
+						<TooltipContainer id="tooltip-achor">
+							<TooltipIcon />
+						</TooltipContainer>
+						<StyleTooltip
+							anchorSelect="#tooltip-achor"
+							content='Бар может измениться, 
+							если количество желающих
+							превысит ожидания'
+							place='bottom'
+						/>
 					</AreaTime>
 					<AreaDescription>
 						<AreaTitle>Рестобар Друзья</AreaTitle>
 						<AreaAddress>
-							Адрес: Сиреневый бульвар, 1а
+							Адрес: <a href='https://yandex.ru/maps/org/restobar_druzya/234373157458/?ll=28.342081,57.836867&z=16' target='_blank'>Сиреневый бульвар, 1а</a>
 						</AreaAddress>
 					</AreaDescription>
 				</Area>
@@ -116,7 +128,7 @@ const Area = styled.div`
 const AreaTime = styled.div`
 	display: flex;
 	align-items: center;
-	gap: 20px;
+	gap: 15px;
 	margin: 35px 0;
 `
 
@@ -125,6 +137,7 @@ const Step = styled.p`
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #4B4547;
+	font-size: 15px;
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
@@ -161,7 +174,8 @@ const Time = styled.p`
 	justify-content: center;
 	align-items: center;
 	height: 60px;
-	padding: 0 20px;
+	font-size: 15px;
+	padding: 0 30px;
 	border-radius: 100px;
 	background-color: #212121;
 	border: 1px solid #4B4547;
@@ -204,13 +218,21 @@ const AreaTitle = styled.p`
 const AreaAddress = styled.p`
 	font-size: 15px;
 	font-family: 'Unbounded-Regular';
+	
+	& a {
+		color: #AFB2FF;
+		text-decoration: none;
+		cursor: url('src/assets/image/cursor-hover.png'), auto;
+	}
 `
 
-const AreaLinks = styled.nav``
+const AreaLinks = styled.nav`
+	margin-left: 20px;
+`
 
 const Link = styled.a`
-	cursor: pointer;
 	text-decoration: none;
+	cursor: url('src/assets/image/cursor-hover.png'), auto;
 `
 
 const Slide = styled(SwiperSlide)`
@@ -229,4 +251,29 @@ const ImageBar = styled.img`
 	height: 100%;
 	object-fit: cover;
 	border-radius: 20px;
+`
+
+const TooltipContainer = styled.span`
+	margin-left: 20px;
+	cursor: url('src/assets/image/cursor-hover.png'), auto;
+`
+
+const TooltipIcon = styled(IconAttention)`
+`
+
+const StyleTooltip = styled(Tooltip)`
+	max-width: 225px!important;
+	font-family: 'Unbounded-Regular';
+	font-size: 11px!important;
+	color: #ffffff!important;
+	padding: 15px!important;
+	background-color: #212121!important;
+	border-radius: 12px!important;
+	opacity: 1!important;
+	text-align: center;
+
+	& div {
+		width: 12px!important;
+		height: 12px!important;
+	}
 `

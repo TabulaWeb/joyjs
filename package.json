@@ -12,12 +12,14 @@
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
+    "aos": "^3.0.0-beta.6",
     "matter-dom-plugin": "^1.0.0",
     "matter-js": "^0.20.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-fast-marquee": "^1.6.5",
     "react-matter-js": "^1.0.5",
+    "react-tooltip": "^5.28.0",
     "swiper": "^11.1.12",
     "two.js": "^0.8.14"
   },

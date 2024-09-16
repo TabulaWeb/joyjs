@@ -95,17 +95,27 @@ const People = styled.div`
 
 const AvatarContainer = styled.div`
 	position: relative;
-	width: 230px;
-	height: 230px;
+	width: 300px;
+	height: 300px;
 	border-radius: 50%;
 	margin-bottom: 35px;
+
+	@media screen and (max-width: 1440px) {
+		width: 230px;
+		height: 230px;
+	}
 `
 
 const Avatar = styled.img` 
-	width: 230px;
-	height: 230px;
+	width: 300px;
+	height: 300px;
 	object-fit: cover;
 	border-radius: 50%;
+
+	@media screen and (max-width: 1440px) {
+		width: 230px;
+		height: 230px;
+	}
 `
 
 const Link = styled.a`
@@ -116,12 +126,28 @@ const Link = styled.a`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 50px;
-	height: 50px;
+	width: 65px;
+	height: 65px;
 	border-radius: 50%;
 	background-color: #4B4547;
 	text-decoration: none;
 	transition: 300ms;
+	cursor: url('src/assets/image/cursor-hover.png'), auto;
+
+	& svg {
+		width: 45px;
+		height: 45px;
+	}
+
+	@media screen and (max-width: 1440px) {
+		width: 50px;
+		height: 50px;
+
+		& svg {
+		width: 35px;
+		height: 35px;
+	}
+	}
 
 	&:hover {
 		transition: 300ms;
@@ -141,8 +167,8 @@ const Name = styled.p`
 `
 
 const Description = styled.p`
-	font-size: 16px;
-	margin-bottom: 15px;
+	font-size: 15px;
+	margin-bottom: 5px;
 	font-family: 'Unbounded-Regular';
 `
 

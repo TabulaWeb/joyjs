@@ -4,10 +4,18 @@ import { IconStar } from '../icons/icon-star'
 import { IconLaptop } from '../icons/icon-laptop'
 import { IconCursor } from '../icons/icon-cursor'
 import Sketch from '../../assets/image/sketch.png'
+import { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export const Idea = () => {
+
+	useEffect(() => {
+		Aos.init()
+	}, [])
+
 	return <Main className='container' id='about'>
-		<Keywords className='left'>
+		<Keywords className='left' data-aos='fade-up' data-aos-delay="500">
 			<Keyword>Митап</Keyword>
 			<Keyword>Знания</Keyword>
 			<Keyword>Доклады</Keyword>
@@ -19,7 +27,7 @@ export const Idea = () => {
 			</Keyword>
 		</Keywords>
 
-		<Keywords className='right'>
+		<Keywords className='right' data-aos='fade-up' data-aos-delay="500">
 			<Keyword>
 				<IconContainer className='networker'>
 					<IconNetwork />
@@ -42,6 +50,8 @@ export const Idea = () => {
 		</Keywords>
 
 		<MascotImage
+			data-aos='fade-up'
+			data-aos-delay="800"
 			src={Sketch}
 			alt='mascot'
 			loading='lazy'
@@ -57,7 +67,7 @@ const Main = styled.section`
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 150px;
+	margin-bottom: 110px;
 
 	@media screen and (max-width: 1024px) {
 		margin-bottom: 120px;

@@ -19,15 +19,16 @@ const Main = styled.a`
 	text-decoration: none;
 	gap: 10px;
 	height: 65px;
-	border-top: 1px solid #909090;
-	border-bottom: 1px solid #909090;
-	cursor: pointer;
-	margin-bottom: 150px;
+	border-top: 1px solid #4b4547;
+	border-bottom: 1px solid #4b4547;
+	margin-bottom: 225px;
 	text-decoration: none;
+	cursor: url('src/assets/image/cursor-hover.png'), auto;
 `
 
 const LinkText = styled.span`
-	font-family: 'Unbounded-Medium';
+	font-family: 'Unbounded-Regular';
+	font-size: 15px;
 	color: #ffffff;
 	font-weight: 300;
 `

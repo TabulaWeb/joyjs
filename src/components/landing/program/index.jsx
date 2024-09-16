@@ -11,7 +11,7 @@ export const Program = () => {
 		<SecTitle>Программа</SecTitle>
 		{programs.map((program) => (
 			<ProgramItem key={program.id} className={program.time === '21:00' ? 'after-party' : ''}>
-				<Time>
+				<Time className={program.time === '21:00' ? 'dashed' : ''}>
 					<span>{program.time}</span>
 					{program.time === '21:00' && <ImageParty 
 						src={imageParty} 
@@ -24,10 +24,13 @@ export const Program = () => {
 					/>}
 				</Time>
 				<Content>
-					<Title hasMargin={program.description}>{ program.title }</Title>
+					<Title hasMargin={program.description}>
+					<span dangerouslySetInnerHTML={{__html: program.title }}></span>
+						
+					</Title>
 					{program.description && 
 						<Description hasMargin={program.speaker.name}>
-							{ program.description }
+							<span dangerouslySetInnerHTML={{__html: program.description}}></span>
 						</Description>
 					}
 					{program.speaker.name && <Speaker>
@@ -80,7 +83,7 @@ export const Program = () => {
 const Main = styled.section`
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
+	gap: 10px;
 	margin-bottom: 250px;
 
 	@media screen and (max-width: 600px) {
@@ -140,20 +143,49 @@ const ProgramItem = styled.div`
 
 const Time = styled.div`
 	display: flex;
+	font-size: 15px;
+	position: relative;
 	font-family: 'YapariTrial-Medium';
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	position: relative;
 	align-self: self-start;
-	padding: 0 25px;
+	padding: 0 30px;
+	max-width: 232px;
+	width: 100%;
 	height: 60px;
-	width: 237px;
 	border-radius: 100px;
 	border: 1px solid #4B4547;
 	background-color: #212121;
 
 	& span {
 		padding-top: 6px;
+	}
+
+	&.dashed {
+		max-width: 215px;
+		position: relative;
+		--b: 1px;
+		--s: 40px;
+		--c1: #4B4547;
+		--c2: #080808;
+		border: none;
+
+		&::before {
+			content:"";
+			position: absolute;
+			border-radius: 50px;
+			inset: 0;
+			padding: var(--b);
+			background: 
+				repeating-conic-gradient(var(--c1) 0 25%,var(--c2) 0 50%) 
+				0 0/var(--s) var(--s) round;
+			-webkit-mask: linear-gradient(#000 0 0) content-box,
+				linear-gradient(#000 0 0);
+			-webkit-mask-composite: xor;
+							mask-composite: exclude;
+			pointer-events: none;
+		}
 	}
 
 	@media screen and (max-width: 600px) {
@@ -169,7 +201,7 @@ const Time = styled.div`
 
 const ImageParty = styled.img`
 	position: absolute;
-	right: -70px;
+	right: -30px;
 
 
 	@media screen and (max-width: 600px) {
@@ -189,6 +221,7 @@ const Content = styled.div`
 `
 
 const Title = styled.p`
+	text-transform: uppercase;
 	font-family: 'Unbounded-Light';
 	margin-bottom: ${({ hasMargin }) => hasMargin ? 35 : 0}px;
 	font-size: 25px;
@@ -202,9 +235,15 @@ const Title = styled.p`
 const Description = styled.p`
 	margin-bottom: ${({ hasMargin }) => hasMargin ? 25 : 0}px;
 	font-weight: 300;
-	line-height: 20.8px;
-	font-size: 15;
+	line-height: 22px;
+	font-size: 15px;
 	font-family: 'Unbounded-Regular';
+
+	& a {
+		color: #AFB2FF;
+		text-decoration: none;
+		cursor: url('src/assets/image/cursor-hover.png'), auto;
+	}
 
 	@media screen and (max-width: 600px) {
 		font-size: 14px;
@@ -251,7 +290,7 @@ const More = styled.div`
 `
 
 const Name = styled.p`
-	font-family: 'Unbounded-Regular';
+	font-family: 'Unbounded-Medium';
 	font-size: 15px;
 
 	@media screen and (max-width: 600px)  {
@@ -260,7 +299,7 @@ const Name = styled.p`
 `
 
 const SubInfo = styled.p`
-	font-family: 'Unbounded-Medium';
+	font-family: 'Unbounded-Regular';
 	font-size: 15px;
 
 	@media screen and (max-width: 600px)  {
@@ -273,7 +312,7 @@ const Button = styled.a`
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
-	max-width: 865px;
+	max-width: 750px;
 	width: 100%;
 	color: #080808;
 	height: 110px;
@@ -281,12 +320,13 @@ const Button = styled.a`
 	font-size: 25px;
 	font-family: 'Unbounded-Medium';
 	margin: 0 auto;
-	margin-top: 60px;
+	margin-top: 65px;
 	border: none;
 	background-color: #AFB2FF;
 	cursor: pointer;
 	text-decoration: none;
 	transition: 300ms;
+	cursor: url('src/assets/image/cursor-hover.png'), auto;
 
 	&:hover {
 		transition: 300ms;

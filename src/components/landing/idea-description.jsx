@@ -6,13 +6,13 @@ import { timepad, telegram } from '../../consts/urls'
 export const IdeaDescription = () => {
 	return <Main className='container'>
 		<Description>
-			На нашем митапе тебя ждёт программа с четырьмя докладами от экспертов,
-			В перерывах между выступлениями будет отличная возможность пообщаться, обменяться
-			идеями и завести новые знакомства. 
+			На нашем митапе тебя ждёт программа с четырьмя докладами от экспертов,<br/>
+
+			В перерывах между выступлениями будет отличная возможность пообщаться, <br/>обменяться идеями и завести новые знакомства.
 		</Description>
 
 		<Description className='subDescription'>
-			Мы уверены, что каждый найдет что-то для себя и уйдет с ценными инсайтами
+			Мы уверены, что каждый найдет что-то для себя и уйдет с ценными инсайтами<br/>
 			и позитивными эмоциями. Независимо от грейда, ждем с нетерпением на Joy.JS!
 		</Description>
 
@@ -57,9 +57,10 @@ const Main = styled.section`
 const Description = styled.p`
 	font-family: 'Unbounded-Regular';
 	font-size: 15px;
-	max-width: 865px;
+	max-width: 900px;
 	text-align: center;
 	margin-bottom: 25px;
+	line-height: 22px;
 
 	&.subDescription {
 		margin-bottom: 75px;
@@ -89,7 +90,7 @@ const Button = styled.a`
 	justify-content: center;
 	gap: 7.5px;
 	height: 60px;
-	padding: 0 20px;
+	padding: 0 30px;
 	border-radius: 100px;
 	border: none;
 	font-weight: 500;
@@ -101,11 +102,14 @@ const Button = styled.a`
 	text-decoration: none;
 	transition: 300ms;
 
+	border: ${({ isFilled }) => isFilled ? '' : '1px solid #AFB2FF'};
+	cursor: url('src/assets/image/cursor-hover.png'), auto;
+	
 	&:hover {
 		transition: 300ms;
 		border-color: #9496D3;
 		background-color: ${({ isFilled }) => isFilled ? '#9496D3' : ''};
-
+		border: ${({ isFilled }) => isFilled ? '' : '1px solid #9496D3'};
 		& svg path {
 			fill:  ${({ isFilled }) => isFilled ? '#080808' : '#9496D3'};
 		}

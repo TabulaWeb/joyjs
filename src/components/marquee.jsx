@@ -111,6 +111,7 @@ const Main = styled(ReactFastMarquee)`
 					color: #CCEE55;
 					font-family: 'YapariTrial-Medium';
 					text-decoration: none;
+					cursor: url('src/assets/image/cursor-hover.png'), auto;
 				}
 			}
 		}

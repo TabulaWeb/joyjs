@@ -187,7 +187,7 @@ const Description = styled.h2`
 
 const Content = styled.div`
 	position: relative;
-	margin-bottom: 290px;
+	margin-bottom: 179px;
 
 	@media screen and (max-width: 600px) {
 		margin-bottom: 140px;

@@ -51,7 +51,7 @@ const Main = styled.section`
 const Marquee = styled(ReactFastMarquee)`
 	font-family: 'Unbounded-ExtraLight';
 	font-size: 7vw;
-	gap: 30px;
+	gap: 200px;
 `
 
 const Sticker = styled.div`
