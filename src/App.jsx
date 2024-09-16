@@ -28,9 +28,9 @@ function App() {
       setLoading(false)
     }
 
-    window.addEventListener("load", removeLoader);
+    window.addEventListener("DOMContentLoaded", removeLoader);
 
-    return () => window.removeEventListener("load", removeLoader)
+    return () => window.removeEventListener("DOMContentLoaded", removeLoader)
   }, []);
 
   return (
