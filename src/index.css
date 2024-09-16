@@ -1,41 +1,41 @@
 @font-face {
   font-family: 'Unbounded-ExtraLight';
-  src: url('/src/assets/fonts/Unbounded-ExtraLight.ttf');
+  src: url('/src/assets/fonts/Unbounded-ExtraLight.woff');
 }
 
 @font-face {
   font-family: 'Unbounded-Light';
-  src: url('/src/assets/fonts/Unbounded-Light.ttf');
+  src: url('/src/assets/fonts/Unbounded-Light.woff');
 }
 
 @font-face {
   font-family: 'Unbounded-Regular';
-  src: url('/src/assets/fonts/Unbounded-Regular.ttf');
+  src: url('/src/assets/fonts/Unbounded-Regular.woff');
 }
 
 @font-face {
   font-family: 'Unbounded-Medium';
-  src: url('/src/assets/fonts/Unbounded-Medium.ttf');
+  src: url('/src/assets/fonts/Unbounded-Medium.woff');
 }
 
 @font-face {
   font-family: 'YapariTrial-Regular';
-  src: url('/src/assets/fonts/YapariTrial-Regular.ttf');
+  src: url('/src/assets/fonts/YapariTrial-Regular.woff');
 }
 
 @font-face {
   font-family: 'YapariTrial-Medium';
-  src: url('/src/assets/fonts/YapariTrial-Medium.ttf');
+  src: url('/src/assets/fonts/YapariTrial-Medium.woff');
 }
 
 @font-face {
   font-family: 'YapariTrial-SemiBold';
-  src: url('/src/assets/fonts/YapariTrial-SemiBold.ttf');
+  src: url('/src/assets/fonts/YapariTrial-SemiBold.woff');
 }
 
 @font-face {
   font-family: 'YapariTrial-Light';
-  src: url('/src/assets/fonts/YapariTrial-Light.ttf');
+  src: url('/src/assets/fonts/YapariTrial-Light.woff');
 }
 
 :root {

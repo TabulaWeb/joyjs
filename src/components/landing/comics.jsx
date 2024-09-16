@@ -7,9 +7,9 @@ import ThreeComics from '../../assets/image/three-comics.png'
 export const Comics = () => {
 	return <Main className='container'>
 		<Images>
-			<Image src={OneComics}/>
-			<Image src={TwoComics}/>
-			<Image src={ThreeComics}/>
+			<Image src={OneComics} alt='первая картинка комикса' loading='lazy'/>
+			<Image src={TwoComics} alt='вторая картинка комикса' loading='lazy'/>
+			<Image src={ThreeComics} alt='третья картинка комикса' loading='lazy'/>
 		</Images>
 		
 		<Button

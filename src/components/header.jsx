@@ -9,6 +9,7 @@ import { IconTelegram } from './icons/icon-telegram'
 import { IconEmail } from './icons/icon-email'
 import ImageCode from '../assets/image/code.png'
 import Sketch from '../assets/image/sketch.png'
+import { telegram } from '../consts/urls'
 
 export const Header = () => {
 	const [isActive, setIsActive] = useState(false)
@@ -75,10 +76,12 @@ export const Header = () => {
 					<IconCode 
 						src={ImageCode}
 						alt='code'
+						loading='lazy'
 					/>
 					<MascotImage
 						src={Sketch}
 						alt='mascot'
+						loading='lazy'
 					/>
 					<Link
 						href='#about'
@@ -127,7 +130,9 @@ export const Header = () => {
 				</Message>
 
 				<Contacts>
-					<Contact>
+					<Contact
+						href={telegram['alexey-tabula']}
+					>
 						<IconTelegram
 							color='#AFB2FF'
 							width={25}
@@ -135,7 +140,9 @@ export const Header = () => {
 						/>
 						<span>@webtabula</span>
 					</Contact>
-					<Contact>
+					<Contact
+						href='mailto:tabulaweb@mail.ru'
+					>
 						<IconEmail
 							color='#AFB2FF'
 							width={25}
@@ -495,6 +502,7 @@ const Contact = styled.a`
 	gap: 10px;
 	cursor: pointer;
 	text-decoration: none;
+	color: #ffffff;
 `
 
 const IconCode = styled.img`

@@ -35,26 +35,31 @@ export const Home = ({ loading }) => {
 				className={timer >= 2 && 'active'}
 				src={ImageLoft}
 				alt='loft logo'
+				loading='lazy'
 			/>
 			<IconSmile
 				className={timer >= 1 && 'active'}
 				src={ImageSmile}
 				alt='smile'
+				loading='lazy'
 			/>
 			<IconCode 
 				className={timer >= 2 && 'active'}
 				src={ImageCode}
 				alt='code'
+				loading='lazy'
 			/>
 			<IconMascot
 				className={timer >= 1 && 'active'}
 				src={ImageMascot}
 				alt='mascot'
+				loading='lazy'
 			/>
 			<IconCamera 
 				className={timer >= 2 && 'active'}
 				src={ImageCamera}
 				alt='camera'
+				loading='lazy'
 			/>
 			<Title><span>Joy</span> <span>.JS</span></Title>
 		</Content>

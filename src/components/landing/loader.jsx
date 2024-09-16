@@ -7,6 +7,7 @@ export const Loader = ({ active }) => {
 		<IconSmile 
 			src={ImageSmile}
 			alt='smile'
+			loading='lazy'
 		/>
 	</Main>
 }

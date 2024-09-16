@@ -44,6 +44,7 @@ export const Idea = () => {
 		<MascotImage
 			src={Sketch}
 			alt='mascot'
+			loading='lazy'
 		/>
 	</Main>
 }

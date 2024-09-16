@@ -10,11 +10,10 @@ export const Program = () => {
 	return <Main className='container' id='program'>
 		<SecTitle>Программа</SecTitle>
 		{programs.map((program) => (
-			<ProgramItem key={program.id}>
+			<ProgramItem key={program.id} className={program.time === '21:00' ? 'after-party' : ''}>
 				<Time>
 					<span>{program.time}</span>
-					{console.log(program)}
-					{program.time === '21:00' && <ImageParty src={imageParty} />}
+					{program.time === '21:00' && <ImageParty src={imageParty} alt='Автепати' loading='lazy' />}
 				</Time>
 				<Content>
 					<Title hasMargin={program.description}>{ program.title }</Title>
@@ -28,11 +27,13 @@ export const Program = () => {
 							<Image 
 								alt='avatar'
 								src={program.speaker.avatar}
+								loading='lazy'
 							/>
 							<Logo
 								isDark={program.speaker.name === 'Тимур Гафиулин'}
 								alt='logo'
 								src={program.speaker.company}
+								loading='lazy'
 							/>
 						</Avatar>
 						<More>
@@ -98,20 +99,17 @@ const ProgramItem = styled.div`
   --c1: #CCEE55;
   --c2: #080808;
 
-	&:nth-last-child(2) {
+	&.after-party {
 		&::before {
 			content:"";
 			position: absolute;
 			border-radius: 50px;
 			inset: 0;
 			padding: var(--b);
-			background: 
-				repeating-conic-gradient(var(--c1) 0 25%,var(--c2) 0 50%) 
-				0 0/var(--s) var(--s) round;
-			-webkit-mask: linear-gradient(#000 0 0) content-box,
-				linear-gradient(#000 0 0);
+			background: repeating-conic-gradient(var(--c1) 0 25%,var(--c2) 0 50%) 0 0/var(--s) var(--s) round;
+			-webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
 			-webkit-mask-composite: xor;
-							mask-composite: exclude;
+			mask-composite: exclude;
 			pointer-events: none;
 		}
 	}

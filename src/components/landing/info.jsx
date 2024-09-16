@@ -15,15 +15,18 @@ export const Info = () => {
 				<ImageSticker
 					src={ImgSticker}
 					alt='sticker'
+					loading='lazy'
 				/>
 
 				<ActivePin
 					src={ImgPinActive}
 					alt='pin'
+					loading='lazy'
 				/>
 				<Pin
 					src={ImgPin}
 					alt='pin'
+					loading='lazy'
 				/>
 			</Content>
 		</Sticker>

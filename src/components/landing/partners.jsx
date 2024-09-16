@@ -14,12 +14,14 @@ export const Partners = () => {
 					<Logo
 						className='loft'
 						alt='loft'
-						src={LogoLoft} 
+						src={LogoLoft}
+						loading='lazy'
 					/>
 					<Logo 
 						className='coffee-studion'
 						alt='coffee-studion'
-						src={LogoCoffee} 
+						src={LogoCoffee}
+						loading='lazy'
 					/>
 				</Logos>
 

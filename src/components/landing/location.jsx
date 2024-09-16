@@ -18,6 +18,7 @@ export const Location = () => {
 							<ImageLoft
 								src={SlideLoft}
 								alt='loft'
+								loading='lazy'
 							/>
 						</Slide>
 					</Swiper>
@@ -49,6 +50,7 @@ export const Location = () => {
 							<ImageBar
 								src={SlideBar}
 								alt='bar'
+								loading='lazy'
 							/>
 						</Slide>
 					</Swiper>
