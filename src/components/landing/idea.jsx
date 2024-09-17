@@ -70,7 +70,7 @@ const Main = styled.section`
 	margin-bottom: 110px;
 
 	@media screen and (max-width: 1024px) {
-		margin-bottom: 120px;
+		margin-bottom: 100px;
 	}
 
 	@media screen and (max-width: 600px) {

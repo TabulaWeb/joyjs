@@ -68,6 +68,10 @@ const Description = styled.p`
 	font-family: 'Unbounded-Regular';
 	font-size: 15px;
 	color: '#FAFAFA';
+
+	@media screen and (max-width: 600px) {
+		font-size: 14px;
+	}
 `
 
 const Links = styled.nav`
@@ -117,6 +121,13 @@ const Link = styled.a`
 	@media screen and (max-width: 600px) {
 		width: 100px;
 		height: 100px;
+
+		&.telegram {
+			& svg {
+				width: 70px;
+				height: 70px;
+			}
+		}
 
 		& svg {
 			width: 40px;

@@ -138,4 +138,8 @@ const Button = styled.a`
 			height: 30px;
 		}
 	}
+
+	@media screen and (max-width: 600px) {
+		height: 54px;
+	}
 `

@@ -24,6 +24,10 @@ const Main = styled.a`
 	margin-bottom: 225px;
 	text-decoration: none;
 	cursor: url('src/assets/image/cursor-hover.png'), auto;
+
+	@media screen and (max-width: 1024px) {
+		margin-bottom: 100px;
+	}
 `
 
 const LinkText = styled.span`

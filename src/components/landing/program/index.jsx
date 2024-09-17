@@ -138,6 +138,8 @@ const ProgramItem = styled.div`
 		padding: 35px 20px;
 		flex-direction: column;
 		gap: 35px;
+
+		
 	}
 `
 
@@ -196,6 +198,13 @@ const Time = styled.div`
 		justify-content: flex-start;
 		padding: 0;
 		border: 0;
+
+		&.dashed {
+			max-width: none;
+			&::before {
+				opacity: 0;
+			}
+		}
 	}
 `
 
@@ -343,7 +352,13 @@ const Button = styled.a`
 	}
 
 	@media screen and (max-width: 600px) {
-		margin-top: 50px;
+		margin-top: 40px;
 		height: 80px;
+		font-size: 17px;
+
+		& svg {
+			width: 35px;
+			height: 35px;
+		}
 	}
 `

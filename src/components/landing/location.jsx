@@ -237,6 +237,18 @@ const Link = styled.a`
 
 const Slide = styled(SwiperSlide)`
 	height: 450px;
+
+	@media screen and (max-width: 1440px) {
+		height: 340px;
+	}
+
+	@media screen and (max-width: 1024px) {
+		height: 240px;
+	}
+
+	@media screen and (max-width: 600px) {
+		height: 188px;
+	}
 `
 
 const ImageLoft = styled.img`
