@@ -41,7 +41,7 @@ function App() {
         <Partners />
         <Questions />
       </main>
-      <KeyWords />
+      {/* <KeyWords /> */}
       <Footer />
     </>
   )
