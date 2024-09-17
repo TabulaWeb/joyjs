@@ -1,9 +1,8 @@
 import styled from '@emotion/styled'
-import organisersJson from './api/organisers.json'
+import { organisers } from './api/organisers'
 import { IconTelegram } from '../../icons/icon-telegram'
 
 export const Organiser = () => {
-	const { organisers } = organisersJson
 
 	return <Main className='container'>
 		<Title>Организаторы</Title>
