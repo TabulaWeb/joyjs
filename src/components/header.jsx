@@ -201,6 +201,14 @@ const Content = styled.div`
 		width: 77px;
 	}
 
+	@media screen and (max-width: 1440px) {
+		padding: 15px 15px 15px 35px;
+
+		& .logo {
+			width: 66px;
+		}
+	}
+
 	@media screen and (max-width: 600px) {
 		& .logo {
 			width: 41px;
@@ -348,6 +356,18 @@ const OpenBurder = styled.button`
 		height: 50px;
 	}
 
+	@media screen and (max-width: 1440px) {
+		margin-right: 35px;
+
+		width: 40px;
+		height: 40px;
+
+		& svg {
+			width: 40px;
+			height: 40px;
+		}
+	}
+
 	@media screen and (max-width: 600px) {
 		margin-right: 20px;
 		width: 30px;
@@ -399,6 +419,16 @@ const Register = styled.a`
 		display: none;
 	}
 
+	@media screen and (max-width: 1440px) {
+		height: 55px;
+		padding: 0 25px;
+
+		& svg {
+			width: 36px;
+			height: 36px;
+		}
+	}
+
 	@media screen and (max-width: 600px) {
 		height: 40px;
 		font-size: 14px;
@@ -421,6 +451,10 @@ const Register = styled.a`
 const TextButton = styled.span`
 	font-family: 'Unbounded-Medium';
 	font-size: 15px;
+
+	@media screen and (max-width: 1440px) {
+		font-size: 14px;
+	}
 `
 
 const Menu = styled.div`
@@ -439,6 +473,10 @@ const Menu = styled.div`
 		margin-top: 100px;
 		transition: height 300ms;
 		height: calc(100dvh - 150px);
+	}
+
+	@media screen and (max-width: 1440px) {
+		height: 85px;
 	}
 
 	@media screen and (max-width: 600px) {

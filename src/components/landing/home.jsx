@@ -7,7 +7,7 @@ import ImageCode from '../../assets/image/code.png'
 import ImageMascot from '../../assets/image/mascot.png'
 import ImageCamera from '../../assets/image/camera.png'
 
-export const Home = ({ loading }) => {
+export const Home = () => {
 	const [timer, setTimer] = useState(0)
 
 	useEffect(() => {

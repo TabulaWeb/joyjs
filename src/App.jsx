@@ -21,25 +21,13 @@ import { Questions } from './components/landing/questions'
 import { Footer } from './components/landing/footer'
 
 function App() {
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    const removeLoader = () => {
-      setLoading(false)
-    }
-
-    window.addEventListener("DOMContentLoaded", removeLoader);
-
-    return () => window.removeEventListener("DOMContentLoaded", removeLoader)
-  }, []);
 
   return (
     <>
-      <Loader active={loading} />
       <Marquee />
       <Header />
       <main>
-        <Home loading={loading}/>
+        <Home/>
         <Devider />
         <Idea />
         <IdeaDescription />
