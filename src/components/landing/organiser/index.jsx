@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import { organisers } from './api/organisers'
 import { IconTelegram } from '../../icons/icon-telegram'
+import CursorHover from '../../../assets/image/cursor-hover.png'
 
 export const Organiser = () => {
 
@@ -131,7 +132,7 @@ const Link = styled.a`
 	background-color: #4B4547;
 	text-decoration: none;
 	transition: 300ms;
-	cursor: url('src/assets/image/cursor-hover.png'), auto;
+	cursor: url(${CursorHover}), auto;
 
 	& svg {
 		width: 45px;

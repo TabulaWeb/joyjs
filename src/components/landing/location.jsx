@@ -6,6 +6,7 @@ import { IconAttention } from '../icons/icon-attention';
 import { IconVk } from '../icons/icon-vk'
 import SlideLoft from '../../assets/image/slide-loft.jpg'
 import SlideBar from '../../assets/image/slide-bar.png'
+import CursorHover from '../../assets/image/cursor-hover.png'
 
 export const Location = () => {
 	return <Main>
@@ -222,7 +223,7 @@ const AreaAddress = styled.p`
 	& a {
 		color: #AFB2FF;
 		text-decoration: none;
-		cursor: url('src/assets/image/cursor-hover.png'), auto;
+		cursor: url(${CursorHover}), auto;
 	}
 `
 
@@ -232,7 +233,7 @@ const AreaLinks = styled.nav`
 
 const Link = styled.a`
 	text-decoration: none;
-	cursor: url('src/assets/image/cursor-hover.png'), auto;
+	cursor: url(${CursorHover}), auto;
 `
 
 const Slide = styled(SwiperSlide)`
@@ -267,7 +268,7 @@ const ImageBar = styled.img`
 
 const TooltipContainer = styled.span`
 	margin-left: 20px;
-	cursor: url('src/assets/image/cursor-hover.png'), auto;
+	cursor: url(${CursorHover}), auto;
 `
 
 const TooltipIcon = styled(IconAttention)`

@@ -8,7 +8,7 @@ export const Devider = () => {
 		name='link to program'
 		aria-label='Read more about programm'
 	>
-		<LinkText>Программа 1</LinkText>
+		<LinkText>Программа</LinkText>
 		<IconMicro />
 	</Main>
 }

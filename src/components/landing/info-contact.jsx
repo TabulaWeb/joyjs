@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 import { IconTelegram } from '../icons/icon-telegram'
 import { IconArrow } from '../icons/icon-arrow'
 import { telegram } from '../../consts/urls'
+import CursorHover from '../../assets/image/cursor-hover.png'
 
 export const InfoContact = () => {
 	return <Main className='container'>
@@ -88,7 +89,7 @@ const Link = styled.a`
 	border-radius: 50%;
 	text-decoration: none;
 	transition: 300ms;
-	cursor: url('src/assets/image/cursor-hover.png'), auto;
+	cursor: url(${CursorHover}), auto;
 
 	&:hover {
 		transition: 300ms;

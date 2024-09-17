@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 import ReactFastMarquee from "react-fast-marquee";
 import { IconSmileOutline } from '../icons/icon-smile-outline';
 import { telegram } from '../../consts/urls'
+import CursorHover from '../../assets/image/cursor-hover.png'
 
 export const Community = () => {
 	return <>
@@ -58,7 +59,7 @@ const Description = styled.p`
 	font-family: 'Unbounded-Regular';
 
 	& a {
-		cursor: url('src/assets/image/cursor-hover.png'), auto;
+		cursor: url(${CursorHover}), auto;
 		color: #AFB2FF;
 		text-decoration: none;
 	}

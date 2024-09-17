@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 import { IconEye } from '../icons/icon-eye'
 import { IconTelegram } from '../icons/icon-telegram'
 import { timepad, telegram } from '../../consts/urls'
+import CursorHover from '../../assets/image/cursor-hover.png'
 
 export const IdeaDescription = () => {
 	return <Main className='container'>
@@ -113,7 +114,7 @@ const Button = styled.a`
 	transition: 300ms;
 
 	border: ${({ isFilled }) => isFilled ? '' : '1px solid #AFB2FF'};
-	cursor: url('src/assets/image/cursor-hover.png'), auto;
+	cursor: url(${CursorHover}), auto;
 	
 	&:hover {
 		transition: 300ms;

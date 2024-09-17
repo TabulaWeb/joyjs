@@ -10,6 +10,7 @@ import { IconEmail } from './icons/icon-email'
 import ImageCode from '../assets/image/code.png'
 import Sketch from '../assets/image/sketch.png'
 import { telegram } from '../consts/urls'
+import CursorHover from '../assets/image/cursor-hover.png'
 
 export const Header = () => {
 	const [isActive, setIsActive] = useState(false)
@@ -350,7 +351,7 @@ const OpenBurder = styled.button`
 	width: 60px;
 	height: 60px;
 	margin-right: 40px;
-	cursor: url('src/assets/image/cursor-hover.png'), auto;
+	cursor: url(${CursorHover}), auto;
 
 	& svg {
 		width: 50px;
@@ -396,7 +397,7 @@ const Register = styled.a`
 	transition: 300ms;
 	background-color: ${({ isActive }) => isActive ? '#AFB2FF' : ''};
 	color:${({ isActive }) => isActive ? '#212121' : '#AFB2FF'};
-	cursor: url('src/assets/image/cursor-hover.png'), auto;
+	cursor: url(${CursorHover}), auto;
 
 	& svg path {
 		fill:${({ isActive }) => isActive ? '#212121' : '#AFB2FF'};
@@ -542,7 +543,7 @@ const Link = styled.a`
 	cursor: pointer;
 	text-decoration: none;
 	color: #ffffff;
-	cursor: url('src/assets/image/cursor-hover.png'), auto;
+	cursor: url(${CursorHover}), auto;
 `
 
 const Message = styled.p`
@@ -588,7 +589,7 @@ const Contact = styled.a`
 	cursor: pointer;
 	text-decoration: none;
 	color: #ffffff;
-	cursor: url('src/assets/image/cursor-hover.png'), auto;
+	cursor: url(${CursorHover}), auto;
 `
 
 const IconCode = styled.img`

@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import { IconTelegram } from '../icons/icon-telegram'
 import { telegram } from '../../consts/urls'
+import CursorHover from '../../assets/image/cursor-hover.png'
 
 export const Questions = () => {
 	return <Main
@@ -78,7 +79,7 @@ const Button = styled.a`
 	text-decoration: none;
 	transition: 300ms;
 	border: 1px solid #AFB2FF;
-	cursor: url('src/assets/image/cursor-hover.png'), auto;
+	cursor: url(${CursorHover}), auto;
 
 	& svg path {
 		fill: #AFB2FF;

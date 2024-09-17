@@ -3,6 +3,7 @@ import { IconLogo } from '../icons/icon-logo'
 import { IconTelegram } from '../icons/icon-telegram'
 import { IconEmail } from '../icons/icon-email'
 import { telegram } from '../../consts/urls'
+import CursorHover from '../../assets/image/cursor-hover.png'
 
 export const Footer = () => {
 	return (
@@ -94,7 +95,7 @@ const Link = styled.a`
 	cursor: pointer;
 	text-decoration: none;
 	color: #ffffff;
-	cursor: url('src/assets/image/cursor-hover.png'), auto;
+	cursor: url(${CursorHover}), auto;
 
 	& svg {
 		width: 36px;

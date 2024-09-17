@@ -3,6 +3,7 @@ import { IconEye } from '../../icons/icon-eye'
 import { timepad } from '../../../consts/urls'
 import imageParty from '../../../assets/image/drink.png'
 import { programs } from './api/programs'
+import CursorHover from '../../../assets/image/cursor-hover.png'
 
 export const Program = () => {
 	return <Main className='container' id='program'>
@@ -249,7 +250,7 @@ const Description = styled.p`
 	& a {
 		color: #AFB2FF;
 		text-decoration: none;
-		cursor: url('src/assets/image/cursor-hover.png'), auto;
+		cursor: url(${CursorHover}), auto;
 	}
 
 	@media screen and (max-width: 600px) {
@@ -333,7 +334,7 @@ const Button = styled.a`
 	cursor: pointer;
 	text-decoration: none;
 	transition: 300ms;
-	cursor: url('src/assets/image/cursor-hover.png'), auto;
+	cursor: url(${CursorHover}), auto;
 
 	&:hover {
 		transition: 300ms;

@@ -5,6 +5,7 @@ import LogoLoft from '../../assets/image/loft-logo.png'
 import { IconTelegram } from '../icons/icon-telegram'
 import { IconEmail } from '../icons/icon-email'
 import { telegram } from '../../consts/urls'
+import CursorHover from '../../assets/image/cursor-hover.png'
 
 export const Partners = () => {
 	return <Main>
@@ -153,7 +154,7 @@ const Link = styled.a`
 	cursor: pointer;
 	text-decoration: none;
 	transition: 300ms;
-	cursor: url('src/assets/image/cursor-hover.png'), auto;
+	cursor: url(${CursorHover}), auto;
 
 	& svg {
 		width: 100px;
