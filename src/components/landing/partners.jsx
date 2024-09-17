@@ -144,8 +144,8 @@ const ContainerLink = styled.div`
 `
 
 const Link = styled.a`
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

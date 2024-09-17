@@ -26,7 +26,7 @@ export const Home = () => {
 		<Description>
 			Велком на первый в Пскове Frontend Meetup!
 			4 доклада от крутых спикеров, нетворкинг<br/>
-			<span class='beer-container'>и пиво <span class="beer"></span></span>
+			<span className='beer-container'>и пиво <span className="beer"></span></span>
 		</Description>
 
 		<Content>
