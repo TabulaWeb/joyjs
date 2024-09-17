@@ -39,7 +39,7 @@ export const Comics = () => {
 						ev.currentTarget.style.setProperty("--x", `${xPercentage * 100}%`);
 						ev.currentTarget.style.setProperty("--y", `${yPercentage * 100}%`);
 					}}
-					className="group relative grid w-[260px] grid-rows-[200px_120px_40px] rounded-md bg-[#FFFEEC] p-4 text-[#01A977] transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))_scale(1.1)]"
+					className="group relative grid w-[260px] grid-rows-[200px_120px_40px] rounded-md bg-[#FFFEEC] p-4 text-[#01A977] transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))_scale(1)]"
 				>
           <div className="ml-auto w-12">
 						<Image src={OneComics} alt='вторая картинка комикса' loading='lazy'/>
@@ -78,7 +78,7 @@ export const Comics = () => {
 						ev.currentTarget.style.setProperty("--x", `${xPercentage * 100}%`);
 						ev.currentTarget.style.setProperty("--y", `${yPercentage * 100}%`);
 					}}
-					className="group relative grid w-[260px] grid-rows-[200px_120px_40px] rounded-md bg-[#FFFEEC] p-4 text-[#01A977] transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))_scale(1.1)]"
+					className="group relative grid w-[260px] grid-rows-[200px_120px_40px] rounded-md bg-[#FFFEEC] p-4 text-[#01A977] transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))_scale(1)]"
 				>
           <div className="ml-auto w-12">
 						<Image src={TwoComics} alt='вторая картинка комикса' loading='lazy'/>
@@ -117,7 +117,7 @@ export const Comics = () => {
 						ev.currentTarget.style.setProperty("--x", `${xPercentage * 100}%`);
 						ev.currentTarget.style.setProperty("--y", `${yPercentage * 100}%`);
 					}}
-					className="group relative grid w-[260px] grid-rows-[200px_120px_40px] rounded-md bg-[#FFFEEC] p-4 text-[#01A977] transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))_scale(1.1)]"
+					className="group relative grid w-[260px] grid-rows-[200px_120px_40px] rounded-md bg-[#FFFEEC] p-4 text-[#01A977] transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))_scale(1)]"
 				>
           <div className="ml-auto w-12">
 						<Image src={ThreeComics} alt='третья картинка комикса' loading='lazy'/>
