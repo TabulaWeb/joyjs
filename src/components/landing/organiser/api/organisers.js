@@ -32,7 +32,7 @@ export const organisers = [
 	{
 		"avatar": AnnaMsk,
 		"name": "Анна Ширяева",
-		"link": "@it_wildlife",
+		"link": "https://t.me/it_wildlife",
 		"description": "Lead Frontend dev, SIBUR Digital",
 		"role": ""
 	},
