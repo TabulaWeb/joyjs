@@ -66,6 +66,16 @@ const Description = styled.p`
 		margin-bottom: 75px;
 	}
 
+	@media screen and (max-width: 1440px) {
+		font-size: 14px;
+	}
+
+	@media screen and (max-width: 750px) {
+		br {
+			display: none;
+		}
+	}
+
 	@media screen and (max-width: 600px) {
 		&.subDescription {
 			margin-bottom: 50px;
@@ -116,6 +126,16 @@ const Button = styled.a`
 
 		& span {
 			color: ${({ isFilled }) => isFilled ? '#080808' : '#9496D3'};
+		}
+	}
+
+	@media screen and (max-width: 1440px) {
+		font-size: 14px;
+		padding: 0 25px;
+
+		& svg {
+			width: 30px;
+			height: 30px;
 		}
 	}
 `
