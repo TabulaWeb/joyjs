@@ -7,9 +7,8 @@ import CursorHover from '../../assets/image/cursor-hover.png'
 export const IdeaDescription = () => {
 	return <Main className='container'>
 		<Description>
-			На нашем митапе тебя ждёт программа с четырьмя докладами от экспертов,<br/>
-
-			В перерывах между выступлениями будет отличная возможность пообщаться, <br/>обменяться идеями и завести новые знакомства.
+			На нашем митапе тебя ждёт программа с четырьмя докладами от экспертов.<br/>
+			В перерывах между выступлениями будет отличная возможность пообщаться, обменяться<br/> идеями и завести новые знакомства.
 		</Description>
 
 		<Description className='subDescription'>
@@ -58,7 +57,6 @@ const Main = styled.section`
 const Description = styled.p`
 	font-family: 'Unbounded-Regular';
 	font-size: 15px;
-	max-width: 900px;
 	text-align: center;
 	margin-bottom: 25px;
 	line-height: 22px;
@@ -71,13 +69,14 @@ const Description = styled.p`
 		font-size: 14px;
 	}
 
-	@media screen and (max-width: 750px) {
+	@media screen and (max-width: 840px) {
 		br {
 			display: none;
 		}
 	}
 
 	@media screen and (max-width: 600px) {
+		text-align: left;
 		&.subDescription {
 			margin-bottom: 50px;
 		}

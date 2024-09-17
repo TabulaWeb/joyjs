@@ -40,7 +40,7 @@ const Main = styled.section`
 
 const Title = styled.h2`
 	text-align: center;
-	margin-bottom: 100px;
+	margin-bottom: 75px;
 	font-size: 80px;
 	font-family: 'Unbounded-Regular';
 
@@ -50,6 +50,7 @@ const Title = styled.h2`
 
 	@media screen and (max-width: 600px) {
 		font-size: 30px;
+		margin-bottom: 50px;
 	}
 `
 
@@ -58,6 +59,10 @@ const Description = styled.p`
 	font-family: 'Unbounded-Regular';
 	margin-bottom: 25px;
 	text-align: center;
+
+	@media screen and (max-width: 1440px) {
+		font-size: 14px;
+	}
 `
 
 const Button = styled.a`
@@ -96,5 +101,9 @@ const Button = styled.a`
 		& span {
 			color:  #9496D3;
 		}
+	}
+
+	@media screen and (max-width: 1440px) {
+		font-size: 14px;
 	}
 `

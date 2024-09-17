@@ -93,7 +93,11 @@ const Main = styled.section`
 const SecTitle = styled.h2`
 	font-size: 80px;
 	font-family: 'Unbounded-Regular';
-	margin-bottom: 85px;
+	margin-bottom: 90px;
+
+	@media screen and (max-width: 1440px) {
+		font-size: 70px;
+	}
 
 	@media screen and (max-width: 1024px) {
 		font-size: 50px;
@@ -101,14 +105,14 @@ const SecTitle = styled.h2`
 
 	@media screen and (max-width: 600px) {
 		font-size: 30px;
-		margin-bottom: 75px;
+		margin-bottom: 65px;
 	}
 `
 
 const ProgramItem = styled.div`
 	background-color: #21212199;
 	position: relative;
-	gap: 70px;
+	gap: 20px;
 	border-radius: 50px;
 	padding: 50px;
 	display: flex;
@@ -136,7 +140,7 @@ const ProgramItem = styled.div`
 	@media screen and (max-width: 600px) {
 		padding: 35px 20px;
 		flex-direction: column;
-		gap: 35px;
+		gap: 25px;
 
 		
 	}
@@ -147,13 +151,12 @@ const Time = styled.div`
 	font-size: 15px;
 	position: relative;
 	font-family: 'YapariTrial-Medium';
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 	position: relative;
 	align-self: self-start;
-	padding: 0 30px;
-	max-width: 232px;
-	width: 100%;
+	/* padding: 0 30px; */
+	min-width: 222px;
 	height: 60px;
 	border-radius: 100px;
 	border: 1px solid #4B4547;
@@ -171,6 +174,8 @@ const Time = styled.div`
 		--c1: #4B4547;
 		--c2: #080808;
 		border: none;
+		justify-content: flex-start;
+		padding-left: 30px;
 
 		&::before {
 			content:"";
@@ -187,6 +192,11 @@ const Time = styled.div`
 							mask-composite: exclude;
 			pointer-events: none;
 		}
+	}
+
+	@media screen and (max-width: 1440px) {
+		min-width: 212px;
+		font-size: 14px;
 	}
 
 	@media screen and (max-width: 600px) {
@@ -231,8 +241,12 @@ const Content = styled.div`
 const Title = styled.p`
 	text-transform: uppercase;
 	font-family: 'Unbounded-Light';
-	margin-bottom: ${({ hasMargin }) => hasMargin ? 35 : 0}px;
+	margin-bottom: ${({ hasMargin }) => hasMargin ? 25 : 0}px;
 	font-size: 25px;
+
+	@media screen and (max-width: 1440px) {
+		font-size: 20px;
+	}
 
 	@media screen and (max-width: 600px) {
 		font-size: 17px;
@@ -251,6 +265,10 @@ const Description = styled.p`
 		color: #AFB2FF;
 		text-decoration: none;
 		cursor: url(${CursorHover}), auto;
+	}
+
+	@media screen and (max-width: 1440px) {
+		font-size: 14px;
 	}
 
 	@media screen and (max-width: 600px) {
@@ -294,12 +312,16 @@ const Logo = styled.img`
 const More = styled.div`
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
+	gap: 10px;
 `
 
 const Name = styled.p`
 	font-family: 'Unbounded-Medium';
 	font-size: 15px;
+
+	@media screen and (max-width: 1440px) {
+		font-size: 14px;
+	}
 
 	@media screen and (max-width: 600px)  {
 		font-size: 14px;
@@ -309,6 +331,10 @@ const Name = styled.p`
 const SubInfo = styled.p`
 	font-family: 'Unbounded-Regular';
 	font-size: 15px;
+
+	@media screen and (max-width: 1440px) {
+		font-size: 14px;
+	}
 
 	@media screen and (max-width: 600px)  {
 		font-size: 14px;
@@ -348,6 +374,10 @@ const Button = styled.a`
 		& span {
 			color:  #080808;
 		}
+	}
+
+	@media screen and (max-width: 1440px) {
+		font-size: 20px;
 	}
 
 	@media screen and (max-width: 600px) {

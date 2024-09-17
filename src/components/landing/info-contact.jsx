@@ -46,7 +46,7 @@ const Main = styled.section`
 	flex-direction: column;
 	max-width: 550px;
 	width: 100%;
-	gap: 35px;
+	gap: 25px;
 	margin-left: auto;
 	margin-right: 12%;
 	margin-bottom: 250px;

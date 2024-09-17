@@ -13,7 +13,7 @@ export const Footer = () => {
 				height={46}
 			/>
 			<Description>
-				Давайте сделаем ещё что-нибудь классное вместе, пишите!
+				Давайте сделаем ещё что-нибудь классное<br/> вместе, пишите!
 			</Description>
 
 			<Links>
@@ -70,8 +70,21 @@ const Description = styled.p`
 	max-width: 700px;
 	text-transform: uppercase;
 
+	@media screen and (max-width: 1440px) {
+		font-size: 18px;
+		margin-left: 50px;
+	}
+
 	@media screen and (max-width: 991px) {
 		margin-left: 0;
+
+		& br {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 14px;
 	}
 `
 

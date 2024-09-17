@@ -67,6 +67,14 @@ const Content = styled.div`
 
 const ImageSticker = styled.img`
 	height: auto;
+
+	@media screen and (max-width: 1440px) {
+		width: 250px;
+	}
+
+	@media screen and (max-width: 600px) {
+		width: 170px;
+	}
 `
 
 const ActivePin = styled.img`
@@ -76,7 +84,6 @@ const ActivePin = styled.img`
 `
 
 const Pin = styled.img`
-	cursor: pointer;
 	position: absolute;
 	top: -28px;
 	right: 50px;

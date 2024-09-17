@@ -204,6 +204,10 @@ const Button = styled.a`
 		}
 	}
 
+	@media screen and (max-width: 1440px) {
+		font-size: 20px;
+	}
+
 	@media screen and (max-width: 600px) {
 		height: 80px;
 		width: -webkit-fill-available;

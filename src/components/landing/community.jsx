@@ -37,6 +37,10 @@ const Main = styled.section`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	@media screen and (max-width: 600px) {
+		margin-bottom: 200px;
+	}
 `
 
 const Marquee = styled(ReactFastMarquee)`
@@ -52,7 +56,7 @@ const Marquee = styled(ReactFastMarquee)`
 `
 
 const Description = styled.p`
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 	max-width: 900px;
 	font-size: 15px;
 	line-height: 22px;
@@ -66,5 +70,20 @@ const Description = styled.p`
 
 	&.subDescription {
 		margin-bottom: 0px;
+	}
+
+	@media screen and (max-width: 1440px) {
+		font-size: 14px;
+	}
+
+	@media screen and (max-width: 680px) {
+		br {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 14px;
+		text-align: start;
 	}
 `

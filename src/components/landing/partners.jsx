@@ -78,7 +78,11 @@ border-radius: 80px;
 const Container = styled.div`
 	display: flex;
 	flex-direction: column;
-	gap: 70px;
+	gap: 50px;
+
+	@media screen and (max-width: 600px) {
+		padding: 0;
+	}
 `
 
 const Title = styled.div`
@@ -91,11 +95,13 @@ const Title = styled.div`
 
 	@media screen and (max-width: 600px) {
 		font-size: 30px;
+		text-align: center;
 	}
 `
 
 const Content = styled.div`
 	display: flex;
+	align-items: end;
 	justify-content: space-between;
 	gap: 70px;
 	flex-wrap: wrap;
@@ -104,11 +110,20 @@ const Content = styled.div`
 const Logos = styled.div`
 	display: flex;
 	align-items: center;
-	gap: 100px;
+	gap: 150px;
 
+	@media screen and (max-width: 1440px) {
+		gap: 100px;
+	}
+
+	@media screen and (max-width: 1024px) {
+		gap: 75px;
+	}
 
 	@media screen and (max-width: 600px) {
-		gap: 70px;
+		width: 100%;
+		justify-content: space-between;
+		gap: 20px;
 		flex-wrap: wrap;
 	}
 `
@@ -125,6 +140,39 @@ const Logo = styled.img`
 		width: 150px;
 		height: 150px;
 	}
+
+	@media screen and (max-width: 1440px) {
+		&.coffee-studion {
+			max-width: 250px;
+		}
+
+		&.loft {
+			width: 125px;
+			height: 125px;
+		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		&.loft {
+			width: 100px;
+			height: 100px;
+		}
+
+		&.coffee-studion {
+			max-width: 196px;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		&.loft {
+			width: 94px;
+			height: 94px;
+		}
+
+		&.coffee-studion {
+			max-width: 185px;
+		}
+	}
 `
 
 const Links = styled.nav`
@@ -136,6 +184,19 @@ const Links = styled.nav`
 		font-size: 20px;
 		text-transform: uppercase;
 		font-family: 'Unbounded-Light';
+	}
+
+	@media screen and (max-width: 1440px) {
+		& span {
+			font-size: 18px;
+		}
+	
+	}
+
+	@media screen and (max-width: 600px) {
+		& span {
+			font-size: 14px;
+		}
 	}
 `
 
@@ -170,8 +231,8 @@ const Link = styled.a`
 		background-color: #4B4547;
 
 		& svg {
-		width: 140px;
-		height: 140px;
+		width: 100px;
+		height: 100px;
 	}
 
 		&:hover {
@@ -181,6 +242,23 @@ const Link = styled.a`
 			& svg path {
 				transition: 300ms;
 				fill: #9496d3;
+			}
+		}
+	}
+
+
+	@media screen and (max-width: 600px) {
+		width: 100px;
+		height: 100px;
+
+		& svg {
+			width: 70px;
+		}
+
+		&.telegram {
+			& svg {
+				width: 70px;
+				height: 70px;
 			}
 		}
 	}

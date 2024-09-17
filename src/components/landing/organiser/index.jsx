@@ -82,7 +82,7 @@ const Content = styled.div`
 	}
 
 	@media screen and (max-width: 600px) {
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
 `
 
@@ -98,11 +98,18 @@ const AvatarContainer = styled.div`
 	width: 300px;
 	height: 300px;
 	border-radius: 50%;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 
 	@media screen and (max-width: 1440px) {
 		width: 230px;
 		height: 230px;
+	}
+
+	@media screen and (max-width: 600px) {
+		max-width: 230px;
+		max-height: 230px;
+		width: 100%;
+		height: 100%;
 	}
 `
 
@@ -111,10 +118,17 @@ const Avatar = styled.img`
 	height: 300px;
 	object-fit: cover;
 	border-radius: 50%;
+	
+
 
 	@media screen and (max-width: 1440px) {
 		width: 230px;
 		height: 230px;
+	}
+
+	@media screen and (max-width: 600px) {
+		width: 100%;
+		height: 100%;
 	}
 `
 
@@ -164,16 +178,40 @@ const Name = styled.p`
 	font-size: 20px;
 	margin-bottom: 25px;
 	font-family: 'Unbounded-Regular';
+
+	@media screen and (max-width: 1440px) {
+		font-size: 20px;
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 14px;
+	}
 `
 
 const Description = styled.p`
 	font-size: 15px;
 	margin-bottom: 5px;
 	font-family: 'Unbounded-Regular';
+
+	@media screen and (max-width: 1440px) {
+		font-size: 14px;
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 11px;
+	}
 `
 
 const Role = styled.p`
-	font-size: 16px;
+	font-size: 15px;
 	color: #AECD41;
 	font-family: 'Unbounded-Regular';
+
+	@media screen and (max-width: 1440px) {
+		font-size: 14px;
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 11px;
+	}
 `

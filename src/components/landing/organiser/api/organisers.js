@@ -1,11 +1,11 @@
-import AlexeyTabulaAvatar from '../../../../assets/image/tabula-avatar.jpg'
+import AlexeyTabulaAvatar from '../../../../assets/image/tabula-avatar.png'
 import IriFlina from '../../../../assets/image/flina-avatar.png'
-import KiripPavlik from '../../../../assets/image/kirill-org-avatar.jpg'
-import AnnaMsk from '../../../../assets/image/anna-msc-org-avatar.jpg'
+import KiripPavlik from '../../../../assets/image/kirill-org-avatar.png'
+import AnnaMsk from '../../../../assets/image/anna-msc-org-avatar.png'
 import MaxSber from '../../../../assets/image/maximSber-avatar.png'
 import Viacheslav from '../../../../assets/image/viacheslav-avatar.png'
-import AnnaOrg from '../../../../assets/image/anna-org-avatar.jpg'
-import AlexKirilov from '../../../../assets/image/alexander-org-avatar.jpg'
+import AnnaOrg from '../../../../assets/image/anna-org-avatar.png'
+import AlexKirilov from '../../../../assets/image/alexander-org-avatar.png'
 
 export const organisers = [
 	{

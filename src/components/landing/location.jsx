@@ -98,6 +98,10 @@ const Title = styled.h2`
 	font-size: 80px;
 	margin-bottom: 100px;
 
+	@media screen and (max-width: 1440px) {
+		font-size: 70px;
+	}
+
 	@media screen and (max-width: 1024px) {
 		font-size: 50px;
 	}
@@ -110,7 +114,7 @@ const Title = styled.h2`
 
 const Areas = styled.div`
 	display: flex;
-	gap: 35px;
+	gap: 25px;
 
 	@media screen and (max-width: 600px) {
 		flex-direction: column;
@@ -130,7 +134,7 @@ const AreaTime = styled.div`
 	display: flex;
 	align-items: center;
 	gap: 15px;
-	margin: 35px 0;
+	margin: 25px 0;
 `
 
 const Step = styled.p`
@@ -167,6 +171,10 @@ const Step = styled.p`
 							mask-composite: exclude;
 			pointer-events: none;
 		}
+	}
+
+	@media screen and (max-width: 1440px) {
+		font-size: 14px;
 	}
 `
 
@@ -206,6 +214,10 @@ const Time = styled.p`
 			pointer-events: none;
 		}
 	}
+
+	@media screen and (max-width: 1440px) {
+		font-size: 14px;
+	}
 `
 
 const AreaDescription = styled.div``
@@ -213,7 +225,11 @@ const AreaDescription = styled.div``
 const AreaTitle = styled.p`
 	font-family: 'Unbounded-Light';
 	font-size: 25px;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
+
+	@media screen and (max-width: 1440px) {
+		font-size: 20px;
+	}
 `
 
 const AreaAddress = styled.p`
@@ -224,6 +240,10 @@ const AreaAddress = styled.p`
 		color: #AFB2FF;
 		text-decoration: none;
 		cursor: url(${CursorHover}), auto;
+	}
+
+	@media screen and (max-width: 1440px) {
+		font-size: 14px;
 	}
 `
 
@@ -257,6 +277,7 @@ const ImageLoft = styled.img`
 	height: 100%;
 	object-fit: cover;
 	border-radius: 20px;
+	object-position: bottom;
 `
 
 const ImageBar = styled.img`

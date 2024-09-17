@@ -183,6 +183,7 @@ const MascotImage = styled.img`
 	}
 
 	@media screen and (max-width: 600px) {
+		bottom: -35px;
 		width: clamp(180px, 45vw, 250px);
 	}
 `
