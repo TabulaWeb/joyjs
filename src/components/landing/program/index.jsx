@@ -1,12 +1,10 @@
 import styled from '@emotion/styled'
 import { IconEye } from '../../icons/icon-eye'
-import programsJson from './api/programs'
 import { timepad } from '../../../consts/urls'
 import imageParty from '../../../assets/image/drink.png'
+import { programs } from './api/programs'
 
 export const Program = () => {
-	const { programs } = programsJson
-
 	return <Main className='container' id='program'>
 		<SecTitle>Программа</SecTitle>
 		{programs.map((program) => (
