@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { IconMicro } from './icons/icon-micro'
+import CursorHover from '../assets/image/cursor-hover.png'
 
 export const Devider = () => {
 	return <Main 
@@ -23,7 +24,7 @@ const Main = styled.a`
 	border-bottom: 1px solid #4b4547;
 	margin-bottom: 225px;
 	text-decoration: none;
-	cursor: url('src/assets/image/cursor-hover.png'), auto;
+	cursor: url(${CursorHover}), auto;
 
 	@media screen and (max-width: 1024px) {
 		margin-bottom: 100px;
