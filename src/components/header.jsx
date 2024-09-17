@@ -212,8 +212,11 @@ const Content = styled.div`
 	}
 
 	@media screen and (max-width: 600px) {
+		padding: 10px 10px 10px 20px;
+
 		& .logo {
 			width: 41px;
+			height: 25px;
 		}
 	}
 `
@@ -426,14 +429,15 @@ const Register = styled.a`
 		padding: 0 25px;
 
 		& svg {
-			width: 36px;
-			height: 36px;
+			width: 30px;
+			height: 30px;
 		}
 	}
 
 	@media screen and (max-width: 600px) {
 		height: 40px;
 		font-size: 14px;
+		padding: 0 20px;
 
 		& .text-button-desctop {
 			display: none;
@@ -469,7 +473,6 @@ const Menu = styled.div`
 	padding: 0 20px;
 	margin: 0 auto;
 	transition: height 300ms;
-	/* overflow: hidden; */
 
 	&.active {
 		margin-top: 100px;
@@ -487,7 +490,7 @@ const Menu = styled.div`
 	}
 
 	@media screen and (max-width: 600px) {
-		height: 77px;
+		height: 60px;
 		padding: 0 10px;
 
 		&.active {
@@ -549,15 +552,21 @@ const Link = styled.a`
 const Message = styled.p`
 	display: block;
 	font-family: 'Unbounded-Light';
-	font-size: 14px;
+	font-size: 20px;
 	text-align: left;
 	max-width: 350px;
 	margin: 0 auto;
 	margin-bottom: 25px;
+	text-transform: uppercase;
+
+	@media screen and (max-width: 1440px) {
+		font-size: 18px;
+	}
 
 	@media screen and (max-width: 600px) {
 		margin-left: 0;
 		align-items: self-start;
+		font-size: 14px;
 		padding-left: 25px;
 	}
 `

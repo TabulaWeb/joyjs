@@ -119,7 +119,12 @@ const Main = styled(ReactFastMarquee)`
 	}
 
 	@media screen and (max-width: 1440px) {
-		
+		font-size: 14px;
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 11px;
+		height: 40px;
 	}
 `
 

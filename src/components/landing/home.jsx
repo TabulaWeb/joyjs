@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import styled from '@emotion/styled'
 import { keyframes } from '@emotion/react'
+import CursorHover from '../../assets/image/cursor-hover.png'
 import ImageLoft from '../../assets/image/loft.png'
 import ImageSmile from '../../assets/image/smile.png'
 import ImageCode from '../../assets/image/code.png'
@@ -152,6 +153,7 @@ const Description = styled.h2`
 	}
 
 	& .beer-container:hover {
+		cursor: url(${CursorHover}), auto;
 		& .beer {
 			opacity: 1;
 			display: flex;
