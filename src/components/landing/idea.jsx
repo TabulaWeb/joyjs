@@ -174,15 +174,15 @@ const MascotImage = styled.img`
 	width: 600px;
 	height: auto;
 
-	@media screen and (max-width: 1400px) {
-		width: 500px;
+	@media screen and (max-width: 1440px) {
+		width: clamp(450px, 44vw, 590px);
 	}
 
 	@media screen and (max-width: 1024px) {
-		width: 350px;
+		width: clamp(325px, 41vw, 450px);
 	}
 
 	@media screen and (max-width: 600px) {
-		width: 200px;
+		width: clamp(180px, 45vw, 250px);
 	}
 `
