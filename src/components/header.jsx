@@ -100,6 +100,7 @@ export const Header = () => {
 						href='#location'
 						name='link to location'
 						aria-label='Read more location'
+						onClick={() => setIsOpen(prev => !prev)}
 					>Места встречи</Link>
 					{/* <Link
 						href='#organisatiors'
