@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import { IconEye } from '../../icons/icon-eye'
-import programsJson from './api/programs.json'
+import programsJson from './api/programs'
 import { timepad } from '../../../consts/urls'
 import imageParty from '../../../assets/image/drink.png'
 
