@@ -101,23 +101,23 @@ export const Header = () => {
 						name='link to location'
 						aria-label='Read more location'
 					>Места встречи</Link>
-					<Link
+					{/* <Link
 						href='#organisatiors'
 						name='link to organisatiors'
 						aria-label='Read more organisatiors'
-					>Организаторы</Link>
-					<Link
+					>Организаторы</Link> */}
+					{/* <Link
 						href='#community'
 						name='link to community'
 						aria-label='Read more community'
 						onClick={() => setIsOpen(prev => !prev)}
-					>Сообщество</Link>
-					<Link
+					>Сообщество</Link> */}
+					{/* <Link
 						href='#partners'
 						name='link to partners'
 						aria-label='Read more partners'
 						onClick={() => setIsOpen(prev => !prev)}
-					>Партнеры</Link>
+					>Партнеры</Link> */}
 					<Link
 						href='#support'
 						name='link to support'
@@ -472,15 +472,25 @@ const Menu = styled.div`
 	&.active {
 		margin-top: 100px;
 		transition: height 300ms;
-		height: calc(100dvh - 150px);
+		height: calc(100dvh - 190px);
 	}
 
 	@media screen and (max-width: 1440px) {
 		height: 85px;
+
+		&.active {
+			height: calc(100dvh - 190px);
+			margin-top: 85px;
+		}
 	}
 
 	@media screen and (max-width: 600px) {
 		height: 77px;
+		padding: 0 10px;
+
+		&.active {
+			margin-top: 77px;
+		}
 	}
 `
 
@@ -500,6 +510,11 @@ const MenuContent = styled.div`
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
 	}
+
+	@media screen and (max-width: 600px) {
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
 `
 
 const ListNav = styled.nav`
@@ -515,6 +530,8 @@ const ListNav = styled.nav`
 		margin-left: 0;
 		align-items: self-start;
 		padding-left: 25px;
+		max-width: none;
+		margin-bottom: auto;
 	}
 `
 
@@ -557,6 +574,7 @@ const Contacts = styled.div`
 		margin-left: 0;
 		align-items: self-start;
 		padding-left: 25px;
+		margin-bottom: 40px;
 	}
 `
 
