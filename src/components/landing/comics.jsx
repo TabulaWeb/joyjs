@@ -26,7 +26,6 @@ export const Comics = () => {
 					}}
 					onMouseMove={(ev) => {
 						if (!boundingRef.current) return;
-						console.log(ev)
 						const x = ev.clientX - boundingRef.current.left;
 						const y = ev.clientY - boundingRef.current.top;
 						const xPercentage = x / boundingRef.current.width;
@@ -65,7 +64,6 @@ export const Comics = () => {
 					}}
 					onMouseMove={(ev) => {
 						if (!boundingRef.current) return;
-						console.log(ev)
 						const x = ev.clientX - boundingRef.current.left;
 						const y = ev.clientY - boundingRef.current.top;
 						const xPercentage = x / boundingRef.current.width;
@@ -104,7 +102,6 @@ export const Comics = () => {
 					}}
 					onMouseMove={(ev) => {
 						if (!boundingRef.current) return;
-						console.log(ev)
 						const x = ev.clientX - boundingRef.current.left;
 						const y = ev.clientY - boundingRef.current.top;
 						const xPercentage = x / boundingRef.current.width;
