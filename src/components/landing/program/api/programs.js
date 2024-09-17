@@ -51,7 +51,7 @@ export const programs = [
 	},
 	{
 		"id": 5,
-		"time": "19:30 — 10:55",
+		"time": "19:30 — 19:55",
 		"title": "Перерыв",
 		"description": "Кофе-брейк",
 		"speaker" : {}
