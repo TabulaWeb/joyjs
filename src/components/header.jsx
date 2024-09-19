@@ -12,7 +12,7 @@ import Sketch from '../assets/image/sketch.png'
 import { telegram } from '../consts/urls'
 import CursorHover from '../assets/image/cursor-hover.png'
 
-export const Header = () => {
+const Header = () => {
 	const [isActive, setIsActive] = useState(false)
 	const [isMoreZero, setIsMoreZero] = useState(false)
 	const [isOpen, setIsOpen] = useState(false)
@@ -58,6 +58,41 @@ export const Header = () => {
 				}
 			</OpenBurder>
 			<IconLogo className='logo' />
+
+			<NavListDesctop>
+				<LinkDesctop
+					href='#about'
+					name='link to about'
+					aria-label='Read more about'
+				>
+					О митапе
+				</LinkDesctop>
+
+				<LinkDesctop
+					href='#program'
+					name='link to program'
+					aria-label='Read more programm'
+				>
+					Программа
+				</LinkDesctop>
+
+				<LinkDesctop
+					href='#location'
+					name='link to location'
+					aria-label='Read more location'
+				>
+					Места встречи
+				</LinkDesctop>
+
+				<LinkDesctop
+					href='#support'
+					name='link to support'
+					aria-label='Read more support'
+				>
+					Поддержка
+				</LinkDesctop>
+			</NavListDesctop>
+
 			<Register
 				isActive={isActive}
 				href={timepad}
@@ -72,7 +107,7 @@ export const Header = () => {
 				</TextButton>
 			</Register>
 		</Content>
-		<Menu className={isOpen ? 'active' : ''}>
+		<Menu className={isOpen ? 'active' : ''} data-more-zero={isMoreZero}>
 			<MenuContent className={isOpen ? 'active' : ''}>
 				<ListNav>
 					<IconCode 
@@ -103,23 +138,6 @@ export const Header = () => {
 						aria-label='Read more location'
 						onClick={() => setIsOpen(prev => !prev)}
 					>Места встречи</Link>
-					{/* <Link
-						href='#organisatiors'
-						name='link to organisatiors'
-						aria-label='Read more organisatiors'
-					>Организаторы</Link> */}
-					{/* <Link
-						href='#community'
-						name='link to community'
-						aria-label='Read more community'
-						onClick={() => setIsOpen(prev => !prev)}
-					>Сообщество</Link> */}
-					{/* <Link
-						href='#partners'
-						name='link to partners'
-						aria-label='Read more partners'
-						onClick={() => setIsOpen(prev => !prev)}
-					>Партнеры</Link> */}
 					<Link
 						href='#support'
 						name='link to support'
@@ -189,6 +207,7 @@ const Main = styled.header`
 const Content = styled.div`
 	position: relative;
 	display: flex;
+	justify-content: space-between;
 	z-index: 7;
 	align-items: center;
 	padding: 20px 15px 20px 35px;
@@ -209,6 +228,10 @@ const Content = styled.div`
 		& .logo {
 			width: 66px;
 		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		justify-content: flex-start;
 	}
 
 	@media screen and (max-width: 600px) {
@@ -360,6 +383,7 @@ const OpenBurder = styled.button`
 		width: 50px;
 		height: 50px;
 	}
+	display: none;
 
 	@media screen and (max-width: 1440px) {
 		margin-right: 35px;
@@ -371,6 +395,10 @@ const OpenBurder = styled.button`
 			width: 40px;
 			height: 40px;
 		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		display: block;
 	}
 
 	@media screen and (max-width: 600px) {
@@ -392,7 +420,6 @@ const Register = styled.a`
 	gap: 0 10px;
 	padding: 0 30px;
 	height: 60px;
-	margin-left: auto;
 	border: 1px solid #AFB2FF;
 	border-radius: 100px;
 	cursor: pointer;
@@ -432,6 +459,10 @@ const Register = styled.a`
 			width: 30px;
 			height: 30px;
 		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		margin-left: auto;
 	}
 
 	@media screen and (max-width: 600px) {
@@ -477,7 +508,11 @@ const Menu = styled.div`
 	&.active {
 		margin-top: 100px;
 		transition: height 300ms;
-		height: calc(100dvh - 190px);
+		height: calc(100dvh - 210px);
+
+		&[data-more-zero='true'] {
+			height: calc(100dvh - 140px);
+		}
 	}
 
 	@media screen and (max-width: 1440px) {
@@ -494,7 +529,7 @@ const Menu = styled.div`
 		padding: 0 10px;
 
 		&.active {
-			margin-top: 77px;
+			margin-top: 60px;
 		}
 	}
 `
@@ -537,6 +572,7 @@ const ListNav = styled.nav`
 		padding-left: 25px;
 		max-width: none;
 		margin-bottom: auto;
+		margin-top: 10dvh;
 	}
 `
 
@@ -547,6 +583,10 @@ const Link = styled.a`
 	text-decoration: none;
 	color: #ffffff;
 	cursor: url(${CursorHover}), auto;
+
+	@media screen and (max-width: 600px) {
+		font-size: 25px;
+	}
 `
 
 const Message = styled.p`
@@ -602,7 +642,7 @@ const Contact = styled.a`
 `
 
 const IconCode = styled.img`
-	top: 8vh;
+	top: -45px;
 	left: -140px;
 	width: 120px;
 	position: absolute;
@@ -623,3 +663,33 @@ const MascotImage = styled.img`
 		display: none;
 	}
 `
+
+const NavListDesctop = styled.nav`
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	gap: 75px;
+
+	@media screen and (max-width: 1440px) {
+		gap: 25px;
+	}
+
+	@media screen and (max-width: 1024px) {
+		display: none;
+	}
+`
+
+const LinkDesctop =	styled.a`
+	font-family: 'Unbounded-Medium';
+	font-size: 15px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #ffffff;
+	cursor: url(${CursorHover}), auto;
+
+	&:hover {
+		color: #AFB2FF;
+	}
+`
+
+export default Header

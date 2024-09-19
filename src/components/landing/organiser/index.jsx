@@ -4,7 +4,7 @@ import { organisers } from './api/organisers'
 import { IconTelegram } from '../../icons/icon-telegram'
 import CursorHover from '../../../assets/image/cursor-hover.png'
 
-export const Organiser = () => {
+const Organiser = () => {
 	return <Main className='container'>
 		<Title>Организаторы</Title>
 
@@ -36,7 +36,7 @@ export const Organiser = () => {
 
 						<Hobbys className='hobbys'>
 							{organiser.hobby.map((hobby, index) => (
-								<Hobby className='hobby'>{hobby()}</Hobby>	
+								<Hobby key={index} className='hobby'>{hobby()}</Hobby>	
 							))}
 						</Hobbys>
 					</AvatarContainer>
@@ -298,3 +298,5 @@ const Hobby = styled.div`
 		opacity: 0;
 	}
 `
+
+export default Organiser

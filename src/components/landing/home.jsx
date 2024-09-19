@@ -8,7 +8,7 @@ import ImageCode from '../../assets/image/code.png'
 import ImageMascot from '../../assets/image/mascot.png'
 import ImageCamera from '../../assets/image/camera.png'
 
-export const Home = () => {
+const Home = () => {
 	const [timer, setTimer] = useState(0)
 
 	useEffect(() => {
@@ -411,3 +411,4 @@ const IconCamera = styled.img`
 		width: clamp(90px, 24dvw, 140px);
 	}
 `
+export default Home

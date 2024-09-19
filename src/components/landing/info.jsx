@@ -4,7 +4,7 @@ import ImgPin from '../../assets/image/pin.png'
 import ImgPinActive from '../../assets/image/pin-active.png'
 import ReactFastMarquee from "react-fast-marquee";
 
-export const Info = () => {
+const Info = () => {
 	return <Main>
 		<Marquee>
 			<span>Интервью со спикерами</span>
@@ -88,3 +88,5 @@ const Pin = styled.img`
 	top: -28px;
 	right: 50px;
 `
+
+export default Info

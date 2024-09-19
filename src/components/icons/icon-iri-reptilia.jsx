@@ -1,7 +1,7 @@
 export const IconIriReptilia = () => {
 	return (
 		<svg width="121" height="140" viewBox="0 0 121 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_338_1482)">
+<g clipPath="url(#clip0_338_1482)">
 <path d="M56.9165 41.0783H56.9777C56.9581 41.0702 56.9361 41.0702 56.9165 41.0783Z" fill="#CCEE55"/>
 <path d="M53.6797 30.7723L53.8396 30.8476C53.7455 30.7817 53.7032 30.7676 53.6797 30.7723Z" fill="#CCEE55"/>
 <path d="M61.6577 45.0393C61.7424 45.0816 61.8553 45.1334 62.0434 45.2133L61.6577 45.0393Z" fill="#CCEE55"/>

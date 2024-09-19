@@ -4,7 +4,7 @@ import { IconTelegram } from '../icons/icon-telegram'
 import { timepad, telegram } from '../../consts/urls'
 import CursorHover from '../../assets/image/cursor-hover.png'
 
-export const IdeaDescription = () => {
+const IdeaDescription = () => {
 	return <Main className='container'>
 		<Description>
 			На нашем митапе тебя ждёт программа с четырьмя докладами от экспертов.<br/>
@@ -143,3 +143,5 @@ const Button = styled.a`
 		height: 54px;
 	}
 `
+
+export default IdeaDescription

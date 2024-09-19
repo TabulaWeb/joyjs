@@ -1,7 +1,7 @@
 export const IconAnnaCode = () => {
 	return (
 		<svg width="138" height="123" viewBox="0 0 138 123" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_754_1016)">
+<g clipPath="url(#clip0_754_1016)">
 <path d="M82.9485 113.227H83.0233C82.9986 113.222 82.9732 113.222 82.9485 113.227Z" fill="#CCEE55"/>
 <path d="M81.7053 108.824L81.7571 108.865C81.7399 108.83 81.7283 108.824 81.7053 108.824Z" fill="#CCEE55"/>
 <path d="M80.1282 99.0972V99.1605C80.1339 99.1317 80.1397 99.1145 80.1282 99.0972Z" fill="#CCEE55"/>

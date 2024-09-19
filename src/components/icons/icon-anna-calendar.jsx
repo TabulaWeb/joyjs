@@ -1,7 +1,7 @@
 export const IconAnnaCalendar = () => {
 	return (
 		<svg width="118" height="118" viewBox="0 0 118 118" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_756_3493)">
+<g clipPath="url(#clip0_756_3493)">
 <path d="M99.2218 36.1728C99.2262 36.1345 99.2262 36.0959 99.2218 36.0576C99.2112 36.0953 99.2112 36.1351 99.2218 36.1728Z" fill="#CCEE55"/>
 <path d="M90.665 35.434L90.7681 35.3794C90.7014 35.3855 90.6772 35.4097 90.665 35.434Z" fill="#CCEE55"/>
 <path d="M104.348 36.5239V36.5542H104.705L104.348 36.5239Z" fill="#CCEE55"/>

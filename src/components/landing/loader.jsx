@@ -2,8 +2,8 @@ import styled from '@emotion/styled'
 import { keyframes } from '@emotion/react'
 import ImageSmile from '../../assets/image/smile.png'
 
-export const Loader = ({ active }) => {
-	return <Main active={active}>
+export const Loader = () => {
+	return <Main>
 		<IconSmile 
 			src={ImageSmile}
 			alt='smile'
@@ -18,11 +18,9 @@ const Main = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	opacity: ${({ active }) => active ? 1 : 0};
-	position: fixed;
+	opacity: 1;
 	background-color: #080808;
 	transition: 300ms;
-	z-index: ${({ active }) => active ? 10 : -1};
 `
 
 const blob = keyframes`

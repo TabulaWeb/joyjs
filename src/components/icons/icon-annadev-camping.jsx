@@ -1,7 +1,7 @@
 export const IconAnnadevCamping = () => {
 	return (
 		<svg width="150" height="133" viewBox="0 0 150 133" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_740_3681)">
+<g clipPath="url(#clip0_740_3681)">
 <path d="M129.227 125.812C129.232 125.775 129.232 125.738 129.227 125.702C129.213 125.737 129.213 125.776 129.227 125.812Z" fill="#CCEE55"/>
 <path d="M118.136 125.729L118.256 125.664C118.136 125.68 118.136 125.702 118.136 125.729Z" fill="#CCEE55"/>
 <path d="M94.8687 126.734H95.0167C94.9509 126.723 94.907 126.712 94.8687 126.734Z" fill="#CCEE55"/>

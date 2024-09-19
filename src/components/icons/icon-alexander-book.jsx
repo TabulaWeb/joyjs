@@ -1,7 +1,7 @@
 export const IconAlexanderBook = () => {
 	return (
 		<svg width="140" height="148" viewBox="0 0 140 148" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_757_13325)">
+<g clipPath="url(#clip0_757_13325)">
 <path d="M81.684 113.709L81.6548 113.674C81.6548 113.674 81.6665 113.697 81.684 113.709Z" fill="#CCEE55"/>
 <path d="M81.1389 115.376C81.1596 115.383 81.1766 115.398 81.1863 115.417C81.1863 115.417 81.1863 115.388 81.1389 115.376Z" fill="#CCEE55"/>
 <path d="M85.074 111.115H84.9614C84.9975 111.13 85.038 111.13 85.074 111.115Z" fill="#CCEE55"/>

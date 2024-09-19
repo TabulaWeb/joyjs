@@ -8,7 +8,7 @@ import SlideLoft from '../../assets/image/slide-loft.jpg'
 import SlideBar from '../../assets/image/slide-bar.png'
 import CursorHover from '../../assets/image/cursor-hover.png'
 
-export const Location = () => {
+const Location = () => {
 	return <Main>
 		<Content className='container' id='location'>
 			<Title>Места встречи</Title>
@@ -135,6 +135,16 @@ const AreaTime = styled.div`
 	align-items: center;
 	gap: 15px;
 	margin: 25px 0;
+
+	@media screen and (max-width: 780px) {
+		gap: 10px;
+		justify-content: space-between;
+	}
+
+	@media screen and (max-width: 600px) {
+		gap: 15px;
+		justify-content: flex-start;
+	}
 `
 
 const Step = styled.p`
@@ -144,6 +154,9 @@ const Step = styled.p`
 	border: 1px solid #4B4547;
 	font-size: 15px;
 	width: 60px;
+	height: 60px;
+	min-height: 60px;
+	min-width: 60px;
 	height: 60px;
 	border-radius: 50%;
 	font-family: 'YapariTrial-Medium';
@@ -184,7 +197,8 @@ const Time = styled.p`
 	align-items: center;
 	height: 60px;
 	font-size: 15px;
-	padding: 0 30px;
+	/* padding: 0 30px; */
+	width: 212px;
 	border-radius: 100px;
 	background-color: #212121;
 	border: 1px solid #4B4547;
@@ -249,6 +263,10 @@ const AreaAddress = styled.p`
 
 const AreaLinks = styled.nav`
 	margin-left: 20px;
+
+	@media screen and (max-width: 780px) {
+		margin-left: 0;
+	}
 `
 
 const Link = styled.a`
@@ -290,6 +308,10 @@ const ImageBar = styled.img`
 const TooltipContainer = styled.span`
 	margin-left: 20px;
 	cursor: url(${CursorHover}), auto;
+
+	@media screen and (max-width: 780px) {
+		margin-left: 0;
+	}
 `
 
 const TooltipIcon = styled(IconAttention)`
@@ -311,3 +333,5 @@ const StyleTooltip = styled(Tooltip)`
 		height: 12px!important;
 	}
 `
+
+export default Location

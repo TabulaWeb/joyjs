@@ -1,7 +1,7 @@
 export const IconTabulaCup = () => {
 	return (
 		<svg width="140" height="108" viewBox="0 0 140 108" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_328_27121)">
+<g clipPath="url(#clip0_328_27121)">
 <path d="M92.6019 31.3468C92.5957 31.3165 92.5845 31.2874 92.5688 31.2607C92.5734 31.2915 92.5847 31.3209 92.6019 31.3468Z" fill="#CCEE55"/>
 <path d="M86.1671 34.4542L86.2201 34.3748C86.1737 34.4079 86.1605 34.4277 86.1671 34.4542Z" fill="#CCEE55"/>
 <path d="M71.6104 38.2559H71.6964C71.6567 38.236 71.6302 38.236 71.6104 38.2559Z" fill="#CCEE55"/>

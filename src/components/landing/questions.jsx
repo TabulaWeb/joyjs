@@ -3,7 +3,7 @@ import { IconTelegram } from '../icons/icon-telegram'
 import { telegram } from '../../consts/urls'
 import CursorHover from '../../assets/image/cursor-hover.png'
 
-export const Questions = () => {
+const Questions = () => {
 	return <Main
 		className='container'
 		id='support'
@@ -107,3 +107,5 @@ const Button = styled.a`
 		font-size: 14px;
 	}
 `
+
+export default Questions

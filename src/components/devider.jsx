@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import { IconMicro } from './icons/icon-micro'
 import CursorHover from '../assets/image/cursor-hover.png'
 
-export const Devider = () => {
+const Devider = () => {
 	return <Main 
 		href='#program'
 		name='link to program'
@@ -51,3 +51,5 @@ const LinkText = styled.span`
 		font-size: 14px;
 	}
 `
+
+export default Devider

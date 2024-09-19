@@ -1,7 +1,7 @@
 export const IconAlexanderMap = () => {
 	return (
 		<svg width="115" height="139" viewBox="0 0 115 139" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_759_3920)">
+<g clipPath="url(#clip0_759_3920)">
 <path d="M32.5908 122.67C32.6073 122.693 32.6275 122.713 32.6507 122.729C32.6382 122.703 32.6171 122.682 32.5908 122.67Z" fill="#CCEE55"/>
 <path d="M37.4214 111.563V111.731C37.4687 111.624 37.4687 111.584 37.4214 111.563Z" fill="#CCEE55"/>
 <path d="M41.333 85.4214L41.4411 85.5958C41.4119 85.5337 41.3757 85.4752 41.333 85.4214Z" fill="#CCEE55"/>

@@ -5,7 +5,7 @@ import { IconEmail } from '../icons/icon-email'
 import { telegram } from '../../consts/urls'
 import CursorHover from '../../assets/image/cursor-hover.png'
 
-export const Footer = () => {
+const Footer = () => {
 	return (
 		<Main>
 			<IconLogo 
@@ -115,3 +115,5 @@ const Link = styled.a`
 		height: 36px;
 	}
 `
+
+export default Footer

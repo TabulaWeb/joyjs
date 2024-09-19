@@ -4,7 +4,7 @@ import { IconArrow } from '../icons/icon-arrow'
 import { telegram } from '../../consts/urls'
 import CursorHover from '../../assets/image/cursor-hover.png'
 
-export const InfoContact = () => {
+const InfoContact = () => {
 	return <Main className='container'>
 		<Description>
 			Знакомство со спикерами и больше инфы о митапе
@@ -136,3 +136,5 @@ const Link = styled.a`
 		}
 	}
 `
+
+export default InfoContact

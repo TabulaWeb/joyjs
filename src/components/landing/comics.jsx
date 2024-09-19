@@ -7,7 +7,7 @@ import TwoComics from '../../assets/image/two-comics.png'
 import ThreeComics from '../../assets/image/three-comics.png'
 import CursorHover from '../../assets/image/cursor-hover.png'
 
-export const Comics = () => {
+const Comics = () => {
 	const boundingRef = useRef(null);
 	return <Main className='container'>
 		<Images>
@@ -221,3 +221,5 @@ const Button = styled.a`
 		}
 	}
 `
+
+export default Comics

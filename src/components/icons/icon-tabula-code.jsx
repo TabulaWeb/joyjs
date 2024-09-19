@@ -1,7 +1,7 @@
 export const IconTabulaCode = () => {
 	return (
 		<svg width="117" height="153" viewBox="0 0 117 153" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_326_23707)">
+<g clipPath="url(#clip0_326_23707)">
 <path d="M36.9839 136.574C37.005 136.581 37.0281 136.581 37.0492 136.574H36.9839Z" fill="#CCEE55"/>
 <path d="M36.7983 128.351L36.8447 128.443C36.8314 128.351 36.8182 128.351 36.7983 128.351Z" fill="#CCEE55"/>
 <path d="M35.3154 110.971V111.077C35.3199 111.042 35.3199 111.006 35.3154 110.971Z" fill="#CCEE55"/>

@@ -1,7 +1,7 @@
 export const IconVcheslavRap = () => {
 	return (
 		<svg width="120" height="127" viewBox="0 0 120 127" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_748_9879)">
+<g clipPath="url(#clip0_748_9879)">
 <path d="M1.35119 12.7883L1.30688 12.7588C1.31058 12.7772 1.32904 12.7846 1.35119 12.7883Z" fill="#CCEE55"/>
 <path d="M2.06372 9.20732H2.08957V9.11133L2.06372 9.20732Z" fill="#CCEE55"/>
 <path d="M0.627657 17.7314V17.7019C0.627657 17.7019 0.61289 17.724 0.627657 17.7314Z" fill="#CCEE55"/>

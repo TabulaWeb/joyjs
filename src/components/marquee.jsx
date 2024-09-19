@@ -5,7 +5,7 @@ import { IconSmile } from './icons/icon-smile';
 import { telegram } from '../consts/urls';
 import CursorHover from '../assets/image/cursor-hover.png'
 
-export const Marquee = () => {
+const Marquee = () => {
 	return <Main pauseOnHover>
 		<MarqueeItem>
 			<p>{'/  !  /'}</p>
@@ -133,3 +133,5 @@ const MarqueeItem = styled.div`
 	flex-direction: row;
 	align-items: center;
 `
+
+export default Marquee

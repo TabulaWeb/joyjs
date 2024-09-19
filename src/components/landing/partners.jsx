@@ -7,7 +7,7 @@ import { IconEmail } from '../icons/icon-email'
 import { telegram } from '../../consts/urls'
 import CursorHover from '../../assets/image/cursor-hover.png'
 
-export const Partners = () => {
+const Partners = () => {
 	return <Main>
 		<Container className='container' id='partners'>
 			<Title>Партнеры</Title>
@@ -263,3 +263,5 @@ const Link = styled.a`
 		}
 	}
 `
+
+export default Partners

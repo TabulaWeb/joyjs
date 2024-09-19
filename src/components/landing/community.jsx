@@ -4,9 +4,19 @@ import { IconSmileOutline } from '../icons/icon-smile-outline';
 import { telegram } from '../../consts/urls'
 import CursorHover from '../../assets/image/cursor-hover.png'
 
-export const Community = () => {
+const Community = () => {
 	return <>
 		<Marquee>
+			<span>Сообщество Joy.JS</span>
+			<IconSmileOutline />
+			<span>Сообщество Joy.JS</span>
+			<IconSmileOutline />
+			<span>Сообщество Joy.JS</span>
+			<IconSmileOutline />
+			<span>Сообщество Joy.JS</span>
+			<IconSmileOutline />
+			<span>Сообщество Joy.JS</span>
+			<IconSmileOutline />
 			<span>Сообщество Joy.JS</span>
 			<IconSmileOutline />
 			<span>Сообщество Joy.JS</span>
@@ -53,6 +63,10 @@ const Marquee = styled(ReactFastMarquee)`
 	& .rfm-initial-child-container {
 		gap: 100px;
 	}
+
+	@media screen and (max-width: 600px) {
+		gap: 50px;
+	}
 `
 
 const Description = styled.p`
@@ -87,3 +101,5 @@ const Description = styled.p`
 		text-align: start;
 	}
 `
+
+export default Community
