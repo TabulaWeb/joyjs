@@ -1,10 +1,10 @@
 import styled from '@emotion/styled'
+import { keyframes } from '@emotion/react'
 import { organisers } from './api/organisers'
 import { IconTelegram } from '../../icons/icon-telegram'
 import CursorHover from '../../../assets/image/cursor-hover.png'
 
 export const Organiser = () => {
-
 	return <Main className='container'>
 		<Title>Организаторы</Title>
 
@@ -33,6 +33,12 @@ export const Organiser = () => {
 								color='#AFB2FF'
 							/>
 						</Link>
+
+						<Hobbys className='hobbys'>
+							{organiser.hobby.map((hobby, index) => (
+								<Hobby className='hobby'>{hobby()}</Hobby>	
+							))}
+						</Hobbys>
 					</AvatarContainer>
 					
 					<Name>{ organiser.name }</Name>
@@ -43,6 +49,16 @@ export const Organiser = () => {
 		</Content>
 	</Main>
 }
+
+const hobbyAnimation = keyframes`
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+`
 
 const Main = styled.section`
 	margin-bottom: 250px;
@@ -100,6 +116,49 @@ const AvatarContainer = styled.div`
 	border-radius: 50%;
 	margin-bottom: 25px;
 
+	&:hover {
+		& .hobbys {
+			opacity: 1;
+
+			& .hobby:nth-child(1) {
+				animation: ${hobbyAnimation} 1s ease;
+				& svg {
+					animation: ${hobbyAnimation} 600ms ease;
+				}
+			}
+
+			& .hobby:nth-child(2) {
+				animation: ${hobbyAnimation} 1s ease;
+				& svg {
+					animation: ${hobbyAnimation} 600ms ease 600ms;
+				}
+			}
+
+			& .hobby:nth-child(3) {
+				animation: ${hobbyAnimation} 1s ease;
+				& svg {
+					animation: ${hobbyAnimation} 600ms ease 1200ms;
+				}
+			}
+
+			& .hobby:nth-child(4) {
+				animation: ${hobbyAnimation} 1s ease;
+				& svg {
+					animation: ${hobbyAnimation} 600ms ease 1800ms;
+				}
+			}
+
+			& .hobby:nth-child(5) {
+				animation: ${hobbyAnimation} 1s ease;
+				& svg {
+					animation: ${hobbyAnimation} 600ms ease 2400ms;
+				}
+			}
+		}
+
+
+	}
+
 	@media screen and (max-width: 1440px) {
 		width: 230px;
 		height: 230px;
@@ -118,8 +177,6 @@ const Avatar = styled.img`
 	height: 300px;
 	object-fit: cover;
 	border-radius: 50%;
-	
-
 
 	@media screen and (max-width: 1440px) {
 		width: 230px;
@@ -143,6 +200,7 @@ const Link = styled.a`
 	width: 65px;
 	height: 65px;
 	border-radius: 50%;
+	z-index: 2;
 	background-color: #4B4547;
 	text-decoration: none;
 	transition: 300ms;
@@ -213,5 +271,30 @@ const Role = styled.p`
 
 	@media screen and (max-width: 600px) {
 		font-size: 11px;
+	}
+`
+
+const Hobbys = styled.div`
+	background-color: #0808087f;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+	opacity: 0;
+`
+
+const Hobby = styled.div`
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& svg {
+		position: absolute;
+		opacity: 0;
 	}
 `

@@ -1,4 +1,4 @@
-export const timepad = 'https://joyjs.timepad.ru/event/3041293/'
+export const timepad = 'https://afisha.timepad.ru/event/3041293'
 export const telegram = {
 	chennal: 'https://t.me/joyjs_conf',
 	['alexey-tabula']: 'https://t.me/webtabula',

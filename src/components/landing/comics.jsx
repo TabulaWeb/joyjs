@@ -1,9 +1,11 @@
 import { useRef } from "react";
 import styled from '@emotion/styled'
+import { timepad } from '../../consts/urls'
 import { IconEye } from '../icons/icon-eye'
 import OneComics from '../../assets/image/one-comics.png'
 import TwoComics from '../../assets/image/two-comics.png'
 import ThreeComics from '../../assets/image/three-comics.png'
+import CursorHover from '../../assets/image/cursor-hover.png'
 
 export const Comics = () => {
 	const boundingRef = useRef(null);
@@ -125,7 +127,7 @@ export const Comics = () => {
 		</Images>
 		
 		<Button
-				href='/'
+				href={timepad}
 				name='link to register'
 				aria-label='Go to register page'
 			>
@@ -186,9 +188,9 @@ const Button = styled.a`
 	background-color: #AFB2FF;
 	border-radius: 100px;
 	border: none;
-	cursor: pointer;
 	text-decoration: none;
 	transition: 300ms;
+	cursor: url(${CursorHover}), auto;
 
 	&:hover {
 		transition: 300ms;
