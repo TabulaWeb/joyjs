@@ -1,5 +1,5 @@
 import { Suspense, lazy } from 'react';
-import { Loading } from './components/loading';
+import { Loading } from './loading';
 
 const Marquee = lazy(() => import('./components/marquee'));
 const Header = lazy(() => import('./components/header'));
