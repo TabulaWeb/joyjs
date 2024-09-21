@@ -21,7 +21,7 @@ const Info = () => {
 					alt='sticker'
 					loading='lazy'
 					decoding='async'
-					role='presentation'
+					role='img'
 				/>
 
 				<ActivePin
@@ -29,14 +29,14 @@ const Info = () => {
 					alt='pin'
 					loading='lazy'
 					decoding='async'
-					role='presentation'
+					role='img'
 				/>
 				<Pin
 					src={ImgPin}
 					alt='pin'
 					loading='lazy'
 					decoding='async'
-					role='presentation'
+					role='img'
 				/>
 			</Content>
 		</Sticker>
@@ -51,7 +51,7 @@ const Main = styled.section`
 `
 
 const Marquee = styled(ReactFastMarquee)`
-	font-family: 'Unbounded-ExtraLight';
+	font-family: var(--font-unbounded-extraLight);
 	font-size: 7vw;
 	gap: 200px;
 `

@@ -8,7 +8,6 @@ import { IconAttention } from '../icons/icon-attention';
 import { IconVk } from '../icons/icon-vk'
 import SlideLoft from '../../../assets/image/slide-loft.jpg'
 import SlideBar from '../../../assets/image/slide-bar.png'
-import CursorHover from '../../../assets/image/cursor-hover.png'
 
 const Location = () => {
 	return <Main>
@@ -96,7 +95,7 @@ const Main = styled.section`
 const Content = styled.div``
 
 const Title = styled.h2`
-	font-family: 'Unbounded-Regular';
+	font-family: var(--font-unbounded-regular);
 	font-size: 80px;
 	margin-bottom: 100px;
 
@@ -161,7 +160,7 @@ const Step = styled.p`
 	min-width: 60px;
 	height: 60px;
 	border-radius: 50%;
-	font-family: 'YapariTrial-Medium';
+	font-family: var(--font-yaparitrial-medium);
 
 	&.dashed {
 		position: relative;
@@ -204,7 +203,7 @@ const Time = styled.p`
 	border-radius: 100px;
 	background-color: #212121;
 	border: 1px solid #4B4547;
-	font-family: 'YapariTrial-Medium';
+	font-family: var(--font-yaparitrial-medium);
 
 	&.dashed {
 		position: relative;
@@ -239,7 +238,7 @@ const Time = styled.p`
 const AreaDescription = styled.div``
 
 const AreaTitle = styled.p`
-	font-family: 'Unbounded-Light';
+	font-family: var(--font-unbounded-light);
 	font-size: 25px;
 	margin-bottom: 25px;
 
@@ -250,12 +249,11 @@ const AreaTitle = styled.p`
 
 const AreaAddress = styled.p`
 	font-size: 15px;
-	font-family: 'Unbounded-Regular';
+	font-family: var(--font-unbounded-regular);
 	
 	& a {
 		color: #AFB2FF;
 		text-decoration: none;
-		cursor: url(${CursorHover}), auto;
 	}
 
 	@media screen and (max-width: 1440px) {
@@ -273,7 +271,6 @@ const AreaLinks = styled.nav`
 
 const Link = styled.a`
 	text-decoration: none;
-	cursor: url(${CursorHover}), auto;
 `
 
 const Slide = styled(SwiperSlide)`
@@ -309,7 +306,6 @@ const ImageBar = styled(Image)`
 
 const TooltipContainer = styled.span`
 	margin-left: 20px;
-	cursor: url(${CursorHover}), auto;
 
 	@media screen and (max-width: 780px) {
 		margin-left: 0;
@@ -321,7 +317,7 @@ const TooltipIcon = styled(IconAttention)`
 
 const StyleTooltip = styled(Tooltip)`
 	max-width: 225px!important;
-	font-family: 'Unbounded-Regular';
+	font-family: var(--font-unbounded-regular);
 	font-size: 11px!important;
 	color: #ffffff!important;
 	padding: 15px!important;

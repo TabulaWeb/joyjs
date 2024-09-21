@@ -3,7 +3,6 @@ import ReactFastMarquee from "react-fast-marquee";
 
 import { IconSmile } from '../icons/icon-smile';
 import { telegram } from '../../consts/urls';
-import CursorHover from '@/assets/image/cursor-hover.png'
 
 const Marquee = () => {
 	return <Main pauseOnHover>
@@ -91,7 +90,7 @@ const Main = styled(ReactFastMarquee)`
 	height: 45px;
 	gap: 0 50px;
 	background-color: #212121;
-	font-family: 'Unbounded-Light';
+	font-family: var(--font-unbounded-light);
 	background-color: #212121;
 	font-size: 15px;
 
@@ -110,9 +109,8 @@ const Main = styled(ReactFastMarquee)`
 				& a {
 					margin-top: 3px;
 					color: #CCEE55;
-					font-family: 'YapariTrial-Medium';
+					font-family: var(--font-yaparitrial-medium);
 					text-decoration: none;
-					cursor: url(${CursorHover}), auto;
 				}
 			}
 		}

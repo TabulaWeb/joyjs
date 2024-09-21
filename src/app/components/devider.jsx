@@ -1,6 +1,5 @@
 import { styled } from '@linaria/react'
 import { IconMicro } from './icons/icon-micro'
-import CursorHover from '../../assets/image/cursor-hover.png'
 
 const Devider = () => {
 	return <Main 
@@ -24,7 +23,6 @@ const Main = styled.a`
 	border-bottom: 1px solid #4b4547;
 	margin-bottom: 250px;
 	text-decoration: none;
-	cursor: url(${CursorHover}), auto;
 
 	@media screen and (max-width: 1440px) {
 		height: 60px;
@@ -42,7 +40,7 @@ const Main = styled.a`
 `
 
 const LinkText = styled.span`
-	font-family: 'Unbounded-Regular';
+	font-family: var(--font-unbounded-regular);
 	font-size: 15px;
 	color: #ffffff;
 	font-weight: 300;

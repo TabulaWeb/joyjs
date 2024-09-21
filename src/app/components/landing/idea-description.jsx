@@ -2,7 +2,6 @@ import { styled } from '@linaria/react'
 import { IconEye } from '../icons/icon-eye'
 import { IconTelegram } from '../icons/icon-telegram'
 import { timepad, telegram } from '../../consts/urls'
-import CursorHover from '../../../assets/image/cursor-hover.png'
 
 const IdeaDescription = () => {
 	return <Main className='container'>
@@ -55,7 +54,7 @@ const Main = styled.section`
 `
 
 const Description = styled.p`
-	font-family: 'Unbounded-Regular';
+	font-family: var(--font-unbounded-regular);
 	font-size: 15px;
 	text-align: center;
 	margin-bottom: 25px;
@@ -105,7 +104,7 @@ const Button = styled.a`
 	border: none;
 	font-weight: 500;
 	font-size: 15px;
-	font-family: 'Unbounded-Medium';
+	font-family: var(--font-unbounded-medium);
 	background-color: ${({ isFilled }) => isFilled ? '#AFB2FF' : '#212121'};
 	color: ${({ isFilled }) => isFilled ? '#212121' : '#AFB2FF'};
 	cursor: pointer;
@@ -113,7 +112,6 @@ const Button = styled.a`
 	transition: 300ms;
 
 	border: ${({ isFilled }) => isFilled ? '' : '1px solid #AFB2FF'};
-	cursor: url(${CursorHover}), auto;
 	
 	&:hover {
 		transition: 300ms;

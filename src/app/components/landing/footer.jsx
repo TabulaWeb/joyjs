@@ -3,7 +3,6 @@ import { IconLogo } from '../icons/icon-logo'
 import { IconTelegram } from '../icons/icon-telegram'
 import { IconEmail } from '../icons/icon-email'
 import { telegram } from '../../consts/urls'
-import CursorHover from '../../../assets/image/cursor-hover.png'
 
 const Footer = () => {
 	return (
@@ -63,7 +62,7 @@ const Main = styled.footer`
 `
 
 const Description = styled.p`
-	font-family: 'Unbounded-Light';
+	font-family: var(--font-unbounded-light);
 	font-size: 20px;
 	margin-left: 73px;
 	line-height: 30px;
@@ -103,12 +102,11 @@ const Link = styled.a`
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	font-family: 'Unbounded-Regular';
+	font-family: var(--font-unbounded-regular);
 	font-size: 14px;
 	cursor: pointer;
 	text-decoration: none;
 	color: #ffffff;
-	cursor: url(${CursorHover}), auto;
 
 	& svg {
 		width: 36px;

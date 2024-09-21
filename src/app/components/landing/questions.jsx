@@ -1,7 +1,6 @@
 import { styled } from '@linaria/react'
 import { IconTelegram } from '../icons/icon-telegram'
 import { telegram } from '../../consts/urls'
-import CursorHover from '../../../assets/image/cursor-hover.png'
 
 const Questions = () => {
 	return <Main
@@ -42,7 +41,7 @@ const Title = styled.h2`
 	text-align: center;
 	margin-bottom: 75px;
 	font-size: 80px;
-	font-family: 'Unbounded-Regular';
+	font-family: var(--font-unbounded-regular);
 
 	@media screen and (max-width: 1024px) {
 		font-size: 50px;
@@ -56,7 +55,7 @@ const Title = styled.h2`
 
 const Description = styled.p`
 	font-size: 15px;
-	font-family: 'Unbounded-Regular';
+	font-family: var(--font-unbounded-regular);
 	margin-bottom: 25px;
 	text-align: center;
 
@@ -79,12 +78,11 @@ const Button = styled.a`
 	cursor: pointer;
 	color: #AFB2FF;
 	background: #212121;
-	font-family: 'Unbounded-Medium';
+	font-family: var(--font-unbounded-medium);
 	font-size: 15px;
 	text-decoration: none;
 	transition: 300ms;
 	border: 1px solid #AFB2FF;
-	cursor: url(${CursorHover}), auto;
 
 	& svg path {
 		fill: #AFB2FF;

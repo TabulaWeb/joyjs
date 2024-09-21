@@ -12,7 +12,6 @@ import { IconEmail } from './icons/icon-email'
 import ImageCode from '../../assets/image/code.png'
 import Sketch from '../../assets/image/sketch.png'
 import { telegram } from '../consts/urls'
-import CursorHover from '../../assets/image/cursor-hover.png'
 
 const Header = () => {
 	const [isActive, setIsActive] = useState(false)
@@ -114,6 +113,7 @@ const Header = () => {
 				<ListNav>
 					<IconCode 
 						src={ImageCode}
+						role='img'
 						alt='code'
 						loading='lazy'
 						width={140}
@@ -121,6 +121,7 @@ const Header = () => {
 					/>
 					<MascotImage
 						src={Sketch}
+						role='img'
 						alt='mascot'
 						loading='lazy'
 						width={240}
@@ -382,7 +383,6 @@ const OpenBurder = styled.button`
 	width: 60px;
 	height: 60px;
 	margin-right: 40px;
-	cursor: url(${CursorHover}), auto;
 
 	& svg {
 		width: 50px;
@@ -432,7 +432,6 @@ const Register = styled.a`
 	transition: 300ms;
 	background-color: ${({ isActive }) => isActive ? '#AFB2FF' : ''};
 	color:${({ isActive }) => isActive ? '#212121' : '#AFB2FF'};
-	cursor: url(${CursorHover}), auto;
 
 	& svg path {
 		fill:${({ isActive }) => isActive ? '#212121' : '#AFB2FF'};
@@ -491,7 +490,7 @@ const Register = styled.a`
 `
 
 const TextButton = styled.span`
-	font-family: 'Unbounded-Medium';
+	font-family: var(--font-unbounded-medium);
 	font-size: 15px;
 
 	@media screen and (max-width: 1440px) {
@@ -582,12 +581,11 @@ const ListNav = styled.nav`
 `
 
 const Link = styled.a`
-	font-family: 'Unbounded-Regular';
+	font-family: var(--font-unbounded-regular);
 	font-size: 30px;
 	cursor: pointer;
 	text-decoration: none;
 	color: #ffffff;
-	cursor: url(${CursorHover}), auto;
 
 	@media screen and (max-width: 600px) {
 		font-size: 25px;
@@ -596,7 +594,7 @@ const Link = styled.a`
 
 const Message = styled.p`
 	display: block;
-	font-family: 'Unbounded-Light';
+	font-family: var(--font-unbounded-light);
 	font-size: 20px;
 	text-align: left;
 	max-width: 350px;
@@ -635,7 +633,7 @@ const Contacts = styled.div`
 `
 
 const Contact = styled.a`
-	font-family: 'Unbounded-Regular';
+	font-family: var(--font-unbounded-regular);
 	font-size: 14px;
 	display: flex;
 	align-items: center;
@@ -643,7 +641,6 @@ const Contact = styled.a`
 	cursor: pointer;
 	text-decoration: none;
 	color: #ffffff;
-	cursor: url(${CursorHover}), auto;
 `
 
 const IconCode = styled(Image)`
@@ -683,12 +680,11 @@ const NavListDesctop = styled.nav`
 `
 
 const LinkDesctop =	styled.a`
-	font-family: 'Unbounded-Medium';
+	font-family: var(--font-unbounded-medium);
 	font-size: 15px;
 	cursor: pointer;
 	text-decoration: none;
 	color: #ffffff;
-	cursor: url(${CursorHover}), auto;
 
 	&:hover {
 		color: #AFB2FF;

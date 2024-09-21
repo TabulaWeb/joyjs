@@ -5,7 +5,6 @@ import { IconEye } from '../../icons/icon-eye'
 import { timepad } from '../../../consts/urls'
 import imageParty from '../../../../assets/image/drink.png'
 import { programs } from './api/programs'
-import CursorHover from '../../../../assets/image/cursor-hover.png'
 
 const Program = () => {
 	return <Main className='container' id='program'>
@@ -21,7 +20,7 @@ const Program = () => {
 						height={140}
 						loading='lazy'
 						decoding='async'
-						role='presentation'
+						role='img'
 					/>}
 				</Time>
 				<Content>
@@ -43,17 +42,16 @@ const Program = () => {
 								height={95}
 								loading='lazy'
 								decoding='async'
-								role='presentation'
+								role='img'
 							/>
 							<Logo
-								isDark={program.speaker.name === 'Тимур Гафиулин'}
 								alt='logo'
 								src={program.speaker.company}
 								width={30}
 								height={30}
 								loading='lazy'
 								decoding='async'
-								role='presentation'
+								role='img'
 							/>
 						</Avatar>
 						<More>
@@ -94,7 +92,7 @@ const Main = styled.section`
 
 const SecTitle = styled.h2`
 	font-size: 80px;
-	font-family: 'Unbounded-Regular';
+	font-family: var(--font-unbounded-regular);
 	margin-bottom: 90px;
 
 	@media screen and (max-width: 1440px) {
@@ -152,7 +150,7 @@ const Time = styled.div`
 	display: flex;
 	font-size: 15px;
 	position: relative;
-	font-family: 'YapariTrial-Medium';
+	font-family: var(--font-yaparitrial-medium);
 	justify-content: center;
 	align-items: center;
 	position: relative;
@@ -242,7 +240,7 @@ const Content = styled.div`
 
 const Title = styled.p`
 	text-transform: uppercase;
-	font-family: 'Unbounded-Light';
+	font-family: var(--font-unbounded-light);
 	margin-bottom: ${({ hasMargin }) => hasMargin ? 25 : 0}px;
 	font-size: 25px;
 
@@ -261,12 +259,11 @@ const Description = styled.p`
 	font-weight: 300;
 	line-height: 22px;
 	font-size: 15px;
-	font-family: 'Unbounded-Regular';
+	font-family: var(--font-unbounded-regular);
 
 	& a {
 		color: #AFB2FF;
 		text-decoration: none;
-		cursor: url(${CursorHover}), auto;
 	}
 
 	@media screen and (max-width: 1440px) {
@@ -308,7 +305,6 @@ const Logo = styled(Image)`
 	bottom: -5px;
 	right: -5px;
 	border-radius: 8px;
-	background: ${({ isDark }) => isDark ? '#1e1e1e' : '#ffffff'};
 `
 
 const More = styled.div`
@@ -318,7 +314,7 @@ const More = styled.div`
 `
 
 const Name = styled.p`
-	font-family: 'Unbounded-Medium';
+	font-family: var(--font-unbounded-medium);
 	font-size: 15px;
 
 	@media screen and (max-width: 1440px) {
@@ -331,7 +327,7 @@ const Name = styled.p`
 `
 
 const SubInfo = styled.p`
-	font-family: 'Unbounded-Regular';
+	font-family: var(--font-unbounded-regular);
 	font-size: 15px;
 
 	@media screen and (max-width: 1440px) {
@@ -354,7 +350,7 @@ const Button = styled.a`
 	height: 110px;
 	border-radius: 100px;
 	font-size: 25px;
-	font-family: 'Unbounded-Medium';
+	font-family: var(--font-unbounded-medium);
 	margin: 0 auto;
 	margin-top: 65px;
 	border: none;
@@ -362,7 +358,6 @@ const Button = styled.a`
 	cursor: pointer;
 	text-decoration: none;
 	transition: 300ms;
-	cursor: url(${CursorHover}), auto;
 
 	&:hover {
 		transition: 300ms;

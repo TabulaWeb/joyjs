@@ -10,6 +10,7 @@ export default function Loading() {
 				src={ImageSmile}
 				alt='smile'
 				loading='lazy'
+				role='img'
 				width={200}
 				height={200}
 			/>

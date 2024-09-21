@@ -7,7 +7,6 @@ import LogoLoft from '../../../assets/image/loft-logo.png'
 import { IconTelegram } from '../icons/icon-telegram'
 import { IconEmail } from '../icons/icon-email'
 import { telegram } from '../../consts/urls'
-import CursorHover from '../../../assets/image/cursor-hover.png'
 
 const Partners = () => {
 	return <Main>
@@ -88,7 +87,7 @@ const Container = styled.div`
 `
 
 const Title = styled.div`
-	font-family: 'Unbounded-Regular';
+	font-family: var(--font-unbounded-regular);
 	font-size: 80px;
 
 	@media screen and (max-width: 1024px) {
@@ -185,7 +184,7 @@ const Links = styled.nav`
 	& span {
 		font-size: 20px;
 		text-transform: uppercase;
-		font-family: 'Unbounded-Light';
+		font-family: var(--font-unbounded-light);
 	}
 
 	@media screen and (max-width: 1440px) {
@@ -217,7 +216,6 @@ const Link = styled.a`
 	cursor: pointer;
 	text-decoration: none;
 	transition: 300ms;
-	cursor: url(${CursorHover}), auto;
 
 	& svg {
 		width: 100px;

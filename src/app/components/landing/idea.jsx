@@ -58,7 +58,7 @@ const Idea = () => {
 			alt='mascot'
 			loading='lazy'
 			decoding='async'
-			role='presentation'
+			role='img'
 			width={600}
 			height={600}
 		/>
@@ -116,7 +116,7 @@ const Keywords = styled.div`
 `
 
 const Keyword = styled.p`
-	font-family: 'Unbounded-ExtraLight';
+	font-family: var(--font-unbounded-extraLight);
 	position: relative;
 `
 

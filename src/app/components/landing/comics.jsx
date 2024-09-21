@@ -7,7 +7,6 @@ import { IconEye } from '../icons/icon-eye'
 import OneComics from '../../../assets/image/one-comics.png'
 import TwoComics from '../../../assets/image/two-comics.png'
 import ThreeComics from '../../../assets/image/three-comics.png'
-import CursorHover from '../../../assets/image/cursor-hover.png'
 
 const Comics = () => {
 	const boundingRef = useRef(null);
@@ -45,7 +44,14 @@ const Comics = () => {
 					className="group relative grid w-[260px] grid-rows-[200px_120px_40px] rounded-md bg-[#FFFEEC] p-4 text-[#01A977] transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))_scale(1)]"
 				>
           <div className="ml-auto w-12">
-						<ImageSlide src={OneComics} alt='вторая картинка комикса' loading='lazy'/>
+						<ImageSlide
+							width={565}
+							height={565}
+							role='img'
+							src={OneComics} 
+							alt='вторая картинка комикса' 
+							loading='lazy'
+						/>
           </div>
         <div className="pointer-events-none absolute inset-0 group-hover:bg-[radial-gradient(at_var(--x)_var(--y),rgba(255,255,255,0.3)_20%,transparent_80%)]" />
 				</div>
@@ -83,7 +89,14 @@ const Comics = () => {
 					className="group relative grid w-[260px] grid-rows-[200px_120px_40px] rounded-md bg-[#FFFEEC] p-4 text-[#01A977] transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))_scale(1)]"
 				>
           <div className="ml-auto w-12">
-						<ImageSlide src={TwoComics} alt='вторая картинка комикса' loading='lazy'/>
+						<ImageSlide 
+							width={565}
+							height={565}
+							role='img'
+							src={TwoComics} 
+							alt='вторая картинка комикса' 
+							loading='lazy'
+						/>
           </div>
         <div className="pointer-events-none absolute inset-0 group-hover:bg-[radial-gradient(at_var(--x)_var(--y),rgba(255,255,255,0.3)_20%,transparent_80%)]" />
 				</div>
@@ -121,7 +134,14 @@ const Comics = () => {
 					className="group relative grid w-[260px] grid-rows-[200px_120px_40px] rounded-md bg-[#FFFEEC] p-4 text-[#01A977] transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))_scale(1)]"
 				>
           <div className="ml-auto w-12">
-						<ImageSlide src={ThreeComics} alt='третья картинка комикса' loading='lazy'/>
+						<ImageSlide 
+							width={565}
+							height={565}
+							role='img'
+							src={ThreeComics} 
+							alt='третья картинка комикса' 
+							loading='lazy'
+						/>
           </div>
         <div className="pointer-events-none absolute inset-0 group-hover:bg-[radial-gradient(at_var(--x)_var(--y),rgba(255,255,255,0.3)_20%,transparent_80%)]" />
 				</div>
@@ -173,6 +193,7 @@ const Images = styled.div`
 
 const ImageSlide = styled(Image)`
 	width: 100%;
+	height: auto;
 `
 
 const Button = styled.a`
@@ -180,7 +201,7 @@ const Button = styled.a`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Unbounded-Medium';
+	font-family: var(--font-unbounded-medium);
 	color: #080808;
 	font-size: 25px;
 	gap: 10px;
@@ -192,7 +213,6 @@ const Button = styled.a`
 	border: none;
 	text-decoration: none;
 	transition: 300ms;
-	cursor: url(${CursorHover}), auto;
 
 	&:hover {
 		transition: 300ms;

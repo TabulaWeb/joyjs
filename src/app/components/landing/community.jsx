@@ -2,7 +2,6 @@ import { styled } from '@linaria/react'
 import ReactFastMarquee from "react-fast-marquee";
 import { IconSmileOutline } from '../icons/icon-smile-outline';
 import { telegram } from '../../consts/urls'
-import CursorHover from '../../../assets/image/cursor-hover.png'
 
 const Community = () => {
 	return <>
@@ -74,10 +73,9 @@ const Description = styled.p`
 	max-width: 900px;
 	font-size: 15px;
 	line-height: 22px;
-	font-family: 'Unbounded-Regular';
+	font-family: var(--font-unbounded-regular);
 
 	& a {
-		cursor: url(${CursorHover}), auto;
 		color: #AFB2FF;
 		text-decoration: none;
 	}

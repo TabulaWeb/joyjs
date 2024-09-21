@@ -97,7 +97,7 @@ const Tag = styled.p`
   align-items: center;
 
   font-size: 25px;
-  font-family: 'Unbounded-Light';
+  font-family: var(--font-unbounded-light);
 
   position: relative;
   --b: 1px;

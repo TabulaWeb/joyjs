@@ -2,7 +2,6 @@ import { styled } from '@linaria/react'
 import { IconTelegram } from '../icons/icon-telegram'
 import { IconArrow } from '../icons/icon-arrow'
 import { telegram } from '../../consts/urls'
-import CursorHover from '../../../assets/image/cursor-hover.png'
 
 const InfoContact = () => {
 	return <Main className='container'>
@@ -66,7 +65,7 @@ const Main = styled.section`
 `
 
 const Description = styled.p`
-	font-family: 'Unbounded-Regular';
+	font-family: var(--font-unbounded-regular);
 	font-size: 15px;
 	color: '#FAFAFA';
 
@@ -89,7 +88,6 @@ const Link = styled.a`
 	border-radius: 50%;
 	text-decoration: none;
 	transition: 300ms;
-	cursor: url(${CursorHover}), auto;
 
 	&:hover {
 		transition: 300ms;

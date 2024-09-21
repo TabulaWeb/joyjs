@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { styled } from '@linaria/react'
-import CursorHover from '../../../assets/image/cursor-hover.png'
 import ImageLoft from '../../../assets/image/loft.png'
 import ImageSmile from '../../../assets/image/smile.png'
 import ImageCode from '../../../assets/image/code.png'
@@ -38,7 +37,7 @@ const Home = () => {
 				alt='loft logo'
 				loading='lazy'
 				decoding='async'
-				role='presentation'
+				role='img'
 				width={140}
 				height={140}
 			/>
@@ -48,7 +47,7 @@ const Home = () => {
 				alt='smile'
 				loading='lazy'
 				decoding='async'
-				role='presentation'
+				role='img'
 				width={140}
 				height={140}
 			/>
@@ -58,7 +57,7 @@ const Home = () => {
 				alt='code'
 				loading='lazy'
 				decoding='async'
-				role='presentation'
+				role='img'
 				width={140}
 				height={140}
 			/>
@@ -68,7 +67,7 @@ const Home = () => {
 				alt='mascot'
 				loading='lazy'
 				decoding='async'
-				role='presentation'
+				role='img'
 				width={240}
 				height={141}
 			/>
@@ -78,7 +77,7 @@ const Home = () => {
 				alt='camera'
 				loading='lazy'
 				decoding='async'
-				role='presentation'
+				role='img'
 				width={140}
 				height={140}
 			/>
@@ -127,7 +126,7 @@ const Description = styled.h2`
 		}
 	}
 
-	font-family: 'Unbounded-Light';
+	font-family: var(--font-unbounded-light);
 	font-weight: 400;
 	max-width: 390px;
 	line-height: 22px;
@@ -143,7 +142,6 @@ const Description = styled.h2`
 	}
 
 	& .beer-container:hover {
-		cursor: url(${CursorHover}), auto;
 		& .beer {
 			opacity: 1;
 			display: flex;
@@ -187,7 +185,7 @@ const Content = styled.div`
 `
 
 const Title = styled.h1`
-	font-family: 'YapariTrial-SemiBold';
+	font-family: var(--font-yaparitrial-semibold);
 	font-size: 15.7vw;
 
 	@media screen and (min-width: 1400px) {
