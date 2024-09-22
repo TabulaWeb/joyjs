@@ -1,4 +1,3 @@
-import { Suspense } from 'react'
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -58,9 +57,7 @@ export default function RootLayout({ children }) {
         ${yapariTrialMedium.variable}
         ${yapariTrialSemiBold.variable}
       `}>
-        <Suspense fallback={<p>ЗАГРУЗКА 123</p>}>
-          {children}
-        </Suspense>
+        {children}
       </body>
     </html>
   );
