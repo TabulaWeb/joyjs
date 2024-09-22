@@ -3,7 +3,7 @@ import ReactFastMarquee from "react-fast-marquee";
 import { IconSmileOutline } from '../icons/icon-smile-outline';
 import { telegram } from '../../consts/urls'
 
-export default async function Community () {
+export default function Community () {
 	return <>
 		<Marquee>
 			<span>Сообщество Joy.JS</span>

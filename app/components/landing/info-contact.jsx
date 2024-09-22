@@ -3,7 +3,7 @@ import { IconTelegram } from '../icons/icon-telegram'
 import { IconArrow } from '../icons/icon-arrow'
 import { telegram } from '../../consts/urls'
 
-export default async function InfoContact () {
+export default function InfoContact () {
 	return <Main className='container'>
 		<Description>
 			Знакомство со спикерами и больше инфы о митапе

@@ -1,7 +1,7 @@
 import { styled } from '@linaria/react'
 import { IconMicro } from './icons/icon-micro'
 
-export default async function Devider () {
+export default function Devider () {
 	return <Main 
 		href='#program'
 		name='link to program'

@@ -4,7 +4,7 @@ import ReactFastMarquee from "react-fast-marquee";
 import { IconSmile } from '../icons/icon-smile';
 import { telegram } from '../../consts/urls';
 
-export default async function Marquee () {
+export default function Marquee () {
 	return <Main pauseOnHover>
 		<MarqueeItem>
 			<p>{'/  !  /'}</p>

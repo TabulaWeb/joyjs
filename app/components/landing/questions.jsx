@@ -2,7 +2,7 @@ import { styled } from '@linaria/react'
 import { IconTelegram } from '../icons/icon-telegram'
 import { telegram } from '../../consts/urls'
 
-export default async function Questions () {
+export default function Questions () {
 	return <Main
 		className='container'
 		id='support'

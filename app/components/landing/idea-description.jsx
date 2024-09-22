@@ -3,7 +3,7 @@ import { IconEye } from '../icons/icon-eye'
 import { IconTelegram } from '../icons/icon-telegram'
 import { timepad, telegram } from '../../consts/urls'
 
-export default async function IdeaDescription () {
+export default function IdeaDescription () {
 	return <Main className='container'>
 		<Description>
 			На нашем митапе тебя ждёт программа с четырьмя докладами от экспертов.<br/>

@@ -1,6 +1,6 @@
 import { styled } from '@linaria/react';
 
-export default async function KeyWords () {
+export default function KeyWords () {
   return (
     <Main>
       <TagContainer className='pskov'>

@@ -1,6 +1,5 @@
-import { Suspense } from 'react'
+'use client'
 import dynamic from 'next/dynamic'
-import Loading from './loading'
 
 const Marquee = dynamic(() => import('./components/marquee'), { suspense: true });
 const Header = dynamic(() => import('./components/header'), { suspense: true });
@@ -22,7 +21,7 @@ const Footer = dynamic(() => import('./components/landing/footer'), { suspense: 
 
 export default function Home() {
   return (
-    <Suspense fallback={<Loading />}>
+    <>
       <Marquee />
       <Header />
       <main>
@@ -41,6 +40,6 @@ export default function Home() {
         <Questions />
       </main>
       <Footer />
-    </Suspense>
+    </>
   )
 }
