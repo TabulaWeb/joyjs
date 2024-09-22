@@ -9,6 +9,7 @@ export default function Loading() {
 		<Main>
 			<Smile 
 				src={ImageSmile}
+				priority={true}
 				alt='smile'
 				role='img'
 				width={200}

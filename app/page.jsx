@@ -1,5 +1,7 @@
 'use client'
 import dynamic from 'next/dynamic'
+import React, { useEffect, useState, Suspense } from 'react'
+import Loading from './loading'
 
 const Marquee = dynamic(() => import('./components/marquee'), { suspense: true });
 const Header = dynamic(() => import('./components/header'), { suspense: true });
@@ -20,26 +22,37 @@ const Footer = dynamic(() => import('./components/landing/footer'), { suspense: 
 
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    const eventLoaded = () => setIsLoading(false)
+    window.addEventListener('load', eventLoaded)
+
+    return () => window.removeEventListener('load', eventLoaded)
+  }, [])
+
   return (
-    <>
-      <Marquee />
-      <Header />
-      <main>
-        <FirstSection/>
-        <Devider />
-        <Idea />
-        <IdeaDescription />
-        <Program />
-        <Info />
-        <InfoContact />
-        <Location/>
-        <Organiser />
-        <Comics />
-        <Community />
-        <Partners />
-        <Questions />
-      </main>
-      <Footer />
-    </>
+    isLoading 
+      ? <Loading />
+      : <>
+          <Marquee />
+          <Header />
+          <main>
+            <FirstSection/>
+            <Devider />
+            <Idea />
+            <IdeaDescription />
+            <Program />
+            <Info />
+            <InfoContact />
+            <Location/>
+            <Organiser />
+            <Comics />
+            <Community />
+            <Partners />
+            <Questions />
+          </main>
+          <Footer />
+        </>
   )
 }
