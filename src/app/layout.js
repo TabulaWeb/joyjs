@@ -34,17 +34,20 @@ const yapariTrialSemiBold = localFont({
 export const metadata = {
   title: "JoyJS - митапы для разработчиков в Пскове",
   description: "JoyJS это митап на котором тебя ждёт программа с четырьмя докладами от экспертов, В перерывах между выступлениями будет отличная возможность пообщаться, обменяться идеями и завести новые знакомства. Идея \"Joy.JS\" заключается в развитии IT-культуры в регионах. Для формирования сообщества был выбран Псков, так как это родной город создателя Joy.JS Алексея Табула.",
-  icon: './logo.png',
+  icon: './iocn.png',
   openGraph: {
     title: "JoyJS - митапы для разработчиков в Пскове",
     description: "JoyJS это митап на котором тебя ждёт программа с четырьмя докладами от экспертов, В перерывах между выступлениями будет отличная возможность пообщаться, обменяться идеями и завести новые знакомства. Идея \"Joy.JS\" заключается в развитии IT-культуры в регионах. Для формирования сообщества был выбран Псков, так как это родной город создателя Joy.JS Алексея Табула.",
-    images: ['./meetup.png'],
+    images: './opengraph-image.png',
   }
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="ru">
+      <head>
+        <link rel="icon" href="/logo.png" />
+      </head>
       <body className={`
         ${unboundedExtraLight.variable} 
         ${unboundedLight.variable}
