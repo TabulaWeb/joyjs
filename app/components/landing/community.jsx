@@ -3,7 +3,7 @@ import ReactFastMarquee from "react-fast-marquee";
 import { IconSmileOutline } from '../icons/icon-smile-outline';
 import { telegram } from '../../consts/urls'
 
-const Community = () => {
+export default async function Community () {
 	return <>
 		<Marquee>
 			<span>Сообщество Joy.JS</span>
@@ -99,5 +99,3 @@ const Description = styled.p`
 		text-align: start;
 	}
 `
-
-export default Community

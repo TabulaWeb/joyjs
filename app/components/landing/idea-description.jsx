@@ -3,7 +3,7 @@ import { IconEye } from '../icons/icon-eye'
 import { IconTelegram } from '../icons/icon-telegram'
 import { timepad, telegram } from '../../consts/urls'
 
-const IdeaDescription = () => {
+export default async function IdeaDescription () {
 	return <Main className='container'>
 		<Description>
 			На нашем митапе тебя ждёт программа с четырьмя докладами от экспертов.<br/>
@@ -141,5 +141,3 @@ const Button = styled.a`
 		height: 54px;
 	}
 `
-
-export default IdeaDescription

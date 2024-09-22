@@ -4,7 +4,7 @@ import { IconTelegram } from '../icons/icon-telegram'
 import { IconEmail } from '../icons/icon-email'
 import { telegram } from '../../consts/urls'
 
-const Footer = () => {
+export default async function Footer () {
 	return (
 		<Main>
 			<IconLogo 
@@ -113,5 +113,3 @@ const Link = styled.a`
 		height: 36px;
 	}
 `
-
-export default Footer

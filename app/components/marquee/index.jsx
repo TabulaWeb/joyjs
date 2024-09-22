@@ -4,7 +4,7 @@ import ReactFastMarquee from "react-fast-marquee";
 import { IconSmile } from '../icons/icon-smile';
 import { telegram } from '../../consts/urls';
 
-const Marquee = () => {
+export default async function Marquee () {
 	return <Main pauseOnHover>
 		<MarqueeItem>
 			<p>{'/  !  /'}</p>
@@ -131,5 +131,3 @@ const MarqueeItem = styled.div`
 	flex-direction: row;
 	align-items: center;
 `
-
-export default Marquee

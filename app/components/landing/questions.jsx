@@ -2,7 +2,7 @@ import { styled } from '@linaria/react'
 import { IconTelegram } from '../icons/icon-telegram'
 import { telegram } from '../../consts/urls'
 
-const Questions = () => {
+export default async function Questions () {
 	return <Main
 		className='container'
 		id='support'
@@ -105,5 +105,3 @@ const Button = styled.a`
 		font-size: 14px;
 	}
 `
-
-export default Questions

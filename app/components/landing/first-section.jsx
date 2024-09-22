@@ -8,7 +8,7 @@ import ImageCode from '../../image/code.png'
 import ImageMascot from '../../image/mascot.png'
 import ImageCamera from '../../image/camera.png'
 
-const Home = () => {
+export default function FirstSection() {
 	const [timer, setTimer] = useState(0)
 
 	useEffect(() => {
@@ -454,4 +454,3 @@ const IconCamera = styled(Image)`
 		width: clamp(90px, 24dvw, 140px);
 	}
 `
-export default Home
