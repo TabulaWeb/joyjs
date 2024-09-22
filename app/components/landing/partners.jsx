@@ -1,8 +1,8 @@
 'use client'
 import { styled } from '@linaria/react'
 import Image from 'next/image'
-import LogoCoffee from '../../../assets/image/coffee-logo.png'
-import LogoLoft from '../../../assets/image/loft-logo.png'
+import LogoCoffee from '../../image/coffee-logo.png'
+import LogoLoft from '../../image/loft-logo.png'
 
 import { IconTelegram } from '../icons/icon-telegram'
 import { IconEmail } from '../icons/icon-email'

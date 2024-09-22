@@ -6,8 +6,8 @@ import { Tooltip } from 'react-tooltip';
 
 import { IconAttention } from '../icons/icon-attention';
 import { IconVk } from '../icons/icon-vk'
-import SlideLoft from '../../../assets/image/slide-loft.jpg'
-import SlideBar from '../../../assets/image/slide-bar.png'
+import SlideLoft from '../../image/slide-loft.jpg'
+import SlideBar from '../../image/slide-bar.png'
 
 const Location = () => {
 	return <Main>

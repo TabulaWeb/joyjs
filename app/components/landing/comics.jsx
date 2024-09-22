@@ -4,9 +4,9 @@ import Image from 'next/image';
 import { styled } from '@linaria/react'
 import { timepad } from '../../consts/urls'
 import { IconEye } from '../icons/icon-eye'
-import OneComics from '../../../assets/image/one-comics.png'
-import TwoComics from '../../../assets/image/two-comics.png'
-import ThreeComics from '../../../assets/image/three-comics.png'
+import OneComics from '../../image/one-comics.png'
+import TwoComics from '../../image/two-comics.png'
+import ThreeComics from '../../image/three-comics.png'
 
 const Comics = () => {
 	const boundingRef = useRef(null);

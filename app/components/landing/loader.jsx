@@ -1,5 +1,5 @@
 import { styled } from '@linaria/react'
-import ImageSmile from '../../assets/image/smile.png'
+import ImageSmile from '../../image/smile.png'
 
 export const Loader = () => {
 	return <Main>

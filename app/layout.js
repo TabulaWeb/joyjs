@@ -2,39 +2,39 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const unboundedExtraLight = localFont({
-  src: "../assets/fonts/Unbounded-ExtraLight.woff",
+  src: "fonts/Unbounded-ExtraLight.woff",
   variable: "--font-unbounded-extraLight",
 });
 
 const unboundedLight = localFont({
-  src: "../assets/fonts/Unbounded-Light.woff",
+  src: "fonts/Unbounded-Light.woff",
   variable: "--font-unbounded-light",
 });
 
 const unboundedRegular = localFont({
-  src: "../assets/fonts/Unbounded-Regular.woff",
+  src: "fonts/Unbounded-Regular.woff",
   variable: "--font-unbounded-regular",
 })
 
 const unboundedMedium = localFont({
-  src: "../assets/fonts/Unbounded-Medium.woff",
+  src: "fonts/Unbounded-Medium.woff",
   variable: "--font-unbounded-medium",
 })
 
 const yapariTrialMedium = localFont({
-  src: "../assets/fonts/YapariTrial-Medium.woff",
+  src: "fonts/YapariTrial-Medium.woff",
   variable: "--font-yaparitrial-medium",
 })
 
 const yapariTrialSemiBold = localFont({
-  src: "../assets/fonts/YapariTrial-SemiBold.woff",
+  src: "fonts/YapariTrial-SemiBold.woff",
   variable: "--font-yaparitrial-semibold",
 })
 
 export const metadata = {
   title: "JoyJS - митапы для разработчиков в Пскове",
   description: "JoyJS это митап на котором тебя ждёт программа с четырьмя докладами от экспертов, В перерывах между выступлениями будет отличная возможность пообщаться, обменяться идеями и завести новые знакомства. Идея \"Joy.JS\" заключается в развитии IT-культуры в регионах. Для формирования сообщества был выбран Псков, так как это родной город создателя Joy.JS Алексея Табула.",
-  icon: './iocn.png',
+  icon: './icon.png',
   openGraph: {
     title: "JoyJS - митапы для разработчиков в Пскове",
     description: "JoyJS это митап на котором тебя ждёт программа с четырьмя докладами от экспертов, В перерывах между выступлениями будет отличная возможность пообщаться, обменяться идеями и завести новые знакомства. Идея \"Joy.JS\" заключается в развитии IT-культуры в регионах. Для формирования сообщества был выбран Псков, так как это родной город создателя Joy.JS Алексея Табула.",
@@ -46,8 +46,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <head>
-        <link rel="icon" href="/icon.png" />
-        <meta property="og:image" content="/opengraph-image.png" />
+        <link rel="icon" href="./icon.png" />
+        <meta property="og:image" content="./opengraph-image.png" />
       </head>
       <body className={`
         ${unboundedExtraLight.variable} 

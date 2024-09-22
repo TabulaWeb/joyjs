@@ -9,8 +9,8 @@ import { IconEye } from './icons/icon-eye'
 import { timepad } from '../consts/urls'
 import { IconTelegram } from './icons/icon-telegram'
 import { IconEmail } from './icons/icon-email'
-import ImageCode from '../../assets/image/code.png'
-import Sketch from '../../assets/image/sketch.png'
+import ImageCode from '../image/code.png'
+import Sketch from '../image/sketch.png'
 import { telegram } from '../consts/urls'
 
 const Header = () => {

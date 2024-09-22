@@ -3,7 +3,7 @@ import { styled } from '@linaria/react'
 import Image from 'next/image'
 import { IconEye } from '../../icons/icon-eye'
 import { timepad } from '../../../consts/urls'
-import imageParty from '../../../../assets/image/drink.png'
+import imageParty from '../../../image/drink.png'
 import { programs } from './api/programs'
 
 const Program = () => {

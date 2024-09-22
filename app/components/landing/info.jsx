@@ -1,9 +1,9 @@
 'use client'
 import { styled } from '@linaria/react'
 import Image from 'next/image'
-import ImgSticker from '../../../assets/image/sticker.png'
-import ImgPin from '../../../assets/image/pin.png'
-import ImgPinActive from '../../../assets/image/pin-active.png'
+import ImgSticker from '../../image/sticker.png'
+import ImgPin from '../../image/pin.png'
+import ImgPinActive from '../../image/pin-active.png'
 import ReactFastMarquee from "react-fast-marquee";
 
 const Info = () => {

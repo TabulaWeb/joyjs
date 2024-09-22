@@ -1,14 +1,14 @@
-import MaxMolchanov from '../../../../../assets/image/molchanov-avatar.png'
-import LogoSoftGamings from '../../../../../assets/image/logo-soft-gamings.png'
+import MaxMolchanov from '../../../../image/molchanov-avatar.png'
+import LogoSoftGamings from '../../../../image/logo-soft-gamings.png'
 
-import GrishaAvatar from '../../../../../assets/image/grisha-avatar.png'
-import SberLogo from '../../../../../assets/image/logo-sber.png'
+import GrishaAvatar from '../../../../image/grisha-avatar.png'
+import SberLogo from '../../../../image/logo-sber.png'
 
-import TimurAvatar from '../../../../../assets/image/timur-avatar.png'
-import LogoSamokat from '../../../../../assets/image/logo-samokat.png'
+import TimurAvatar from '../../../../image/timur-avatar.png'
+import LogoSamokat from '../../../../image/logo-samokat.png'
 
-import AlexanderAvatar from '../../../../../assets/image/alexander-avatar.png'
-import LogoGas from '../../../../../assets/image/logo-gas.png'
+import AlexanderAvatar from '../../../../image/alexander-avatar.png'
+import LogoGas from '../../../../image/logo-gas.png'
 
 export const programs = [
 	{

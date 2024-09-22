@@ -2,11 +2,11 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { styled } from '@linaria/react'
-import ImageLoft from '../../../assets/image/loft.png'
-import ImageSmile from '../../../assets/image/smile.png'
-import ImageCode from '../../../assets/image/code.png'
-import ImageMascot from '../../../assets/image/mascot.png'
-import ImageCamera from '../../../assets/image/camera.png'
+import ImageLoft from '../../image/loft.png'
+import ImageSmile from '../../image/smile.png'
+import ImageCode from '../../image/code.png'
+import ImageMascot from '../../image/mascot.png'
+import ImageCamera from '../../image/camera.png'
 
 const Home = () => {
 	const [timer, setTimer] = useState(0)
