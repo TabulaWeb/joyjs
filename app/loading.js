@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import { styled } from '@linaria/react'
-import ImageSmile from './image/smile.png'
 
 export default function Loading() {
 	return (
