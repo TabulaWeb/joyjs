@@ -25,10 +25,11 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    const eventLoaded = () => setIsLoading(false)
-    window.addEventListener('load', eventLoaded)
+    const timeout = setTimeout(() => {
+      setIsLoading(false)
+    }, 2000)
 
-    return () => window.removeEventListener('load', eventLoaded)
+    return () => clearInterval(timeout)
   }, [])
 
   return (
