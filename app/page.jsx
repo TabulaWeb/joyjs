@@ -5,7 +5,7 @@ import Loading from './loading'
 const Marquee = dynamic(() => import('./components/marquee'), { suspense: true });
 const Header = dynamic(() => import('./components/header'), { suspense: true });
 const Devider = dynamic(() => import('./components/devider'), { suspense: true });
-const FirstSection = dynamic(() => import('./components/landing/home'), { suspense: true });
+const FirstSection = dynamic(() => import('./components/landing/first-section'), { suspense: true });
 const Idea = dynamic(() => import('./components/landing/idea'), { suspense: true });
 const IdeaDescription = dynamic(() => import('./components/landing/idea-description'), { suspense: true });
 const Program = dynamic(() => import('./components/landing/program'), { suspense: true });
