@@ -46,7 +46,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <head>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/icon.png" />
+        <meta property="og:image" content="/opengraph-image.png" />
       </head>
       <body className={`
         ${unboundedExtraLight.variable} 
