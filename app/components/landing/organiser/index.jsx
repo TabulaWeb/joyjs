@@ -124,35 +124,35 @@ const AvatarContainer = styled.div`
 
 			& .hobby:nth-child(1) {
 				animation: hobbyAnimation 1s ease;
-				& svg {
+				& img {
 					animation: hobbyAnimation 600ms ease;
 				}
 			}
 
 			& .hobby:nth-child(2) {
 				animation: hobbyAnimation 1s ease;
-				& svg {
+				& img {
 					animation: hobbyAnimation 600ms ease 600ms;
 				}
 			}
 
 			& .hobby:nth-child(3) {
 				animation: hobbyAnimation 1s ease;
-				& svg {
+				& img {
 					animation: hobbyAnimation 600ms ease 1200ms;
 				}
 			}
 
 			& .hobby:nth-child(4) {
 				animation: hobbyAnimation 1s ease;
-				& svg {
+				& img {
 					animation: hobbyAnimation 600ms ease 1800ms;
 				}
 			}
 
 			& .hobby:nth-child(5) {
 				animation: hobbyAnimation 1s ease;
-				& svg {
+				& img {
 					animation: hobbyAnimation 600ms ease 2400ms;
 				}
 			}
@@ -294,7 +294,7 @@ const Hobby = styled.div`
 	justify-content: center;
 	align-items: center;
 
-	& svg {
+	& img {
 		position: absolute;
 		opacity: 0;
 	}
