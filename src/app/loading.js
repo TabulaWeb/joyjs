@@ -1,4 +1,5 @@
 'use client'
+
 import Image from 'next/image'
 import { styled } from '@linaria/react'
 import ImageSmile from '../assets/image/smile.png'
