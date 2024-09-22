@@ -1,7 +1,7 @@
 'use client'
 import dynamic from 'next/dynamic'
-import React, { useEffect, useState, Suspense } from 'react'
-import Loading from './loading'
+import React, { useEffect, useState } from 'react'
+import Loading from './components/loading'
 
 const Marquee = dynamic(() => import('./components/marquee'), { suspense: true });
 const Header = dynamic(() => import('./components/header'), { suspense: true });
