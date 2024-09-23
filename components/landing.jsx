@@ -21,7 +21,7 @@ const Footer = lazy(() => import('./landing/footer'))
 
 export default function Landing () {
 	return (
-    // <Suspense fallback={<Loading/>}>
+    <Suspense fallback={<Loading/>}>
       <div>
         <Marquee />
         <Header />
@@ -42,6 +42,6 @@ export default function Landing () {
         </main>
         <Footer />
       </div>
-    // </Suspense>
+    </Suspense>
 	)
 }
