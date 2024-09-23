@@ -13,7 +13,7 @@ import ImageCode from '../image/code.png'
 import Sketch from '../image/sketch.png'
 import { telegram } from '../consts/urls'
 
-const Header = () => {
+export default function Header () {
 	const [isActive, setIsActive] = useState(false)
 	const [isMoreZero, setIsMoreZero] = useState(false)
 	const [isOpen, setIsOpen] = useState(false)
@@ -700,5 +700,3 @@ const LinkDesctop =	styled.a`
 		color: #AFB2FF;
 	}
 `
-
-export default Header

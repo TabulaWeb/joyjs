@@ -10,7 +10,7 @@ import { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-const Idea = () => {
+export default function Idea () {
 
 	useEffect(() => {
 		Aos.init()
@@ -189,5 +189,3 @@ const MascotImage = styled(Image)`
 		width: clamp(180px, 45vw, 250px);
 	}
 `
-
-export default Idea

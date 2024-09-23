@@ -5,8 +5,7 @@ import ImgSticker from '../../image/sticker.png'
 import ImgPin from '../../image/pin.png'
 import ImgPinActive from '../../image/pin-active.png'
 import ReactFastMarquee from "react-fast-marquee";
-
-const Info = () => {
+export default function Info () {
 	return <Main>
 		<Marquee>
 			<span>Интервью со спикерами</span>
@@ -101,5 +100,3 @@ const Pin = styled(Image)`
 		
 	}
 `
-
-export default Info

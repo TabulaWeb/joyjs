@@ -6,7 +6,7 @@ import { timepad } from '../../../consts/urls'
 import imageParty from '../../../image/drink.png'
 import { programs } from './api/programs'
 
-const Program = () => {
+export default function Program() {
 	return <Main className='container' id='program'>
 		<SecTitle>Программа</SecTitle>
 		{programs.map((program) => (
@@ -388,5 +388,3 @@ const Button = styled.a`
 		}
 	}
 `
-
-export default Program

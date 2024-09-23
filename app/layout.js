@@ -11,11 +11,6 @@ const unboundedLight = localFont({
   variable: "--font-unbounded-light",
 });
 
-const unboundedRegular = localFont({
-  src: "../fonts/Unbounded-Regular.woff",
-  variable: "--font-unbounded-regular",
-})
-
 const unboundedMedium = localFont({
   src: "../fonts/Unbounded-Medium.woff",
   variable: "--font-unbounded-medium",
@@ -52,7 +47,6 @@ export default function RootLayout({ children }) {
       <body className={`
         ${unboundedExtraLight.variable} 
         ${unboundedLight.variable}
-        ${unboundedRegular.variable}
         ${unboundedMedium.variable}
         ${yapariTrialMedium.variable}
         ${yapariTrialSemiBold.variable}

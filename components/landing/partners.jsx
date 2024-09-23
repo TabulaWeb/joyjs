@@ -8,7 +8,7 @@ import { IconTelegram } from '../icons/icon-telegram'
 import { IconEmail } from '../icons/icon-email'
 import { telegram } from '../../consts/urls'
 
-const Partners = () => {
+export default function Partners () {
 	return <Main>
 		<Container className='container' id='partners'>
 			<Title>Партнеры</Title>
@@ -263,5 +263,3 @@ const Link = styled.a`
 		}
 	}
 `
-
-export default Partners

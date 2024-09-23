@@ -8,7 +8,7 @@ import OneComics from '../../image/one-comics.png'
 import TwoComics from '../../image/two-comics.png'
 import ThreeComics from '../../image/three-comics.png'
 
-const Comics = () => {
+export default function Comics() {
 	const boundingRef = useRef(null);
 	return <Main className='container'>
 		<Images>
@@ -243,5 +243,3 @@ const Button = styled.a`
 		}
 	}
 `
-
-export default Comics

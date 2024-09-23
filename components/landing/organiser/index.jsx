@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { organisers } from './api/organisers'
 import { IconTelegram } from '../../icons/icon-telegram'
 
-const Organiser = () => {
+export default function Organiser() {
 	return <Main className='container'>
 		<Title>Организаторы</Title>
 
@@ -301,5 +301,3 @@ const Hobby = styled.div`
 `
 
 const ImageHobby = styled(Image)``
-
-export default Organiser

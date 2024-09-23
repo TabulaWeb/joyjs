@@ -9,7 +9,7 @@ import { IconVk } from '../icons/icon-vk'
 import SlideLoft from '../../image/slide-loft.jpg'
 import SlideBar from '../../image/slide-bar.png'
 
-const Location = () => {
+export default function Location () {
 	return <Main>
 		<Content className='container' id='location'>
 			<Title>Места встречи</Title>
@@ -331,5 +331,3 @@ const StyleTooltip = styled(Tooltip)`
 		height: 12px!important;
 	}
 `
-
-export default Location
