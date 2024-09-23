@@ -4,21 +4,21 @@ import { useState, useEffect } from 'react'
 import Loading from './landing/loading';
 
 const Marquee = dynamic(() => import('./marquee'), { srr: false });
-const Header = dynamic(() => import('./header'));
-const Devider = dynamic(() => import('./devider'));
-const FirstSection = dynamic(() => import('./landing/first-section'));
-const Idea = dynamic(() => import('./landing/idea'));
-const IdeaDescription = dynamic(() => import('./landing/idea-description'));
-const Program = dynamic(() => import('./landing/program'));
-const Info = dynamic(() => import('./landing/info'));
-const InfoContact = dynamic(() => import('./landing/info-contact'));
-const Location = dynamic(() => import('./landing/location'));
-const Organiser = dynamic(() => import('./landing/organiser'));
-const Comics = dynamic(() => import('./landing/comics'));
-const Community = dynamic(() => import('./landing/community'));
-const Partners = dynamic(() => import('./landing/partners'));
-const Questions = dynamic(() => import('./landing/questions'));
-const Footer = dynamic(() => import('./landing/footer'));
+const Header = dynamic(() => import('./header'), { srr: false });
+const Devider = dynamic(() => import('./devider'), { srr: false });
+const FirstSection = dynamic(() => import('./landing/first-section'), { srr: false });
+const Idea = dynamic(() => import('./landing/idea'), { srr: false });
+const IdeaDescription = dynamic(() => import('./landing/idea-description'), { srr: false });
+const Program = dynamic(() => import('./landing/program'), { srr: false });
+const Info = dynamic(() => import('./landing/info'), { srr: false });
+const InfoContact = dynamic(() => import('./landing/info-contact'), { srr: false });
+const Location = dynamic(() => import('./landing/location'), { srr: false });
+const Organiser = dynamic(() => import('./landing/organiser'), { srr: false });
+const Comics = dynamic(() => import('./landing/comics'), { srr: false });
+const Community = dynamic(() => import('./landing/community'), { srr: false });
+const Partners = dynamic(() => import('./landing/partners'), { srr: false });
+const Questions = dynamic(() => import('./landing/questions'), { srr: false });
+const Footer = dynamic(() => import('./landing/footer'), { srr: false });
 
 
 
