@@ -16,6 +16,7 @@
     "aos": "^3.0.0-beta.6",
     "next": "14.2.13",
     "next-with-linaria": "^0.7.0",
+    "oneentry": "^1.0.87",
     "react": "^18",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.5",

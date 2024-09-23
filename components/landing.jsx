@@ -1,5 +1,7 @@
 'use client'
 import dynamic from 'next/dynamic';
+import { useState, useEffect } from 'react'
+import Loading from './landing/loading';
 
 const Marquee = dynamic(() => import('./marquee'), { srr: false });
 const Header = dynamic(() => import('./header'));
@@ -18,9 +20,19 @@ const Partners = dynamic(() => import('./landing/partners'));
 const Questions = dynamic(() => import('./landing/questions'));
 const Footer = dynamic(() => import('./landing/footer'));
 
-export default async function Landing () {
+
+
+export default function Landing () {
+  const [isClient, setIsClient] = useState(true)
+ 
+  useEffect(() => {
+    setIsClient(false)
+  }, [])
+
 	return (
-		<div>
+    isClient
+      ? <Loading />
+      : <div>
 			<Marquee />
       <Header />
       <main>

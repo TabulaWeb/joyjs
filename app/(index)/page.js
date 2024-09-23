@@ -3,6 +3,6 @@ import dynamic from 'next/dynamic'
 
 const Landing = dynamic(() => import('../../components/landing'));
 
-export default async function Index() {
+export default function Index() {
   return <Landing />
 }

@@ -29,15 +29,16 @@ const yapariTrialSemiBold = localFont({
 export const metadata = {
   title: "JoyJS - митапы для разработчиков в Пскове",
   description: "JoyJS это митап на котором тебя ждёт программа с четырьмя докладами от экспертов. В перерывах между выступлениями будет отличная возможность пообщаться, обменяться идеями и завести новые знакомства. Идея \"Joy.JS\" заключается в развитии IT-культуры в регионах. Для формирования сообщества был выбран Псков, так как это родной город создателя Joy.JS Алексея Табула.",
-  icon: './icon.png',
+  icon: '../image/icon.png',
   openGraph: {
     title: "JoyJS - митапы для разработчиков в Пскове",
     description: "JoyJS это митап на котором тебя ждёт программа с четырьмя докладами от экспертов. В перерывах между выступлениями будет отличная возможность пообщаться, обменяться идеями и завести новые знакомства. Идея \"Joy.JS\" заключается в развитии IT-культуры в регионах. Для формирования сообщества был выбран Псков, так как это родной город создателя Joy.JS Алексея Табула.",
-    images: './opengraph-image.png',
+    images: '../image/opengraph-image.png',
   }
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout(props) {
+  
   return (
     <html lang="ru">
       <head>
@@ -51,7 +52,7 @@ export default function RootLayout({ children }) {
         ${yapariTrialMedium.variable}
         ${yapariTrialSemiBold.variable}
       `}>
-        {children}
+        {props.children}
       </body>
     </html>
   );
