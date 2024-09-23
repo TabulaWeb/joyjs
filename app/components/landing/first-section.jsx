@@ -25,7 +25,7 @@ export default function FirstSection() {
 
 	return <Main className='container'>
 		<Description>
-			Велком на первый в Пскове Frontend Meetup!
+			Велком на первый в Пскове Frontend Meetup!<br/>
 			4 доклада от крутых спикеров, нетворкинг<br/>
 			<span className='beer-container'>и пиво <span className="beer"></span></span>
 		</Description>
@@ -172,6 +172,8 @@ const Description = styled.h2`
 
 	@media screen and (max-width: 600px) {
 		margin-bottom: 117px;
+		text-wrap: balance;
+    max-width: 250px;
 	}
 `
 
