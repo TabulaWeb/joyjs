@@ -1,5 +1,4 @@
 import localFont from "next/font/local";
-import Landing from '@/components/landing';
 import "./globals.css";
 
 const unboundedExtraLight = localFont({
@@ -38,8 +37,7 @@ export const metadata = {
   }
 };
 
-export default function RootLayout(props) {
-  
+export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <head>
@@ -53,7 +51,7 @@ export default function RootLayout(props) {
         ${yapariTrialMedium.variable}
         ${yapariTrialSemiBold.variable}
       `}>
-        <Landing />
+        { children }
       </body>
     </html>
   );
