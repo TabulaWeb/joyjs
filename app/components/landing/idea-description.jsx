@@ -116,7 +116,7 @@ const Button = styled.a`
 	&:hover {
 		transition: 300ms;
 		border-color: #9496D3;
-		background-color: ${({ isFilled }) => isFilled ? '#9496D3' : ''};
+		background-color: ${({ isFilled }) => isFilled ? '#9496D3' : '#212121'};
 		border: ${({ isFilled }) => isFilled ? '' : '1px solid #9496D3'};
 		& svg path {
 			fill:  ${({ isFilled }) => isFilled ? '#080808' : '#9496D3'};

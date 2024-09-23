@@ -232,6 +232,10 @@ const Content = styled.div`
 	@media screen and (max-width: 1440px) {
 		padding: 15px 15px 15px 35px;
 
+		&.active {
+			border-radius: 20px 20px 0 0;
+		}
+
 		& .logo {
 			width: 66px;
 		}
@@ -533,7 +537,12 @@ const Menu = styled.div`
 		padding: 0 10px;
 
 		&.active {
+			height: calc(100dvh - 150px);
 			margin-top: 60px;
+
+			&[data-more-zero='true'] {
+				height: calc(100dvh - 110px);
+			}
 		}
 	}
 `
@@ -558,6 +567,7 @@ const MenuContent = styled.div`
 	@media screen and (max-width: 600px) {
 		justify-content: flex-start;
 		align-items: flex-start;
+		border-radius: 20px;
 	}
 `
 
