@@ -2,32 +2,32 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const unboundedExtraLight = localFont({
-  src: "fonts/Unbounded-ExtraLight.woff",
+  src: "../fonts/Unbounded-ExtraLight.woff",
   variable: "--font-unbounded-extraLight",
 });
 
 const unboundedLight = localFont({
-  src: "fonts/Unbounded-Light.woff",
+  src: "../fonts/Unbounded-Light.woff",
   variable: "--font-unbounded-light",
 });
 
 const unboundedRegular = localFont({
-  src: "fonts/Unbounded-Regular.woff",
+  src: "../fonts/Unbounded-Regular.woff",
   variable: "--font-unbounded-regular",
 })
 
 const unboundedMedium = localFont({
-  src: "fonts/Unbounded-Medium.woff",
+  src: "../fonts/Unbounded-Medium.woff",
   variable: "--font-unbounded-medium",
 })
 
 const yapariTrialMedium = localFont({
-  src: "fonts/YapariTrial-Medium.woff",
+  src: "../fonts/YapariTrial-Medium.woff",
   variable: "--font-yaparitrial-medium",
 })
 
 const yapariTrialSemiBold = localFont({
-  src: "fonts/YapariTrial-SemiBold.woff",
+  src: "../fonts/YapariTrial-SemiBold.woff",
   variable: "--font-yaparitrial-semibold",
 })
 
