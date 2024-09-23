@@ -59,7 +59,7 @@ export const metadata = {
   }
 };
 
-export default async function RootLayout({ children }) {
+export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <head>
@@ -69,6 +69,9 @@ export default async function RootLayout({ children }) {
         />
         <link rel="icon" href="./icon.png" />
         <meta property="og:image" content="./opengraph-image.png" />
+        <meta property="twitter:title" content="Фронтенд митап в пскове" />
+        <meta property="twitter:description" content="Фронтенд митап в пскове"></meta>
+        <meta property="twitter:card" content="summary_large_image"></meta>
       </head>
       <body className={`
         ${unboundedExtraLight.variable} 

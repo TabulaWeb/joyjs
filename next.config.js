@@ -11,6 +11,9 @@ const config = {
   experimental: {
     nextScriptWorkers: true,
   },
+  devIndicators: {
+    buildActivity: false
+  }
 }
 
 /** */

@@ -1,5 +1,6 @@
 import { styled } from '@linaria/react'
 import Link from 'next/link'
+
 export default function NotFound () {
 	return <Main>
 		<h1>Такой страницы нет</h1>
