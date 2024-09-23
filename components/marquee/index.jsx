@@ -1,3 +1,4 @@
+'use client'
 import { styled } from '@linaria/react'
 import ReactFastMarquee from "react-fast-marquee";
 
