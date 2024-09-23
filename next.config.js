@@ -7,7 +7,10 @@ const config = {
     fetches: {
       fullUrl: true
     }
-  }
+  },
+  experimental: {
+    nextScriptWorkers: true,
+  },
 }
 
 /** */

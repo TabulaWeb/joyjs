@@ -14,7 +14,7 @@
     "@linaria/react": "^6.2.1",
     "@wyw-in-js/babel-preset": "^0.5.4",
     "aos": "^3.0.0-beta.6",
-    "next": "14.2.13",
+    "next": "^14.2.13",
     "next-with-linaria": "^0.7.0",
     "oneentry": "^1.0.87",
     "react": "^18",
@@ -23,5 +23,8 @@
     "react-tooltip": "^5.28.0",
     "sharp": "^0.33.5",
     "swiper": "^11.1.12"
+  },
+  "devDependencies": {
+    "@builder.io/partytown": "^0.10.2"
   }
 }

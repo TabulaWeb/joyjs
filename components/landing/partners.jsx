@@ -102,7 +102,7 @@ const Title = styled.div`
 
 const Content = styled.div`
 	display: flex;
-	align-items: end;
+	align-items: flex-end;
 	justify-content: space-between;
 	gap: 70px;
 	flex-wrap: wrap;
