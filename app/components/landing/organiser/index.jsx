@@ -61,7 +61,7 @@ const Main = styled.section`
 `
 
 const Title = styled.h2`
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 	font-size: 80px;
 	margin-bottom: 100px;
 
@@ -236,7 +236,7 @@ const Link = styled.a`
 const Name = styled.p`
 	font-size: 20px;
 	margin-bottom: 25px;
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 
 	@media screen and (max-width: 1440px) {
 		font-size: 20px;
@@ -250,7 +250,7 @@ const Name = styled.p`
 const Description = styled.p`
 	font-size: 15px;
 	margin-bottom: 5px;
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 
 	@media screen and (max-width: 1440px) {
 		font-size: 14px;
@@ -264,7 +264,7 @@ const Description = styled.p`
 const Role = styled.p`
 	font-size: 15px;
 	color: #AECD41;
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 
 	@media screen and (max-width: 1440px) {
 		font-size: 14px;

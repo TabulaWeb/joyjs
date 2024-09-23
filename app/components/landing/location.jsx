@@ -95,7 +95,7 @@ const Main = styled.section`
 const Content = styled.div``
 
 const Title = styled.h2`
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 	font-size: 80px;
 	margin-bottom: 100px;
 
@@ -249,7 +249,7 @@ const AreaTitle = styled.p`
 
 const AreaAddress = styled.p`
 	font-size: 15px;
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 	
 	& a {
 		color: #AFB2FF;
@@ -317,7 +317,7 @@ const TooltipIcon = styled(IconAttention)`
 
 const StyleTooltip = styled(Tooltip)`
 	max-width: 225px!important;
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 	font-size: 11px!important;
 	color: #ffffff!important;
 	padding: 15px!important;

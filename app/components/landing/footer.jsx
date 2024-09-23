@@ -102,7 +102,7 @@ const Link = styled.a`
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 	font-size: 14px;
 	cursor: pointer;
 	text-decoration: none;

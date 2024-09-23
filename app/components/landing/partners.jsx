@@ -87,7 +87,7 @@ const Container = styled.div`
 `
 
 const Title = styled.div`
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 	font-size: 80px;
 
 	@media screen and (max-width: 1024px) {

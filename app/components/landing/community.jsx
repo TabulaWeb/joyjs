@@ -73,7 +73,7 @@ const Description = styled.p`
 	max-width: 900px;
 	font-size: 15px;
 	line-height: 22px;
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 
 	& a {
 		color: #AFB2FF;

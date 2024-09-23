@@ -92,7 +92,7 @@ const Main = styled.section`
 
 const SecTitle = styled.h2`
 	font-size: 80px;
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 	margin-bottom: 90px;
 
 	@media screen and (max-width: 1440px) {
@@ -259,7 +259,7 @@ const Description = styled.p`
 	font-weight: 300;
 	line-height: 22px;
 	font-size: 15px;
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 
 	& a {
 		color: #AFB2FF;
@@ -327,7 +327,7 @@ const Name = styled.p`
 `
 
 const SubInfo = styled.p`
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 	font-size: 15px;
 
 	@media screen and (max-width: 1440px) {

@@ -41,7 +41,7 @@ const Title = styled.h2`
 	text-align: center;
 	margin-bottom: 75px;
 	font-size: 80px;
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 
 	@media screen and (max-width: 1024px) {
 		font-size: 50px;
@@ -55,7 +55,7 @@ const Title = styled.h2`
 
 const Description = styled.p`
 	font-size: 15px;
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 	margin-bottom: 25px;
 	text-align: center;
 

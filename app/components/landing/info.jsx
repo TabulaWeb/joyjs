@@ -83,12 +83,23 @@ const ActivePin = styled(Image)`
 	position: absolute;
 	top: 10px;
 	right: 17px;
+
+	@media screen and (max-width: 600px) {
+		top: -15px;
+    right: -5px;
+	}
 `
 
 const Pin = styled(Image)`
 	position: absolute;
 	top: -28px;
 	right: 50px;
+
+	@media screen and (max-width: 600px) {
+		top: -38px;
+		right: 18px;
+		
+	}
 `
 
 export default Info

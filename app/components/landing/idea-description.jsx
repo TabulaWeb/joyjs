@@ -6,7 +6,7 @@ import { timepad, telegram } from '../../consts/urls'
 export default function IdeaDescription () {
 	return <Main className='container'>
 		<Description>
-			На нашем митапе тебя ждёт программа с четырьмя докладами от экспертов.<br/>
+			На нашем митапе тебя ждёт программа с четырьмя докладами от экспертов. <br/>
 			В перерывах между выступлениями будет отличная возможность пообщаться, обменяться<br/> идеями и завести новые знакомства.
 		</Description>
 
@@ -54,7 +54,7 @@ const Main = styled.section`
 `
 
 const Description = styled.p`
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 	font-size: 15px;
 	text-align: center;
 	margin-bottom: 25px;
@@ -69,6 +69,7 @@ const Description = styled.p`
 	}
 
 	@media screen and (max-width: 840px) {
+		word-wrap: balance;
 		br {
 			display: none;
 		}

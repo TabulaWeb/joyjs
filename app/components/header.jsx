@@ -591,7 +591,7 @@ const ListNav = styled.nav`
 `
 
 const Link = styled.a`
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 	font-size: 30px;
 	cursor: pointer;
 	text-decoration: none;
@@ -643,7 +643,7 @@ const Contacts = styled.div`
 `
 
 const Contact = styled.a`
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 	font-size: 14px;
 	display: flex;
 	align-items: center;

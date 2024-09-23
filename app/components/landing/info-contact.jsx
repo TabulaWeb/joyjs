@@ -65,7 +65,7 @@ const Main = styled.section`
 `
 
 const Description = styled.p`
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 	font-size: 15px;
 	color: '#FAFAFA';
 

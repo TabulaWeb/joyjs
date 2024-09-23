@@ -40,7 +40,7 @@ const Main = styled.a`
 `
 
 const LinkText = styled.span`
-	font-family: var(--font-unbounded-regular);
+	font-family: var(--font-unbounded-light);
 	font-size: 15px;
 	color: #ffffff;
 	font-weight: 300;
