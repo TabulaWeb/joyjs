@@ -300,4 +300,9 @@ const Hobby = styled.div`
 	}
 `
 
-const ImageHobby = styled(Image)``
+const ImageHobby = styled(Image)`
+	@media screen and (max-width: 600px) {
+		width: 120px;
+		height: 120px;
+	}
+`
