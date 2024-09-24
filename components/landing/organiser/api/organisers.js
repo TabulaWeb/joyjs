@@ -52,7 +52,7 @@ export const organisers = [
 		"name": "Ирина Иванова",
 		"link": "https://t.me/iriflina13",
 		"description": "UX/UI Дизайнер",
-		"role": "",
+		"role": "Админ JoyJS",
 		"hobby": [
 			IconSport,
 			IconPhoto,
