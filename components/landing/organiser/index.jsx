@@ -170,7 +170,7 @@ const AvatarContainer = styled.div`
 		max-width: 230px;
 		max-height: 230px;
 		width: 100%;
-		height: 100%;
+		height: auto;
 	}
 `
 
@@ -187,7 +187,7 @@ const Avatar = styled(Image)`
 
 	@media screen and (max-width: 600px) {
 		width: 100%;
-		height: 100%;
+		height: auto;
 	}
 `
 
@@ -217,9 +217,9 @@ const Link = styled.a`
 		height: 50px;
 
 		& svg {
-		width: 35px;
-		height: 35px;
-	}
+			width: 35px;
+			height: 35px;
+		}
 	}
 
 	&:hover {
@@ -229,6 +229,19 @@ const Link = styled.a`
 		& svg path {
 			transition: 300ms;
 			fill: #9496d3;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		width: 40px;
+		height: 40px;
+
+		bottom: 3%;
+		right: 3%;
+
+		& svg {
+			width: 25px;
+			height: 25px;
 		}
 	}
 `
@@ -302,7 +315,7 @@ const Hobby = styled.div`
 
 const ImageHobby = styled(Image)`
 	@media screen and (max-width: 600px) {
-		width: 120px;
-		height: 120px;
+		width: 110px;
+		height: 110px;
 	}
 `
