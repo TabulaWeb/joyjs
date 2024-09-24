@@ -3,7 +3,7 @@ const withLinaria = require('next-with-linaria')
 
 /** @type {import('next-with-linaria').LinariaConfig} */
 const config = {
-  distDir: 'build',
+  distDir: 'dist',
   logging: {
     fetches: {
       fullUrl: true
