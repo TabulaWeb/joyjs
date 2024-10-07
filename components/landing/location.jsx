@@ -73,9 +73,9 @@ export default function Location () {
 						/>
 					</AreaTime>
 					<AreaDescription>
-						<AreaTitle>Рестобар Друзья</AreaTitle>
+						<AreaTitle>Гастробар Ребро</AreaTitle>
 						<AreaAddress>
-							Адрес: <a href='https://yandex.ru/maps/org/restobar_druzya/234373157458/?ll=28.342081,57.836867&z=16' target='_blank'>Сиреневый бульвар, 1а</a>
+							Адрес: <a href='https://yandex.ru/maps/-/CDXEyJYF' target='_blank'>Октябрьский проспект, 19</a>
 						</AreaAddress>
 					</AreaDescription>
 				</Area>

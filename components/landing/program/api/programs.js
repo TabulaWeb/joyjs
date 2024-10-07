@@ -91,7 +91,7 @@ export const programs = [
 		"id": 9,
 		"time": "21:00",
 		"title": "АФТЕРПАТИ",
-		"description": "Продолжаем нетворкинг в ресто-баре \"Друзья\". <a href='https://yandex.ru/maps/org/restobar_druzya/234373157458/?ll=28.342081,57.836867&z=16' target='_blank'>Сиреневый бульвар, 1а</a>",
+		"description": "Продолжаем нетворкинг в ресто-баре \"Друзья\". <a href='https://yandex.ru/maps/-/CDXEyJYF' target='_blank'>Октябрьский проспект, 19</a>",
 		"speaker" : {}
 	}
 ]
