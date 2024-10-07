@@ -36,6 +36,11 @@ import IconLinux from '../../../../icon/icon-linux.svg'
 import IconTriangle from '../../../../icon/icon-triangle.svg'
 import IconDiy from '../../../../icon/icon-diy.svg'
 import IconCat from '../../../../icon/icon-cat.svg'
+import IconMovie from '../../../../icon/icon-movie.svg'
+import IconCar from '../../../../icon/icon-car.svg'
+import IconGoal from '../../../../icon/icon-goal.svg'
+import IconCs from '../../../../icon/icon-cs.svg'
+import IconHoc from '../../../../icon/icon-hoc.svg'
 
 export const organisers = [
 	{
@@ -100,7 +105,13 @@ export const organisers = [
 		"link": "https://t.me/maximjaks",
 		"description": "Frontend dev, Sber",
 		"role": "",
-		"hobby": []
+		"hobby": [
+			IconMovie,
+			IconCar,
+			IconGoal,
+			IconCs,
+			IconHoc
+		]
 	},
 	{
 		"avatar": Viacheslav,
