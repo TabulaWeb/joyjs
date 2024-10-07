@@ -314,6 +314,9 @@ const Hobby = styled.div`
 `
 
 const ImageHobby = styled(Image)`
+	width: 70%;
+	height: 70%;
+
 	@media screen and (max-width: 600px) {
 		width: 110px;
 		height: 110px;

@@ -31,6 +31,11 @@ import IconReptilia from '../../../../icon/icon-reptilia.svg'
 import IconIstet from '../../../../icon/icon-istet.svg'
 import IconCamping from '../../../../icon/icon-camping.svg'
 import IconSweet from '../../../../icon/icon-sweet.svg'
+import IconGuitar from '../../../../icon/icon-guitar.svg'
+import IconLinux from '../../../../icon/icon-linux.svg'
+import IconTriangle from '../../../../icon/icon-triangle.svg'
+import IconDiy from '../../../../icon/icon-diy.svg'
+import IconCat from '../../../../icon/icon-cat.svg'
 
 export const organisers = [
 	{
@@ -67,7 +72,13 @@ export const organisers = [
 		"link": "https://t.me/shoom1337",
 		"description": "Frontend dev, Alfa",
 		"role": "",
-		"hobby": []
+		"hobby": [
+			IconGuitar,
+			IconLinux,
+			IconTriangle,
+			IconDiy,
+			IconCat
+		]
 	},
 	{
 		"avatar": AnnaMsk,
