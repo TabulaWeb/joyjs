@@ -27,7 +27,7 @@ export default function Location () {
 					</Swiper>
 					<AreaTime>
 						<Step>1</Step>
-						<Time>18:30 — 21:30</Time>
+						<Time>18:30 — 20:50</Time>
 						<AreaLinks>
 							<Link
 								href='https://vk.com/loft.pskov'
@@ -60,7 +60,7 @@ export default function Location () {
 					</Swiper>
 					<AreaTime>
 						<Step className='dashed'>2</Step>
-						<Time className='dashed'>22:00 — 01:00</Time>
+						<Time className='dashed'>21:00 — 00:00</Time>
 						<TooltipContainer id="tooltip-achor">
 							<TooltipIcon />
 						</TooltipContainer>
