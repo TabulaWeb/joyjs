@@ -699,4 +699,8 @@ const LinkDesctop =	styled.a`
 	&:hover {
 		color: #AFB2FF;
 	}
+
+	@media screen and (max-width: 1440px) {
+		font-size: 14px;
+	}
 `
