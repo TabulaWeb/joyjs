@@ -50,7 +50,7 @@ export default function Location () {
 
 				<Area>
 					<Swiper>
-						<Slide>
+						<Slide className='slide-bar'>
 							<ImageBar
 								src={SlideBar}
 								alt='bar'
@@ -275,6 +275,11 @@ const Link = styled.a`
 
 const Slide = styled(SwiperSlide)`
 	height: 450px;
+
+	&.slide-bar {
+		border: 1px solid #2c2c2c;
+		border-radius: 20px;
+	}
 
 	@media screen and (max-width: 1440px) {
 		height: 340px;
