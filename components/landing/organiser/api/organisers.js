@@ -60,7 +60,7 @@ export const organisers = [
 	},
 	{
 		"avatar": IriFlina,
-		"name": "Ирина Иванова",
+		"name": "Ирина Табула",
 		"link": "https://t.me/iriflina13",
 		"description": "UX/UI Дизайнер",
 		"role": "Админ JoyJS",
