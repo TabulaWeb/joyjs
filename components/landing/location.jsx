@@ -12,7 +12,7 @@ import SlideBar from '../../image/slide-bar.png'
 export default function Location () {
 	return <Main>
 		<Content className='container' id='location'>
-			<Title>Места встречи</Title>
+			<Title>Место встречи</Title>
 
 			<Areas>
 				<Area>
@@ -27,7 +27,7 @@ export default function Location () {
 					</Swiper>
 					<AreaTime>
 						<Step>1</Step>
-						<Time>18:30 — 20:50</Time>
+						<Time>13:30 — 18:00</Time>
 						<AreaLinks>
 							<Link
 								href='https://vk.com/loft.pskov'
@@ -60,22 +60,20 @@ export default function Location () {
 					</Swiper>
 					<AreaTime>
 						<Step className='dashed'>2</Step>
-						<Time className='dashed'>21:00 — 00:00</Time>
+						<Time className='dashed'>18:00 — 21:00</Time>
 						<TooltipContainer id="tooltip-achor">
 							<TooltipIcon />
 						</TooltipContainer>
 						<StyleTooltip
 							anchorSelect="#tooltip-achor"
-							content='Бар может измениться, 
-							если количество желающих
-							превысит ожидания'
+							content='Неформальная часть'
 							place='bottom'
 						/>
 					</AreaTime>
 					<AreaDescription>
-						<AreaTitle>Гастробар Ребро</AreaTitle>
+						<AreaTitle>Фестиваль ЛЕШУГА</AreaTitle>
 						<AreaAddress>
-							Адрес: <a href='https://yandex.ru/maps/-/CDXEyJYF' target='_blank'>Октябрьский проспект, 19</a>
+							Адрес: <a href='https://yandex.ru/maps/-/CHdmRB8c' target='_blank'>Парк Куопио (Финский парк)</a>
 						</AreaAddress>
 					</AreaDescription>
 				</Area>

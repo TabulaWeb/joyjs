@@ -4,7 +4,9 @@ import Image from 'next/image'
 import { styled } from '@linaria/react'
 import ImageLoft from '../../image/loft.png'
 import ImageSmile from '../../image/smile.png'
+import ImageMascotWine from '../../image/mascot-wine.png'
 import ImageCode from '../../image/code.png'
+
 import ImageMascot from '../../image/mascot.png'
 import ImageCamera from '../../image/camera.png'
 
@@ -14,7 +16,7 @@ export default function FirstSection() {
 	useEffect(() => {
 		let interval
 
-		if(timer < 5) {
+		if(timer < 6) {
 			interval = setTimeout(() => {
 				setTimer(prev => prev + 1)
 			}, 100)
@@ -25,9 +27,11 @@ export default function FirstSection() {
 
 	return <Main className='container'>
 		<Description>
-			Велком на первый в Пскове Frontend Meetup!<br/>
-			4 доклада от крутых спикеров, нетворкинг<br/>
-			<span className='beer-container'>и пиво <span className="beer"></span></span>
+		<p>16 августа на JOY.JS#2!</p>
+
+		крутая насыщенная программа из 5 докладов,<br/>
+		нетворкинг в приятной обстановке LOFT,<br/>
+		и чудесный вечер на фестивале <span className='beer-container'>«Сидр»<span className="beer"></span></span><br/>	
 		</Description>
 
 		<Content>
@@ -51,10 +55,20 @@ export default function FirstSection() {
 				width={140}
 				height={140}
 			/>
-			<IconCode 
-				className={timer >= 5 && 'active'}
+			<IconCode
+				className={timer >= 6 && 'active'}
 				src={ImageCode}
 				alt='code'
+				loading='lazy'
+				decoding='async'
+				role='img'
+				width={52}
+				height={52}
+			/>
+			<IconMaskotWine 
+				className={timer >= 5 && 'active'}
+				src={ImageMascotWine}
+				alt='mascot wine'
 				loading='lazy'
 				decoding='async'
 				role='img'
@@ -128,10 +142,16 @@ const Description = styled.h2`
 
 	font-family: var(--font-unbounded-light);
 	font-weight: 400;
-	max-width: 390px;
+	max-width: 440px;
+	width: 100%;
 	line-height: 22px;
 	margin-bottom: 50px;
-	font-size: 14px;;
+	font-size: 14px;
+
+	& p {
+		margin-bottom: 16px;
+		font-size: 14px;
+	}
 
 	& span {
 		position: relative;
@@ -166,14 +186,14 @@ const Description = styled.h2`
 	}
 
 	@media screen and (max-width: 1024px) {
-		max-width: 400px;
+		max-width: 440px;
 		font-size: 14px;
 	}
 
 	@media screen and (max-width: 600px) {
 		margin-bottom: 117px;
 		text-wrap: balance;
-    max-width: 250px;
+    max-width: 440px;
 	}
 `
 
@@ -307,6 +327,56 @@ const IconSmile = styled(Image)`
 	}
 `
 
+const IconMaskotWine = styled(Image)`
+	@keyframes blob {
+		0% {
+			opacity: 0;
+			transform: scale3d(.3, .3, .3);
+		}
+
+		50% {
+			opacity: 1;
+		}
+	}
+
+	width: 140px;
+	height: auto;
+	position: absolute;
+	left: 41%;
+	top: 35%;
+	opacity: 0;
+
+	&.active {
+		transition: 500ms;
+		animation: blob 500ms ease-in-out;
+		opacity: 1;
+	}
+
+	@media (min-width: 1025px) and (max-width: 1400px) {
+		width: clamp(100px, 10.5dvw, 140px);
+	}
+
+	@media screen and (max-width: 1024px) {
+		top: 19%;
+		left: inherit;
+		right: 6%;
+	}
+
+	@media (min-width: 601px) and (max-width: 1024px) {
+		width: clamp(110px, 16.5dvw, 160px);
+	}
+
+	@media screen and (max-width: 600px) {
+		top: inherit;
+		bottom: 5%;
+		right: -5%;
+	}
+
+	@media (min-width: 300px) and (max-width: 600px) {
+		width: clamp(90px, 24dvw, 140px);
+	}
+`
+
 const IconCode = styled(Image)`
 	@keyframes blob {
 		0% {
@@ -319,12 +389,11 @@ const IconCode = styled(Image)`
 		}
 	}
 
-	width: 120px;
+	width: 52px;
 	height: auto;
 	position: absolute;
-	rotate: 30deg;
-	left: 41%;
-	top: 28%;
+	left: 37%;
+	top: 33%;
 	opacity: 0;
 
 	&.active {
@@ -334,27 +403,27 @@ const IconCode = styled(Image)`
 	}
 
 	@media (min-width: 1025px) and (max-width: 1400px) {
-		width: clamp(90px, 9dvw, 140px);
+		width: clamp(42px, 10.5dvw, 52px);
 	}
 
 	@media screen and (max-width: 1024px) {
 		top: 15%;
 		left: inherit;
-		right: 10%;
+		right: 22%;
 	}
 
 	@media (min-width: 601px) and (max-width: 1024px) {
-		width: clamp(90px, 13dvw, 140px);
+		width: clamp(55px, 8dvw, 75px);
 	}
 
 	@media screen and (max-width: 600px) {
 		top: inherit;
-		bottom: 5%;
-		right: -5%;
+		bottom: 40%;
+		right: 20%;
 	}
 
 	@media (min-width: 300px) and (max-width: 600px) {
-		width: clamp(90px, 24dvw, 140px);
+		width: clamp(55px, 12dvw, 75px);
 	}
 `
 

@@ -82,7 +82,7 @@ export default function Header () {
 					name='link to location'
 					aria-label='Read more location'
 				>
-					Места встречи
+					Место встречи
 				</LinkDesctop>
 
 				<LinkDesctop
@@ -144,7 +144,7 @@ export default function Header () {
 						name='link to location'
 						aria-label='Read more location'
 						onClick={() => setIsOpen(prev => !prev)}
-					>Места встречи</Link>
+					>Место встречи</Link>
 					<Link
 						href='#support'
 						name='link to support'

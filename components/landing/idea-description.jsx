@@ -6,13 +6,24 @@ import { timepad, telegram } from '../../consts/urls'
 export default function IdeaDescription () {
 	return <Main className='container'>
 		<Description>
-			На нашем митапе тебя ждёт программа с четырьмя докладами от экспертов. <br/>
-			В перерывах между выступлениями будет отличная возможность пообщаться, обменяться<br/> идеями и завести новые знакомства.
+			<DescrTitle>— Знания и опыт от лучших —</DescrTitle>
+			<DescrText>
+				Мы ответственно подходим к поиску спикеров и приглашаем экспертов, чьи доклады нам самим интересно слушать
+			</DescrText>
 		</Description>
 
-		<Description className='subDescription'>
-			Мы уверены, что каждый найдет что-то для себя и уйдет с ценными инсайтами<br/>
-			и позитивными эмоциями. Независимо от грейда, ждем с нетерпением на Joy.JS!
+		<Description>
+			<DescrTitle>— Здесь не только фронтенд —</DescrTitle>
+			<DescrText>
+				Наши митапы для разработчиков, но будут полезны менеджерам и дизайнерам. Мы не только про технологии, но и про процессы, рост и командную работу
+			</DescrText>
+		</Description>
+
+		<Description>
+			<DescrTitle>— Уютная и ламповая атмосфера —</DescrTitle>
+			<DescrText>
+				В перерывах между выступлениями будет отличная возможность пообщаться, обменяться идеями и завести новые знакомства
+			</DescrText>
 		</Description>
 
 		<Actions>
@@ -53,37 +64,28 @@ const Main = styled.section`
 	}
 `
 
-const Description = styled.p`
+const Description = styled.span`
 	font-family: var(--font-unbounded-light);
-	font-size: 15px;
+	font-size: 14px;
 	text-align: center;
-	margin-bottom: 25px;
-	line-height: 22px;
+	margin-bottom: 50px;
+	word-wrap: balance;
+	max-width: 865px;
 
-	&.subDescription {
-		margin-bottom: 75px;
-	}
-
-	@media screen and (max-width: 1440px) {
-		font-size: 14px;
-	}
-
-	@media screen and (max-width: 840px) {
-		word-wrap: balance;
-		br {
-			display: none;
-		}
-	}
-
-	@media screen and (max-width: 600px) {
-		text-align: left;
-		&.subDescription {
-			margin-bottom: 50px;
-		}
+	&:nth-last-child(2) {
+		margin-bottom: 0;
 	}
 `
 
+const DescrTitle = styled.p`
+	text-transform: uppercase;
+	margin-bottom: 16px;
+`
+
+const DescrText = styled.p``
+
 const Actions = styled.div`
+	margin-top: 75px;
 	display: flex;
 	gap: 25px;
 

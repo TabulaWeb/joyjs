@@ -6,6 +6,7 @@ import Viacheslav from '../../../../image/viacheslav-avatar.png'
 import AnnaOrg from '../../../../image/anna-org-avatar.png'
 import AlexKirilov from '../../../../image/alexander-org-avatar.png'
 import IriFlina from '../../../../image/flina-avatar.png'
+import PixelAvatar from '../../../../image/pixel-org-avatar.png'
 
 import IconSport from '../../../../icon/icon-sport.svg'
 import IconBook from '../../../../icon/icon-book.svg'
@@ -128,18 +129,12 @@ export const organisers = [
 		]
 	},
 	{
-		"avatar": AnnaOrg,
-		"name": "Анна Пахотина",
-		"link": "https://t.me/whataboutanna",
-		"description": "Frontend dev",
+		"avatar": PixelAvatar,
+		"name": "Пиксель",
+		"link": "",
+		"description": "Суетолог",
 		"role": "",
-		"hobby": [
-			IconSport,
-			IconDesign,
-			IconCamping,
-			IconBalance,
-			IconSweet
-		]
+		"hobby": []
 	},
 	{
 		"avatar": AlexKirilov,

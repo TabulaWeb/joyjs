@@ -11,13 +11,13 @@ export default function Marquee () {
 			<p>{'/  !  /'}</p>
 		</MarqueeItem>
 		<MarqueeItem>
-			<p>Что?:  Frontend Meetup в Пскове</p>
+			<p>Что?:  IT–Meetup в Пскове</p>
 		</MarqueeItem>
 		<MarqueeItem>
 			<p>{'<  /  >'}</p>
 		</MarqueeItem>
 		<MarqueeItem>
-			<p>Когда?:  10  октября</p>
+			<p>Когда?:  16 августа</p>
 		</MarqueeItem>
 		<MarqueeItem>
 			<p>{'/  !  /'}</p>
@@ -37,13 +37,13 @@ export default function Marquee () {
 			<p>{'/  !  /'}</p>
 		</MarqueeItem>
 		<MarqueeItem>
-			<p>Что?:  Frontend Meetup в Пскове</p>
+			<p>Что?:  IT–Meetup в Пскове</p>
 		</MarqueeItem>
 		<MarqueeItem>
 			<p>{'<  /  >'}</p>
 		</MarqueeItem>
 		<MarqueeItem>
-			<p>Когда?:  10  октября</p>
+			<p>Когда?:  16 августа</p>
 		</MarqueeItem>
 		<MarqueeItem>
 			<p>{'/  !  /'}</p>
@@ -63,13 +63,13 @@ export default function Marquee () {
 			<p>{'/  !  /'}</p>
 		</MarqueeItem>
 		<MarqueeItem>
-			<p>Что?:  Frontend Meetup в Пскове</p>
+			<p>Что?:  IT–Meetup в Пскове</p>
 		</MarqueeItem>
 		<MarqueeItem>
 			<p>{'<  /  >'}</p>
 		</MarqueeItem>
 		<MarqueeItem>
-			<p>Когда?:  10  октября</p>
+			<p>Когда?:  16 августа</p>
 		</MarqueeItem>
 		<MarqueeItem>
 			<p>{'/  !  /'}</p>

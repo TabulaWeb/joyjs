@@ -21,7 +21,7 @@ export default function Organiser() {
 							decoding='async'
 							role='img'
 						/>
-						<Link
+						{organiser.link && <Link
 							href={organiser.link}
 							name='link to telegram'
 							aria-label='link to telegram'
@@ -32,7 +32,7 @@ export default function Organiser() {
 								height={25}
 								color='#AFB2FF'
 							/>
-						</Link>
+						</Link>}
 
 						<Hobbys className='hobbys'>
 							{organiser.hobby.map((hobby, index) => (

@@ -5,17 +5,27 @@ import { IconEye } from '../../icons/icon-eye'
 import { timepad } from '../../../consts/urls'
 import imageParty from '../../../image/drink.png'
 import { programs } from './api/programs'
+import { IconAttention } from '../../icons/icon-attention'
 
 export default function Program() {
 	return <Main className='container' id='program'>
 		<SecTitle>Программа</SecTitle>
+		<SecSubtitle>
+			<TooltipIcon />
+			<p>
+				<span>
+					Чтобы извлечь максимум пользы, рекомендуем заранее изучить программу и подготовить вопросы для спикеров<br/>
+					— это поможет завязать продуктивный диалог и увеличить вовлеченность участников.
+				</span>
+			</p>
+		</SecSubtitle>
 		{programs.map((program) => (
 			<ProgramItem key={program.id} className={program.time === '21:00' ? 'after-party' : ''}>
 				<Time className={program.time === '21:00' ? 'dashed' : ''}>
 					<span>{program.time}</span>
 					{program.time === '21:00' && <ImagePartyMaskot 
-						src={imageParty} 
-						alt='Автепати' 
+						src={imageParty}
+						alt='Автепати'
 						width={140}
 						height={140}
 						loading='lazy'
@@ -55,8 +65,12 @@ export default function Program() {
 							/>
 						</Avatar>
 						<More>
-							<Name>{program.speaker.name}</Name>
-							<SubInfo>{program.speaker.description}</SubInfo>
+							<Name>
+								<span dangerouslySetInnerHTML={{__html: program.speaker.name}}></span>
+							</Name>
+							<SubInfo>
+								<span dangerouslySetInnerHTML={{__html: program.speaker.description}}></span>
+							</SubInfo>
 						</More>
 					</Speaker>}
 				</Content>
@@ -93,7 +107,7 @@ const Main = styled.section`
 const SecTitle = styled.h2`
 	font-size: 80px;
 	font-family: var(--font-unbounded-light);
-	margin-bottom: 90px;
+	margin-bottom: 20px;
 
 	@media screen and (max-width: 1440px) {
 		font-size: 70px;
@@ -107,6 +121,9 @@ const SecTitle = styled.h2`
 		font-size: 30px;
 		margin-bottom: 65px;
 	}
+`
+
+const TooltipIcon = styled(IconAttention)`
 `
 
 const ProgramItem = styled.div`
@@ -143,6 +160,28 @@ const ProgramItem = styled.div`
 		gap: 25px;
 
 		
+	}
+`
+
+const SecSubtitle = styled.p`
+	display: grid;
+	grid-template-columns: 35px auto;
+	gap: 16px;
+
+	font-size: 14px;
+
+	& svg {
+		width: 35px;
+		height: 35px;
+	}
+
+	& p {
+		margin-bottom: 100px;
+
+
+		@media screen and (max-width: 600px) {
+			margin-bottom: 35px;
+		}
 	}
 `
 
@@ -244,6 +283,12 @@ const Title = styled.p`
 	margin-bottom: ${({ hasMargin }) => hasMargin ? 25 : 0}px;
 	font-size: 25px;
 
+	& a {
+		color: #AFB2FF;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+	}
+
 	@media screen and (max-width: 1440px) {
 		font-size: 20px;
 	}
@@ -305,6 +350,7 @@ const Logo = styled(Image)`
 	bottom: -5px;
 	right: -5px;
 	border-radius: 8px;
+	object-fit: none;
 `
 
 const More = styled.div`
@@ -316,6 +362,12 @@ const More = styled.div`
 const Name = styled.p`
 	font-family: var(--font-unbounded-medium);
 	font-size: 15px;
+
+	& a {
+		color: #AFB2FF;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+	}
 
 	@media screen and (max-width: 1440px) {
 		font-size: 14px;
@@ -329,6 +381,12 @@ const Name = styled.p`
 const SubInfo = styled.p`
 	font-family: var(--font-unbounded-light);
 	font-size: 15px;
+
+	& a {
+		color: #AFB2FF;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+	}
 
 	@media screen and (max-width: 1440px) {
 		font-size: 14px;
