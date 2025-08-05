@@ -12,12 +12,10 @@ export default function Program() {
 		<SecTitle>Программа</SecTitle>
 		<SecSubtitle>
 			<TooltipIcon />
-			<p>
-				<span>
-					Чтобы извлечь максимум пользы, рекомендуем заранее изучить программу и подготовить вопросы для спикеров<br/>
-					— это поможет завязать продуктивный диалог и увеличить вовлеченность участников.
-				</span>
-			</p>
+			<span>
+				Чтобы извлечь максимум пользы, рекомендуем заранее изучить программу и подготовить вопросы для спикеров<br/>
+				— это поможет завязать продуктивный диалог и увеличить вовлеченность участников.
+			</span>
 		</SecSubtitle>
 		{programs.map((program) => (
 			<ProgramItem key={program.id} className={program.time === '21:00' ? 'after-party' : ''}>
@@ -175,7 +173,7 @@ const SecSubtitle = styled.p`
 		height: 35px;
 	}
 
-	& p {
+	& span {
 		margin-bottom: 100px;
 
 
