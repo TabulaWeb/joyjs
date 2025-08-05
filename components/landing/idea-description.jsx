@@ -1,29 +1,71 @@
 import { styled } from '@linaria/react'
+import { IconKey } from '../icons/icon-key'
 import { IconEye } from '../icons/icon-eye'
 import { IconTelegram } from '../icons/icon-telegram'
 import { timepad, telegram } from '../../consts/urls'
 
 export default function IdeaDescription () {
 	return <Main className='container'>
+		<KeyIdeas>
+			<KeyIdea>
+				<KeyIdeaTitle>
+					<IconKey />
+					Знания и опыт 
+					от лучших
+				</KeyIdeaTitle>
+				<KeyIdeaDescription>
+					Мы ответственно подходим к поиску спикеров и приглашаем экспертов, чьи доклады нам самим интересно слушать
+				</KeyIdeaDescription>
+			</KeyIdea>
+			<KeyIdea>
+				<KeyIdeaTitle>
+					<IconKey />
+					Здесь не только фронтенд
+				</KeyIdeaTitle>
+				<KeyIdeaDescription>
+				Наши митапы для разрабов, 
+но будут полезны менеджерам 
+и дизайнерам. Мы не только про технологии, но и про процессы, рост и командную работу
+				</KeyIdeaDescription>
+			</KeyIdea>
+			<KeyIdea>
+				<KeyIdeaTitle>
+					<IconKey />
+					Уютная и ламповая атмосфера
+				</KeyIdeaTitle>
+				<KeyIdeaDescription>
+					Не оставим вас голодными, 
+				в перерыв между докладами будем угощать закусками
+				</KeyIdeaDescription>
+			</KeyIdea>
+			<KeyIdea>
+				<KeyIdeaTitle>
+					<IconKey />
+					Псков + онлайн
+				</KeyIdeaTitle>
+				<KeyIdeaDescription>
+					Для тех кто не сможет приехать в Псков, залетайте к нам 
+					на трансляцию. Ссылка появится в  TG:  <a href='https://t.me/joyjs_conf' target='_blank'>joyjs_conf</a>
+				</KeyIdeaDescription>
+			</KeyIdea>
+		</KeyIdeas>
+
 		<Description>
-			<DescrTitle>— Знания и опыт от лучших —</DescrTitle>
-			<DescrText>
-				Мы ответственно подходим к поиску спикеров и приглашаем экспертов, чьи доклады нам самим интересно слушать
-			</DescrText>
+			Как провести последний месяц лета с пользой? Присоединиться к Joy.JS #2! Здесь не будет скучных и душных лекций — только живые, актуальные кейсы, основанные на реальном опыте спикеров.
 		</Description>
 
 		<Description>
-			<DescrTitle>— Здесь не только фронтенд —</DescrTitle>
-			<DescrText>
-				Наши митапы для разработчиков, но будут полезны менеджерам и дизайнерам. Мы не только про технологии, но и про процессы, рост и командную работу
-			</DescrText>
+			Вас ждут 5 докладов на разные темы из мира разработки — интересно будет не только фронтендерам, но и всем, кто увлекается digital-сферой.
 		</Description>
 
 		<Description>
-			<DescrTitle>— Уютная и ламповая атмосфера —</DescrTitle>
-			<DescrText>
-				В перерывах между выступлениями будет отличная возможность пообщаться, обменяться идеями и завести новые знакомства
-			</DescrText>
+			<DescriptionTitle>В перерывах:</DescriptionTitle>
+			Возможность пообщаться, обменяться идеями, завести полезные знакомства и рассказать о себе
+		</Description>
+
+		<Description>
+			<DescriptionTitle>После докладов:</DescriptionTitle>
+			Вместе отправимся на фестиваль «Сидр» и классно завершим день
 		</Description>
 
 		<Actions>
@@ -64,25 +106,67 @@ const Main = styled.section`
 	}
 `
 
+export const KeyIdeas = styled.div`
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 35px;
+	margin-bottom: 75px;
+
+	@media screen and (max-width: 1024px) { 
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media screen and (max-width: 600px) { 
+		grid-template-columns: 1fr;
+	}
+`
+
+export const KeyIdea = styled.div`
+	padding: 25px 15px;
+	border-radius: 40px;
+	background: #21212199;
+`
+
+export const KeyIdeaTitle = styled.p`
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 20px;
+
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: var(--font-unbounded-medium);
+`
+
+export const KeyIdeaDescription = styled.p`
+	font-size: 14px;
+	font-family: var(--font-unbounded-medium);
+
+	& a {
+		text-decoration: none;
+		color: #AFB2FF;
+	}
+`
+
 const Description = styled.span`
-	font-family: var(--font-unbounded-light);
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	font-family: var(--font-unbounded-medium);
 	font-size: 14px;
 	text-align: center;
-	margin-bottom: 50px;
-	word-wrap: balance;
-	max-width: 865px;
+	margin-bottom: 20px;
+	max-width: 740px;
 
 	&:nth-last-child(2) {
 		margin-bottom: 0;
 	}
 `
 
-const DescrTitle = styled.p`
-	text-transform: uppercase;
-	margin-bottom: 16px;
+const DescriptionTitle = styled.span`
+	color: #FAFAFA99;
+	margin-top: 15px;
 `
-
-const DescrText = styled.p``
 
 const Actions = styled.div`
 	margin-top: 75px;

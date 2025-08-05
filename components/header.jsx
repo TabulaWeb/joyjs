@@ -62,14 +62,6 @@ export default function Header () {
 
 			<NavListDesctop>
 				<LinkDesctop
-					href='#about'
-					name='link to about'
-					aria-label='Read more about'
-				>
-					О митапе
-				</LinkDesctop>
-
-				<LinkDesctop
 					href='#program'
 					name='link to program'
 					aria-label='Read more programm'
@@ -83,6 +75,14 @@ export default function Header () {
 					aria-label='Read more location'
 				>
 					Место встречи
+				</LinkDesctop>
+
+				<LinkDesctop
+					href='#about'
+					name='link to about'
+					aria-label='Read more about'
+				>
+					О сообществе
 				</LinkDesctop>
 
 				<LinkDesctop
@@ -128,12 +128,6 @@ export default function Header () {
 						height={250}
 					/>
 					<Link
-						href='#about'
-						name='link to about'
-						aria-label='Read more about'
-						onClick={() => setIsOpen(prev => !prev)}
-					>О митапе</Link>
-					<Link
 						href='#program'
 						name='link to program'
 						aria-label='Read more programm'
@@ -145,6 +139,12 @@ export default function Header () {
 						aria-label='Read more location'
 						onClick={() => setIsOpen(prev => !prev)}
 					>Место встречи</Link>
+					<Link
+						href='#about'
+						name='link to about'
+						aria-label='Read more about'
+						onClick={() => setIsOpen(prev => !prev)}
+					>О сообществе</Link>
 					<Link
 						href='#support'
 						name='link to support'
@@ -214,7 +214,6 @@ const Main = styled.header`
 const Content = styled.div`
 	position: relative;
 	display: flex;
-	justify-content: space-between;
 	z-index: 7;
 	align-items: center;
 	padding: 20px 15px 20px 35px;
@@ -434,6 +433,7 @@ const Register = styled.a`
 	cursor: pointer;
 	text-decoration: none;
 	transition: 300ms;
+	margin-left: auto;
 	background-color: ${({ isActive }) => isActive ? '#AFB2FF' : ''};
 	color:${({ isActive }) => isActive ? '#212121' : '#AFB2FF'};
 
@@ -679,6 +679,7 @@ const NavListDesctop = styled.nav`
 	align-items: center;
 	flex-direction: row;
 	gap: 75px;
+	margin-left: 65px;
 
 	@media screen and (max-width: 1440px) {
 		gap: 25px;

@@ -7,6 +7,7 @@ import AnnaOrg from '../../../../image/anna-org-avatar.png'
 import AlexKirilov from '../../../../image/alexander-org-avatar.png'
 import IriFlina from '../../../../image/flina-avatar.png'
 import PixelAvatar from '../../../../image/pixel-org-avatar.png'
+import NastiaAvatar from '../../../../image/nastia-org-avatar.png'
 
 import IconSport from '../../../../icon/icon-sport.svg'
 import IconBook from '../../../../icon/icon-book.svg'
@@ -42,6 +43,11 @@ import IconCar from '../../../../icon/icon-car.svg'
 import IconGoal from '../../../../icon/icon-goal.svg'
 import IconCs from '../../../../icon/icon-cs.svg'
 import IconHoc from '../../../../icon/icon-hoc.svg'
+import IconUfo from '../../../../icon/icon-ufo.svg'
+import IconLight from '../../../../icon/icon-light.svg'
+import IconMusic from '../../../../icon/icon-music.svg'
+import IconTheather from '../../../../icon/icon-theather.svg'
+import IconCalian from '../../../../icon/icon-calian.svg'
 
 export const organisers = [
 	{
@@ -70,6 +76,20 @@ export const organisers = [
 			IconReptilia,
 			IconBalance,
 			IconIstet,
+		]
+	},
+	{
+		"avatar": NastiaAvatar,
+		"name": "Анастасия Данилова",
+		"link": "",
+		"description": "Маркетолог",
+		"role": "",
+		"hobby": [
+			IconUfo,
+			IconLight,
+			IconMusic,
+			IconTheather,
+			IconCalian,
 		]
 	},
 	{

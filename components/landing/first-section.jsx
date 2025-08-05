@@ -27,7 +27,7 @@ export default function FirstSection() {
 
 	return <Main className='container'>
 		<Description>
-		<p>16 августа на JOY.JS#2!</p>
+		<p><span>16 августа</span> на JOY.JS#2!</p>
 
 		крутая насыщенная программа из 5 докладов,<br/>
 		нетворкинг в приятной обстановке LOFT,<br/>
@@ -140,7 +140,7 @@ const Description = styled.h2`
 		}
 	}
 
-	font-family: var(--font-unbounded-light);
+	font-family: var(--font-unbounded-medium);
 	font-weight: 400;
 	max-width: 440px;
 	width: 100%;
@@ -148,9 +148,17 @@ const Description = styled.h2`
 	margin-bottom: 50px;
 	font-size: 14px;
 
-	& p {
+	& > p {
 		margin-bottom: 16px;
 		font-size: 14px;
+
+		& span {
+			padding: 8px 12px;
+			background: #FAFAFA;
+			color: #080808;
+			border-radius: 30px;
+			opacity: 1;
+		}
 	}
 
 	& span {

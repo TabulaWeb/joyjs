@@ -92,6 +92,10 @@ const Content = styled.div`
 	@media screen and (max-width: 600px) {
 		grid-template-columns: 1fr 1fr;
 	}
+
+	@media screen and (max-width: 470px) {
+		grid-template-columns: 1fr;
+	}
 `
 
 const People = styled.div`

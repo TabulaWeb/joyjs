@@ -13,15 +13,20 @@ export default function Program() {
 		<SecSubtitle>
 			<TooltipIcon />
 			<span>
-				Чтобы извлечь максимум пользы, рекомендуем заранее изучить программу и подготовить вопросы для спикеров<br/>
-				— это поможет завязать продуктивный диалог и увеличить вовлеченность участников.
+				<span>
+					Чтобы извлечь максимум пользы, рекомендуем заранее изучить программу и подготовить вопросы для спикеров<br/>
+					— это поможет завязать продуктивный диалог
+				</span>
+				<span>
+					Для тех кто не сможет приехать в Псков, залетайте к нам на трансляцию (Ссылка появится в  TG: <a href='https://t.me/joyjs_conf' target='_blank'>joyjs_conf</a>)
+				</span>
 			</span>
 		</SecSubtitle>
 		{programs.map((program) => (
-			<ProgramItem key={program.id} className={program.time === '21:00' ? 'after-party' : ''}>
-				<Time className={program.time === '21:00' ? 'dashed' : ''}>
+			<ProgramItem key={program.id} className={program.time === '18:25' ? 'after-party' : ''}>
+				<Time className={program.time === '18:25' ? 'dashed' : ''}>
 					<span>{program.time}</span>
-					{program.time === '21:00' && <ImagePartyMaskot 
+					{program.time === '18:25' && <ImagePartyMaskot 
 						src={imageParty}
 						alt='Автепати'
 						width={140}
@@ -173,9 +178,16 @@ const SecSubtitle = styled.p`
 		height: 35px;
 	}
 
-	& span {
+	& > span {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
 		margin-bottom: 100px;
 
+		& a {
+			text-decoration: none;
+			color: #AFB2FF;
+		}
 
 		@media screen and (max-width: 600px) {
 			margin-bottom: 35px;

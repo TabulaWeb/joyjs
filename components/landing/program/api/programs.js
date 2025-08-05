@@ -1,14 +1,14 @@
-import AlexanderChernov from '../../../../image/chernov-avatar.jpeg'
+import AlexanderChernov from '../../../../image/chernov-avatar.png'
 import LogoAlfa from '../../../../image/logo-alfa.png'
 
 import GrishaAvatar from '../../../../image/grisha-avatar.png'
 import SberLogo from '../../../../image/logo-sber.png'
 
-import CelkinAvatar from '../../../../image/celkin-avatar.jpeg'
+import CelkinAvatar from '../../../../image/celkin-avatar.png'
 import TbankLogo from '../../../../image/tbank-logo.png'
 
-import SerafimaAvatar from '../../../../image/serafima-avatar.jpeg'
-import SelfLogo from '../../../../image/self-logo.jpeg'
+import SerafimaAvatar from '../../../../image/serafima-avatar.png'
+import SelfLogo from '../../../../image/self-logo.png'
 
 import GoshaAvatar from '../../../../image/gosha-avatar.png'
 import SiburLogo from '../../../../image/sibur-logo.png'
@@ -98,7 +98,7 @@ export const programs = [
 			"avatar": SerafimaAvatar,
 			"company": SelfLogo,
 			"name": "<a href='https://t.me/Serafima_Chekulaeva' target='_blank'>Серафима Чекулаева</a>",
-			"description": "CEO <a href='https://t.me/self_community_it' target='_blank'>self.</a> — айти-сообщества про карьеру Карьерный ментор для айтишников Руководитель продукта; ex-VK Музыка, Тинькофф, Яндекс"
+			"description": "CEO / <a href='https://t.me/self_community_it' target='_blank'>self.</a> — айти-сообщества про карьеру; Карьерный ментор для айтишников; Руководитель продукта; ex-VK Музыка, Тинькофф, Яндекс"
 		}
 	},
 	{
