@@ -3,6 +3,7 @@ import { styled } from '@linaria/react'
 import Image from 'next/image'
 import LogoCoffee from '../../image/coffee-logo.png'
 import LogoLoft from '../../image/loft-logo.png'
+import LogoUnion from '../../image/union.png'
 
 import { IconTelegram } from '../icons/icon-telegram'
 import { IconEmail } from '../icons/icon-email'
@@ -24,6 +25,12 @@ export default function Partners () {
 						className='coffee-studion'
 						alt='coffee-studion'
 						src={LogoCoffee}
+						loading='lazy'
+					/>
+					<Logo 
+						className='union'
+						alt='union'
+						src={LogoUnion}
 						loading='lazy'
 					/>
 				</Logos>
@@ -111,11 +118,7 @@ const Content = styled.div`
 const Logos = styled.div`
 	display: flex;
 	align-items: center;
-	gap: 150px;
-
-	@media screen and (max-width: 1440px) {
-		gap: 100px;
-	}
+	gap: 100px;
 
 	@media screen and (max-width: 1024px) {
 		gap: 75px;
@@ -142,12 +145,22 @@ const Logo = styled(Image)`
 		height: 150px;
 	}
 
+	&.union {
+		width: 150px;
+		height: 150px;
+	}
+
 	@media screen and (max-width: 1440px) {
 		&.coffee-studion {
 			max-width: 250px;
 		}
 
 		&.loft {
+			width: 125px;
+			height: 125px;
+		}
+
+		&.union {
 			width: 125px;
 			height: 125px;
 		}
@@ -161,6 +174,11 @@ const Logo = styled(Image)`
 
 		&.coffee-studion {
 			max-width: 196px;
+		}
+
+		&.union {
+			width: 100px;
+			height: 100px;
 		}
 	}
 
