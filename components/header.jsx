@@ -61,6 +61,14 @@ export default function Header () {
 			<IconLogo className='logo' />
 
 			<NavListDesctop>
+			<LinkDesctop
+					href='#about'
+					name='link to about'
+					aria-label='Read more about'
+				>
+					О митапе
+				</LinkDesctop>
+
 				<LinkDesctop
 					href='#program'
 					name='link to program'
@@ -75,14 +83,6 @@ export default function Header () {
 					aria-label='Read more location'
 				>
 					Место встречи
-				</LinkDesctop>
-
-				<LinkDesctop
-					href='#about'
-					name='link to about'
-					aria-label='Read more about'
-				>
-					О сообществе
 				</LinkDesctop>
 
 				<LinkDesctop
@@ -128,6 +128,12 @@ export default function Header () {
 						height={250}
 					/>
 					<Link
+						href='#about'
+						name='link to about'
+						aria-label='Read more about'
+						onClick={() => setIsOpen(prev => !prev)}
+					>О митапе</Link>
+					<Link
 						href='#program'
 						name='link to program'
 						aria-label='Read more programm'
@@ -139,12 +145,6 @@ export default function Header () {
 						aria-label='Read more location'
 						onClick={() => setIsOpen(prev => !prev)}
 					>Место встречи</Link>
-					<Link
-						href='#about'
-						name='link to about'
-						aria-label='Read more about'
-						onClick={() => setIsOpen(prev => !prev)}
-					>О сообществе</Link>
 					<Link
 						href='#support'
 						name='link to support'

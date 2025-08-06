@@ -360,7 +360,7 @@ const Logo = styled(Image)`
 	bottom: -5px;
 	right: -5px;
 	border-radius: 8px;
-	object-fit: none;
+	object-fit: cover;
 `
 
 const More = styled.div`
