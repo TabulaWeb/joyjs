@@ -140,7 +140,7 @@ export const KeyIdeaTitle = styled.p`
 
 export const KeyIdeaDescription = styled.p`
 	font-size: 14px;
-	font-family: var(--font-unbounded-medium);
+	font-family: var(--font-unbounded-light);
 
 	& a {
 		text-decoration: none;
@@ -152,7 +152,7 @@ const Description = styled.span`
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
-	font-family: var(--font-unbounded-medium);
+	font-family: var(--font-unbounded-light);
 	font-size: 14px;
 	text-align: center;
 	margin-bottom: 20px;
