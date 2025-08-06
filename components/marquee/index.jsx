@@ -26,6 +26,12 @@ export default function Marquee () {
 			<p>Где?:  Креативное пространство «Лофт» </p>
 		</MarqueeItem>
 		<MarqueeItem>
+			<p>{'<  /  >'}</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>Псков и Онлайн</p>
+		</MarqueeItem>
+		<MarqueeItem>
 			<p>
 				<IconSmile />
 				Движухи и анонсы в TG: <a href={telegram.chennal} target='_blank' name='link to channel'
@@ -52,6 +58,12 @@ export default function Marquee () {
 			<p>Где?:  Креативное пространство «Лофт» </p>
 		</MarqueeItem>
 		<MarqueeItem>
+			<p>{'<  /  >'}</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>Псков и Онлайн</p>
+		</MarqueeItem>
+		<MarqueeItem>
 			<p>
 				<IconSmile />
 				Движухи и анонсы в TG: <a href={telegram.chennal} target='_blank' name='link to channel'
@@ -76,6 +88,12 @@ export default function Marquee () {
 		</MarqueeItem>
 		<MarqueeItem>
 			<p>Где?:  Креативное пространство «Лофт» </p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>{'<  /  >'}</p>
+		</MarqueeItem>
+		<MarqueeItem>
+			<p>Псков и Онлайн</p>
 		</MarqueeItem>
 		<MarqueeItem>
 			<p>
