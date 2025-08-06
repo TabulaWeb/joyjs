@@ -140,7 +140,7 @@ const Description = styled.h2`
 		}
 	}
 
-	font-family: var(--font-unbounded-medium);
+	font-family: var(--font-unbounded-light);
 	font-weight: 400;
 	max-width: 440px;
 	width: 100%;
@@ -149,10 +149,12 @@ const Description = styled.h2`
 	font-size: 14px;
 
 	& > p {
+		font-family: var(--font-unbounded-medium);
 		margin-bottom: 16px;
 		font-size: 14px;
 
 		& span {
+			margin-right: 5px;
 			padding: 8px 12px;
 			background: #FAFAFA;
 			color: #080808;
@@ -425,9 +427,7 @@ const IconCode = styled(Image)`
 	}
 
 	@media screen and (max-width: 600px) {
-		top: inherit;
-		bottom: 40%;
-		right: 20%;
+		display: none;
 	}
 
 	@media (min-width: 300px) and (max-width: 600px) {

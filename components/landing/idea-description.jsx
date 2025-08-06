@@ -10,8 +10,7 @@ export default function IdeaDescription () {
 			<KeyIdea>
 				<KeyIdeaTitle>
 					<IconKey />
-					Знания и опыт 
-					от лучших
+					<span>Знания и опыт от лучших</span>
 				</KeyIdeaTitle>
 				<KeyIdeaDescription>
 					Мы ответственно подходим к поиску спикеров и приглашаем экспертов, чьи доклады нам самим интересно слушать
@@ -20,7 +19,7 @@ export default function IdeaDescription () {
 			<KeyIdea>
 				<KeyIdeaTitle>
 					<IconKey />
-					Здесь не только фронтенд
+					<span>Здесь не только фронтенд</span>
 				</KeyIdeaTitle>
 				<KeyIdeaDescription>
 				Наши митапы для разрабов, 
@@ -29,9 +28,9 @@ export default function IdeaDescription () {
 				</KeyIdeaDescription>
 			</KeyIdea>
 			<KeyIdea>
-				<KeyIdeaTitle>
+				<KeyIdeaTitle className='vibe'>
 					<IconKey />
-					Уютная и ламповая атмосфера
+					<span>Уютная и ламповая атмосфера</span>
 				</KeyIdeaTitle>
 				<KeyIdeaDescription>
 					Не оставим вас голодными, 
@@ -41,7 +40,7 @@ export default function IdeaDescription () {
 			<KeyIdea>
 				<KeyIdeaTitle>
 					<IconKey />
-					Псков + онлайн
+					<span>Псков + онлайн</span>
 				</KeyIdeaTitle>
 				<KeyIdeaDescription>
 					Для тех кто не сможет приехать в Псков, залетайте к нам 
@@ -122,8 +121,8 @@ export const KeyIdeas = styled.div`
 `
 
 export const KeyIdea = styled.div`
-	padding: 25px 15px;
-	border-radius: 40px;
+	padding: 20px;
+	border-radius: 20px;
 	background: #21212199;
 `
 
@@ -131,11 +130,25 @@ export const KeyIdeaTitle = styled.p`
 	display: flex;
 	align-items: center;
 	gap: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
+	
 
 	font-size: 14px;
 	text-transform: uppercase;
 	font-family: var(--font-unbounded-medium);
+
+	& span {
+		max-width: 175px;
+	}
+
+	&.vibe span {
+		max-width: 205px;
+	}
+
+	& svg {
+		width: 34px;
+		height: 31px;
+	}
 `
 
 export const KeyIdeaDescription = styled.p`
@@ -151,7 +164,7 @@ export const KeyIdeaDescription = styled.p`
 const Description = styled.span`
 	display: flex;
 	flex-direction: column;
-	gap: 12px;
+	gap: 8px;
 	font-family: var(--font-unbounded-light);
 	font-size: 14px;
 	text-align: center;
@@ -166,6 +179,7 @@ const Description = styled.span`
 const DescriptionTitle = styled.span`
 	color: #FAFAFA99;
 	margin-top: 15px;
+	text-transform: uppercase;
 `
 
 const Actions = styled.div`

@@ -61,7 +61,7 @@ export default function Header () {
 			<IconLogo className='logo' />
 
 			<NavListDesctop>
-			<LinkDesctop
+				<LinkDesctop
 					href='#about'
 					name='link to about'
 					aria-label='Read more about'
@@ -678,7 +678,7 @@ const NavListDesctop = styled.nav`
 	display: flex;
 	align-items: center;
 	flex-direction: row;
-	gap: 75px;
+	gap: 35px;
 	margin-left: 65px;
 
 	@media screen and (max-width: 1440px) {

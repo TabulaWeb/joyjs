@@ -122,6 +122,10 @@ const AvatarContainer = styled.div`
 	border-radius: 50%;
 	margin-bottom: 25px;
 
+	.gif-pixel {
+		opacity: 0;
+	}
+
 	&:hover {
 		& .hobbys {
 			opacity: 1;
@@ -162,7 +166,9 @@ const AvatarContainer = styled.div`
 			}
 		}
 
-
+		& .gif-pixel {
+			opacity: 1;
+		}
 	}
 
 	@media screen and (max-width: 1440px) {
@@ -252,7 +258,7 @@ const Link = styled.a`
 
 const Name = styled.p`
 	font-size: 20px;
-	margin-bottom: 25px;
+	margin-bottom: 10px;
 	font-family: var(--font-unbounded-light);
 
 	@media screen and (max-width: 1440px) {

@@ -81,7 +81,7 @@ export const organisers = [
 	{
 		"avatar": NastiaAvatar,
 		"name": "Анастасия Данилова",
-		"link": "",
+		"link": "https://t.me/danilovastasya",
 		"description": "Маркетолог",
 		"role": "",
 		"hobby": [

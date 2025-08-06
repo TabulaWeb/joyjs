@@ -73,7 +73,7 @@ export default function Location () {
 					<AreaDescription>
 						<AreaTitle>Фестиваль ЛЕШУГА</AreaTitle>
 						<AreaAddress>
-							Адрес: <a href='https://yandex.ru/maps/-/CHdmRB8c' target='_blank'>Парк Куопио (Финский парк)</a>
+							Адрес: <a href='https://yandex.ru/maps/org/park_kuopio/17679693362/?ll=28.347610,57.821740&z=16' target='_blank'>Парк Куопио (Финский парк)</a>
 						</AreaAddress>
 					</AreaDescription>
 				</Area>
@@ -238,7 +238,7 @@ const AreaDescription = styled.div``
 const AreaTitle = styled.p`
 	font-family: var(--font-unbounded-light);
 	font-size: 25px;
-	margin-bottom: 25px;
+	margin-bottom: 12px;
 
 	@media screen and (max-width: 1440px) {
 		font-size: 20px;
