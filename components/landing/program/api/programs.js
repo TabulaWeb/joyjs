@@ -37,7 +37,7 @@ export const programs = [
 			"avatar": AlexanderChernov,
 			"company": LogoAlfa,
 			"name": "Чернов Александр",
-			"description": "Frondend разработчик / Альфа-Банк"
+			"description": "Frontend разработчик / Альфа-Банк"
 		}
 	},
 	{
@@ -74,7 +74,7 @@ export const programs = [
 			"avatar": CelkinAvatar,
 			"company": TbankLogo,
 			"name": "Целикин Максим",
-			"description": "Frondend разработчик / Т-Банк"
+			"description": "Frontend разработчик / Т-Банк"
 		}
 	},
 	{
