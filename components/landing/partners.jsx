@@ -29,7 +29,7 @@ export default function Partners () {
 					/>
 					<Logo 
 						className='union'
-						alt='union'
+						alt='unio'
 						src={LogoUnion}
 						loading='lazy'
 					/>
